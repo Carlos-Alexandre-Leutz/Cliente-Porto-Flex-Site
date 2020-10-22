@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/root/css/main.css">
+    <!--<script src="/root/js/app.js"></script> -->
+    <script src="/root/js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <a href="/pages/PartialViews/contato.html">conteudo</a>
+    <a href link-atributo="/pages/PartialViews/contato.html">pagina</a>
+
+
+    <section id="conteudo"></section>
+    <script>
+        document.querySelectorAll('[link-atributo]').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault()
+                console.log('foi')
+                fetch(link.getAttribute('link-atributo'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+                console.log('2foi')
+
+
+            }
+
+        });
+    </script>
+</body>
+
+</html>
