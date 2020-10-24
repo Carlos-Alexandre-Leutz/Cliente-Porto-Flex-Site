@@ -1,6 +1,75 @@
 // vars colors 
+$verde: green;
+$laranja: orange;
+$branco: #fff;
 html body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: $verde;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    form {
+        div {
+            input {
+                background-color: transparent;
+                border: solid 2px $laranja;
+                color: $laranja;
+                margin-top: 15px;
+            }
+            input::placeholder {
+                color: $laranja;
+            }
+            button {
+                margin-left: -5px;
+                background-color: transparent;
+                border: solid 2px $laranja;
+                svg {
+                    color: $laranja;
+                }
+            }
+        }
+    }
+    section {
+        div {
+            position: relative;
+            float: right;
+            margin-top: -30px;
+            span {
+                color: $branco;
+                svg {
+                    color: $laranja;
+                }
+                i {
+                    color: $laranja;
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 60px;
+    nav {
+        margin: auto;
+        display: flex;
+        div {
+            border: solid;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.quadradoEXcluir {
+    background-color: $verde;
+    width: 90px;
+    min-width: 100px;
+    border: solid 10px $laranja;
+    height: 90px;
 }
