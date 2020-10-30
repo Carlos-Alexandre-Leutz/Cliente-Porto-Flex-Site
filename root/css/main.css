@@ -5,8 +5,9 @@ html body {
 }
 
 header {
-  background-color: green;
+  background-color: #26492a;
   width: 100%;
+  max-width: 100%;
   height: 60px;
   position: fixed;
   top: 0;
@@ -14,41 +15,40 @@ header {
 
 header form div input {
   background-color: transparent;
-  border: solid 2px orange;
-  color: orange;
+  border: solid 2px #db812d;
+  color: #db812d;
   margin-top: 15px;
 }
 
 header form div input::-webkit-input-placeholder {
-  color: orange;
+  color: #db812d;
 }
 
 header form div input:-ms-input-placeholder {
-  color: orange;
+  color: #db812d;
 }
 
 header form div input::-ms-input-placeholder {
-  color: orange;
+  color: #db812d;
 }
 
 header form div input::placeholder {
-  color: orange;
+  color: #db812d;
 }
 
 header form div button {
   margin-left: -5px;
   background-color: transparent;
-  border: solid 2px orange;
+  border: solid 2px #db812d;
 }
 
 header form div button svg {
-  color: orange;
+  color: #db812d;
 }
 
 header section div {
   position: relative;
   float: right;
-  margin-top: -30px;
 }
 
 header section div span {
@@ -56,35 +56,137 @@ header section div span {
 }
 
 header section div span svg {
-  color: orange;
+  color: #db812d;
 }
 
 header section div span i {
-  color: orange;
+  color: #db812d;
 }
 
-main {
+.navegacao {
   margin-top: 60px;
+  background-image: url("/root/img/01_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
 }
 
-main nav {
+.navegacao nav {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.navegacao nav div {
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.navegacao nav div a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+.navegacao .navCorPrinc {
+  color: #fff;
+}
+
+.navegacao .navCorSecund {
+  color: #db812d !important;
+}
+
+.navegacao .cont-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main nav div {
-  border: solid;
+.navegacao .cont-img div {
+  border: solid black;
+  margin: auto;
+  margin-top: 40px;
+  width: 60vh;
+  height: 60vh;
+}
+
+.navegacao .cont-img div img {
   width: 100%;
-  text-align: center;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#linear-gradient {
+  margin-top: -10px;
+  width: 100%;
+  height: 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#db812d), to(#fdb227));
+  background-image: linear-gradient(to right, #db812d, #fdb227);
+}
+
+@media screen and (max-width: 770px) {
+  .navegacao {
+    width: 100%;
+  }
 }
 
 .quadradoEXcluir {
-  background-color: green;
+  background-color: #26492a;
   width: 90px;
   min-width: 100px;
-  border: solid 10px orange;
+  max-width: 100px;
+  border: solid 10px #db812d;
   height: 90px;
+}
+
+.none {
+  display: none;
+}
+
+.logoPosition {
+  width: 100px;
+  margin: auto;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.wthsPositionafter {
+  margin-top: -70px;
+}
+
+.wthsPositionahover {
+  margin-top: -30px;
+}
+
+footer {
+  width: 100%;
+  background-color: #26492a;
+}
+
+footer .footern1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footern1 div {
+  color: #fff;
+  text-align: right;
+  width: 200px;
+  border: solid;
+}
+
+footer .footern1 div i {
+  color: #db812d;
+}
+
+footer .footern1 button {
+  background-color: #000;
 }
 /*# sourceMappingURL=main.css.map */
