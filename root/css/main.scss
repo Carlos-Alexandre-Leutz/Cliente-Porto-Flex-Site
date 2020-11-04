@@ -57,9 +57,9 @@ header {
 .navegacao {
     margin-top: 60px;
     background-image: url("/root/img/01_bg.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: contain;
     width: 100%;
     height: 300px; //30vh;
     nav {
@@ -84,25 +84,9 @@ header {
     .navCorSecund {
         color: $laranja !important;
     }
-    .cont-img {
-        display: flex;
-        div {
-            border: solid black;
-            margin: auto;
-            margin-top: 40px;
-            width: 60vh;
-            height: 60vh;
-            img {
-                width: 100%;
-                max-width: 100%;
-                object-fit: contain;
-            }
-        }
-    }
 }
 
 #linear-gradient {
-    margin-top: -10px;
     width: 100%;
     height: 8px;
     background-image: linear-gradient(to right, $laranja, rgb(253, 178, 39));
@@ -115,13 +99,19 @@ header {
     }
 }
 
-.quadradoEXcluir {
-    background-color: $verde;
-    width: 90px;
-    min-width: 100px;
+.conteinerLogo {
+    width: 100%;
+    height: 100%;
     max-width: 100px;
-    border: solid 10px $laranja;
-    height: 90px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    margin-top: -28px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 
 .none {
@@ -129,37 +119,112 @@ header {
 }
 
 .logoPosition {
-    width: 100px;
+    width: 68px;
     margin: auto;
-    margin-top: -50px;
+    margin-top: -40px;
     text-align: center;
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 .wthsPositionafter {
-    margin-top: -70px;
+    margin-top: -40px;
 }
 
 .wthsPositionahover {
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 //Footer
 footer {
     width: 100%;
     background-color: $verde;
+    border-bottom: solid $verde 20px;
     .footern1 {
         display: flex;
-        div {
+        padding-top: 20px;
+        .esquerda {
+            text-align: end;
+            font-size: 16px;
+            font-weight: 600;
             color: $branco;
-            text-align: right;
-            width: 200px;
-            border: solid;
-            i {
+            width: 45%;
+            padding-right: 15px;
+            line-height: 20px;
+        }
+        .icon-wthas {
+            display: flex;
+            width: 20%;
+            font-size: 20px;
+            img {
+                width: 70px;
+            }
+            .chamaNoWthas {
+                margin-top: 5px;
+                margin-left: 5px;
                 color: $laranja;
+                font-weight: 600;
             }
         }
-        button {
-            background-color: #000;
+        .btn-wthas {
+            width: 30%;
+            button {
+                border: solid $laranja 1px;
+                background-color: transparent;
+                color: $branco;
+                margin-top: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
+    }
+    .separador {
+        width: 100%;
+        height: 5px;
+        background-color: $laranja;
+    }
+    .footer-left {
+        color: $branco;
+        span {
+            width: 100px;
+            img {
+                border: solid #333;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        i {
+            color: $laranja;
+        }
+    }
+    .img-logo-footer {
+        width: 150px;
+        max-width: 150px;
+        min-width: 150px;
+        object-fit: contain;
+        margin: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .footer-right {
+        color: $branco;
+        i {
+            color: $laranja;
+            padding: 5px;
+        }
+        div {
+            text-align: end;
+        }
+        .dias {
+            color: $laranja;
+        }
+    }
+    .img-footer-icons {
+        width: 15px;
+        margin-right: 2px;
     }
 }
