@@ -3,10 +3,29 @@ $verde: #26492a;
 $laranja: #db812d;
 $branco: #fff;
 $preto:#000;
+$laranjaClaro: #f4c498;
 html body {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-ThinItalic-webfont.eot');
+}
+
+.laranja {
+    color: $laranja;
+}
+
+.branco {
+    color: $branco;
+}
+
+.verde {
+    color: $verde;
 }
 
 header {
@@ -15,6 +34,7 @@ header {
     max-width: 100%;
     height: 60px;
     position: fixed;
+    z-index: 998;
     top: 0;
     form {
         div {
@@ -63,9 +83,11 @@ header {
     width: 100%;
     height: 300px; //30vh;
     nav {
+        font-size: 14px;
         margin: auto;
         display: flex;
         width: 100%;
+        z-index: 999;
         div {
             width: 100%;
             text-align: center;
@@ -74,6 +96,30 @@ header {
                 text-decoration: none;
                 color: $branco;
                 width: 100%;
+            }
+             :hover {
+                text-decoration: none;
+                color: $branco;
+            }
+        }
+        .collapseProdutos {
+            table {
+                width: 90%;
+                margin: auto;
+                text-align: start;
+                margin-top: -3px;
+                tr {
+                    td {
+                        font-size: 12px;
+                        font-weight: 300;
+                        //white-space: nowrap;
+                        background-color: $laranja;
+                        padding: 5px 10px;
+                    }
+                }
+                svg {
+                    color: $branco;
+                }
             }
         }
     }
@@ -89,7 +135,7 @@ header {
 #linear-gradient {
     width: 100%;
     height: 8px;
-    background-image: linear-gradient(to right, $laranja, rgb(253, 178, 39));
+    background-image: linear-gradient(to right, $laranja, $laranjaClaro);
 }
 
 @media screen and (max-width: 770px) {
@@ -130,11 +176,30 @@ header {
 }
 
 .wthsPositionafter {
-    margin-top: -40px;
+    margin-top: -41px;
 }
 
 .wthsPositionahover {
     margin-top: -20px;
+}
+
+@media screen and (max-width: 770px) {
+    .logoPosition {
+        width: 68px;
+        margin: auto;
+        margin-top: 0px;
+        text-align: center;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+    .wthsPositionafter {
+        margin-top: -40px;
+    }
+    .wthsPositionahover {
+        margin-top: -20px;
+    }
 }
 
 //Footer
@@ -162,21 +227,63 @@ footer {
                 width: 70px;
             }
             .chamaNoWthas {
-                margin-top: 5px;
+                line-height: 20px;
+                margin-top: 15px;
                 margin-left: 5px;
                 color: $laranja;
                 font-weight: 600;
+                min-width: 100px;
             }
         }
         .btn-wthas {
             width: 30%;
             button {
+                font-size: 15px;
                 border: solid $laranja 1px;
                 background-color: transparent;
                 color: $branco;
-                margin-top: 25px;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding: 5px 15px;
+                margin-top: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 770px) {
+        .footern1 {
+            display: block;
+            padding-top: 20px;
+            .esquerda {
+                text-align: center;
+                width: 200px;
+                padding-right: 15px;
+                line-height: 20px;
+                margin: auto;
+            }
+            .icon-wthas {
+                padding: 20px 0px;
+                display: flex;
+                width: 180px;
+                margin: auto;
+                img {
+                    width: 70px;
+                }
+                .chamaNoWthas {
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    color: $laranja;
+                    font-weight: 600;
+                }
+            }
+            .btn-wthas {
+                width: 111px;
+                margin: auto;
+                margin-bottom: 20px;
+                button {
+                    font-size: 15px;
+                    border: solid $laranja 1px;
+                    background-color: transparent;
+                    color: $branco;
+                    padding: 5px 15px;
+                }
             }
         }
     }
@@ -187,31 +294,25 @@ footer {
     }
     .footer-left {
         color: $branco;
-        span {
-            width: 100px;
+        width: 33%;
+    }
+    .conteiner-img-logo {
+        width: 34%;
+        .img-logo-footer {
+            width: 150px;
+            max-width: 150px;
+            min-width: 150px;
+            object-fit: contain;
+            margin: auto;
             img {
-                border: solid #333;
                 width: 100%;
                 height: 100%;
             }
         }
-        i {
-            color: $laranja;
-        }
-    }
-    .img-logo-footer {
-        width: 150px;
-        max-width: 150px;
-        min-width: 150px;
-        object-fit: contain;
-        margin: auto;
-        img {
-            width: 100%;
-            height: 100%;
-        }
     }
     .footer-right {
         color: $branco;
+        width: 33%;
         i {
             color: $laranja;
             padding: 5px;
@@ -226,5 +327,18 @@ footer {
     .img-footer-icons {
         width: 15px;
         margin-right: 2px;
+    }
+    @media screen and (max-width: 770px) {
+        .conteiner-img-logo {
+            width: 100%;
+        }
+        .footer-left {
+            color: $branco;
+            width: 50%;
+        }
+        .footer-right {
+            color: $branco;
+            width: 50%;
+        }
     }
 }

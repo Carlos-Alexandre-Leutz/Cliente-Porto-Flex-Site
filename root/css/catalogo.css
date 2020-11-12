@@ -1,0 +1,47 @@
+.pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pdf .cont-img-pdf {
+  width: 30%;
+}
+
+.pdf .cont-img-pdf div {
+  padding: 20px;
+}
+
+.pdf .cont-img-pdf div img {
+  width: 100%;
+  max-width: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.pdf .cont-texto-pdf {
+  padding: 20px;
+}
+
+.pdf .cont-texto-pdf h3 {
+  padding: 10px 0px;
+  color: #26492a;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.pdf .cont-texto-pdf p {
+  width: 100%;
+  max-width: 450px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+}
+
+.pdf .cont-texto-pdf span img {
+  width: 100%;
+  max-width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=catalogo.css.map */

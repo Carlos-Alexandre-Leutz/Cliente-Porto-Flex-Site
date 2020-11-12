@@ -1,4 +1,5 @@
 <style>
+    /*
     .cont-img-home {
         display: flex;
         margin: auto;
@@ -16,13 +17,38 @@
         width: 100%;
         max-width: 100%;
         object-fit: contain;
-    }
+    }*/
 </style>
 
+<link rel="stylesheet" href="/root/css/home.css">
 <section class="wrapper">
     <p>{{title}}</p>
-    <div class="wrapper cont-img-home">
-        <img src="/root/img/02_fotos.png" alt="">
+    <div>{{img}}</div>
+    <!--
 
+        <div class="wrapper cont-img-home">
+            <img style="z-index: 0;" src="/root/img/02_fotos.png" alt="">
+            
+        </div>
+    -->
+</section>
+
+<section class="backg-conectados  d-flex">
+
+    <div class=" cont-eficiencia">
+        <b> 24h</b> conectados á eficiência
+    </div>
+    <div class="cont-plantao24hrs">
+        conheça nossos serviçoes. <br> incluindo o plantão 24hrs!
     </div>
 </section>
+
+<br><br><br>
+
+
+<script>
+    function scrollWin() {
+        window.scrollTo(0, 0);
+    }
+    scrollWin();
+</script>

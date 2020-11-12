@@ -2,9 +2,18 @@
 <html ng-app="app">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="content-language" content="pt-br" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="pt-br" />
+    -->
     <title>Porto Flex </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/root/css/selected-menu.css">
     <link rel="shortcut icon" href="/root/img/icones/Logo_topo_colorida.png" type="image/x-icon">
     <link rel="stylesheet" href="root/css/main.css">
     <link rel="stylesheet" href="/root/css/myFrameworks.css">
@@ -12,6 +21,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/root/css/menuMovel.css">
+
+
+
 
     <!--angular-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -25,12 +38,11 @@
 
 <body>
     <header>
-
         <form class="wrapper soNoDescktop">
             <div>
                 <input type="search" id="mySearch" name="q" placeholder="   Faça sua busca">
                 <button class="soNoDescktop"> 
-                    <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="13px" height="13px" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                         <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                     </svg>
@@ -43,49 +55,192 @@
         <section class="wrapper">
             <div class="wthas wthsPositionahover">
 
-                <span>
+                <span class="soNoDescktop">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                     </svg>
                     (47)21227337  
                 </span>
 
-                <span>
+                <span class="soNoDescktop">
                     <i class="fab fa-whatsapp"></i>
                     (47)97641173
                 </span>
             </div>
         </section>
+        <div class="soNoMobile">
+
+            <input id="check" type="checkbox" />
+
+            <label for="check" id="icone">
+                <div class="menu "  >
+                    <span class="hamburguer "></span>
+                </div>
+            </label>
+
+            <div class="barra ">
+                <section>
+                    <a class="linkNavMob" href="#/home">
+                        <div>
+                            home
+                        </div>
+                    </a>
+
+                    <a class="linkNavMob" href="#/nosahistoria">
+                        <div>
+                            Nossa hístoria
+                        </div>
+                    </a>
+                    <a class="linkNavMob" href="#/nossotrabalho">
+                        <div>
+                            Nosso Trabalho
+                        </div>
+                    </a>
+
+                    <div class="branco" style="cursor: pointer;">
+                        Produtos <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                    </div>
+
+                    <div class="collapse" id="collapsProdutoMovel">
+
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+                    </div>
+                    <a class="linkNavMob" style="cursor: pointer;">
+                        <div>
+                            Serviços <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </div>
+                    </a>
+                    <a class="linkNavMob" href="#/faleconosco">
+                        <div>
+                            Fale Conosco
+                        </div>
+                    </a>
+                </section>
+
+
+            </div>
+        </div>
     </header>
+
     <div class="navegacao">
+        <nav class="wrapper ">
 
 
-        <nav class="wrapper">
-
-
-            <div><a id="home" class="home navCorPrinc soNoDescktop" href="#/home">Home</a></div>
+            <div><a id="home" class="home navCorPrinc navCorSecund soNoDescktop selected-menu" href="#/home">Home</a></div>
             <div><a id="historia" class="historia navCorPrinc soNoDescktop" href="#/nosahistoria">Nossa hístoria</a></div>
             <div><a id="trabalho" class="trabalho navCorPrinc soNoDescktop" href="#/nossotrabalho">Nosso Trabalho</a></div>
             <div class="conteinerLogo">
                 <a href="#/home"> <img src="/root/img/icones/Logo_topo_colorida.png" alt=""> </a>
             </div>
-            <div> <a id="produtos" class="produtos navCorPrinc soNoDescktop" href="#/produtos">Produtos</a></div>
-            <div> <a id="servicos" class="servicos navCorPrinc soNoDescktop" href="#/servicos">Serviços</a></div>
+            <div>
+                <a id="produtos" class="produtos navCorPrinc soNoDescktop" style="cursor: pointer;">
+                    Produtos
+                    <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                   </a>
+                <div class="collapse collapseProdutos " id="collapseProdutos" style="color: white;">
+                    <table class="soNoDescktop">
+
+
+                        <tr>
+                            <td>
+                                <a href="#/catalogo">
+                                Catálogo
+                            </a>
+                            </td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Acessório industia</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Correias Industriais</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Conexão Hidraulicas</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+
+                </div>
+            </div>
+            <div>
+                <a id="servicos" class="servicos navCorPrinc soNoDescktop" href="#/servicos" style="cursor: pointer;">Serviços
+                   
+                </a>
+                <div class="collapse collapseProdutos" id="collapseServicos" style="color: white;">
+
+                    <table class="soNoDescktop">
+                        <tr>
+                            <td>Catálogo</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Acessório industia</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Correias Industriais</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Conexão Hidraulicas</td>
+                            <td>
+                                <svg width="10px" height="10px" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
             <div> <a id="fale" class="fale navCorPrinc soNoDescktop" href="#/faleconosco">Fale Conosco</a></div>
-
-
 
         </nav>
 
-
     </div>
-
-
     <div id="linear-gradient"></div>
-
-
     <div ng-view></div>
-
     <footer>
         <div class="footern1 wrapper">
 
@@ -99,250 +254,124 @@
                     Chama <br> no whats!
                 </div>
             </div>
-            <div class="btn-wthas"> <button>clique aqui</button></div>
-
-        </div>
-
-        <div class="separador wrapper mb-3 mt-3"></div>
-        <div class="wrapper ">
-            <div class="d-flex justify-content-between bd-highlight mb-3">
-                <div class="p-2 bd-highlight footer-left ">
-                    <div class="d-flex">
-
-                        <div class="p-3">
-                            <img src="/root/img/icones/Icone_local.png" alt="">
-                        </div>
-                        <div>
-
-                            Rua José Pereira Liberato, <br/> n° 623 Bairo São João <br/> Itajaí - SC,88304-400
-                        </div>
-                    </div>
-                    <div class="d-flex mt-4 ml-4">
-
-                        <div class="">
-                            <img class="img-footer-icons" src="/root/img/icones/Icone_telefone.png" alt="">
-                        </div>
-                        <div>
-
-                            (47)21227337
-                        </div>
-                    </div>
-                    <div class="d-flex  ml-4" style="margin-top: 3px;">
-
-                        <div class="">
-                            <img class="img-footer-icons" src="/root/img/icones/Icone_whatsapp.png" alt="">
-                        </div>
-                        <div>
-
-                            (47)97641173
-                        </div>
-                    </div>
-
-                </div>
-                <div class="p-2 bd-highlight">
-                    <div class="img-logo-footer">
-                        <img src="/root/img/icones/Logo_rodapé_branca.png" alt="">
-                    </div>
-                </div>
-                <div class="p-2 bd-highlight footer-right">
-                    <div class="bd-highlight dias"> <img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Segunda a sexta : </div>
-                    <div class="bd-highlight">08h às 13h30 às 18h </div>
-                    <div class="bd-highlight dias"><img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Sábados: </div>
-                    <div class="bd-highlight">08 às 12h </div>
-
-
-
-
-
-
-
-                    <div class="mt-4">
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-facebook-f fa-2x"></i>
-                    </div>
-                </div>
+            <div class="btn-wthas">
+                <form target="blank" action="http://bit.ly/PortoFlex">
+                    <button type="submit">clique aqui</button>
+                </form>
             </div>
 
         </div>
 
-    </footer>
+        <div class="separador wrapper mb-3 mt-5"></div>
 
+
+        <div class=" wrapper flex " style="margin: auto;">
+
+            <div class="p-2 bd-highlight footer-left  soNoDescktop">
+
+                <div class="d-flex">
+                    <div class="p-3">
+                        <img src="/root/img/icones/Icone_local.png" alt="">
+                    </div>
+                    <div>
+                        Rua José Pereira Liberato, <br/> n° 623 Bairo São João <br/> Itajaí - SC,88304-400
+                    </div>
+                </div>
+
+                <div class="d-flex mt-4 ml-4">
+
+                    <div class="">
+                        <img class="img-footer-icons" src="/root/img/icones/Icone_telefone.png" alt="">
+                    </div>
+                    <div>
+                        (47)21227337
+                    </div>
+                </div>
+
+                <div class="d-flex  ml-4" style="margin-top: 3px;">
+
+                    <div class="">
+                        <img class="img-footer-icons" src="/root/img/icones/Icone_whatsapp.png" alt="">
+                    </div>
+                    <div>
+                        (47)97641173
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="p-2 bd-highlight conteiner-img-logo">
+                <div class="img-logo-footer">
+                    <img src="/root/img/icones/Logo_rodapé_branca.png" alt="">
+                </div>
+            </div>
+
+            <div class="p-2 bd-highlight footer-right soNoDescktop">
+                <div class="bd-highlight dias"> <img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Segunda a sexta : </div>
+                <div class="bd-highlight">08h às 13h30 às 18h </div>
+                <div class="bd-highlight dias"><img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Sábados: </div>
+                <div class="bd-highlight">08 às 12h </div>
+
+                <div class="mt-4">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="soNoMobile wrapper d-flex mt-5">
+
+
+            <div class="p-2 bd-highlight footer-left soNoMobile ">
+
+                <div class="d-flex">
+                    <div class="p-3">
+                        <img src="/root/img/icones/Icone_local.png" alt="">
+                    </div>
+                    <div>
+                        Rua José Pereira Liberato, <br/> n° 623 Bairo São João <br/> Itajaí - SC,88304-400
+                    </div>
+                </div>
+
+                <div class="d-flex mt-4 ml-4">
+
+                    <div class="">
+                        <img class="img-footer-icons" src="/root/img/icones/Icone_telefone.png" alt="">
+                    </div>
+                    <div>
+                        (47)21227337
+                    </div>
+                </div>
+
+                <div class="d-flex  ml-4" style="margin-top: 3px;">
+
+                    <div class="">
+                        <img class="img-footer-icons" src="/root/img/icones/Icone_whatsapp.png" alt="">
+                    </div>
+                    <div>
+                        (47)97641173
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="p-2 bd-highlight footer-right soNoMobile">
+                <div class="bd-highlight dias"> <img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Segunda a sexta : </div>
+                <div class="bd-highlight">08h às 13h30 às 18h </div>
+                <div class="bd-highlight dias"><img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Sábados: </div>
+                <div class="bd-highlight">08 às 12h </div>
+
+                <div class="mt-4">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
-        document.querySelectorAll('[link-atributo]').forEach(link => {
-            link.onclick = function(e) {
-                e.preventDefault()
-                fetch(link.getAttribute('link-atributo'))
-                    .then(resp => resp.text())
-                    .then(html => conteudo.innerHTML = html)
-            }
-        });
-    </script>
-
-    <script>
-        // logo
-        $(function() {
-
-            $(window).on("scroll", function() {
-                if ($(window).scrollTop() > 60) {
-                    $(".logo").removeClass("none");
-                    $(".wthas").addClass("wthsPositionafter");
-                    $(".wthas").removeClass("wthsPositionahover");
-
-
-
-                } else {
-                    $(".wthas").removeClass("wthsPositionafter");
-                    $(".wthas").addClass("wthsPositionahover");
-
-
-                    $(".logo").addClass("none");
-
-                }
-            });
-        });
-
-        //cor navegação
-        //home
-        $('.home').click(function() {
-            if ($('.home').hasClass('navCorPrinc')) {
-                $('.home').removeClass('navCorPrinc');
-                $('.home').addClass('navCorSecund');
-
-                //retira cor dos outros
-
-                $('.historia').removeClass('navCorSecund');
-                $('.trabalho').removeClass('navCorSecund');
-                $('.produtos').removeClass('navCorSecund');
-                $('.servicos').removeClass('navCorSecund');
-                $('.fale').removeClass('navCorSecund');
-
-
-
-
-            } else {
-                $('.home').addClass('navCorPrinc');
-                $('.home').removeClass('navCorSecund');
-
-
-            };
-
-
-
-        });
-        //história
-        $('.historia').click(function() {
-            if ($('.historia').hasClass('navCorPrinc')) {
-
-                $('.historia').removeClass('navCorPrinc');
-                $('.historia').addClass('navCorSecund');
-
-                $('.home').removeClass('navCorSecund');
-
-                $('.trabalho').removeClass('navCorSecund');
-                $('.produtos').removeClass('navCorSecund');
-                $('.servicos').removeClass('navCorSecund');
-                $('.fale').removeClass('navCorSecund');
-
-
-            } else {
-                $('.historia').addClass('navCorPrinc');
-                $('.historia').removeClass('navCorSecund');
-
-            };
-
-
-        });
-        $('.trabalho').click(function() {
-            if ($('.trabalho').hasClass('navCorPrinc')) {
-                $('.trabalho').removeClass('navCorPrinc');
-                $('.trabalho').addClass('navCorSecund');
-
-                $('.home').removeClass('navCorSecund');
-                $('.historia').removeClass('navCorSecund');
-
-                $('.produtos').removeClass('navCorSecund');
-                $('.servicos').removeClass('navCorSecund');
-                $('.fale').removeClass('navCorSecund');
-
-
-
-
-            } else {
-                $('.trabalho').addClass('navCorPrinc');
-                $('.trabalho').removeClass('navCorSecund');
-
-            };
-
-
-        });
-        $('.produtos').click(function() {
-            if ($('.produtos').hasClass('navCorPrinc')) {
-                $('.produtos').removeClass('navCorPrinc');
-                $('.produtos').addClass('navCorSecund');
-
-                $('.home').removeClass('navCorSecund');
-                $('.historia').removeClass('navCorSecund');
-                $('.trabalho').removeClass('navCorSecund');
-
-                $('.servicos').removeClass('navCorSecund');
-                $('.fale').removeClass('navCorSecund');
-
-
-            } else {
-                $('.produtos').addClass('navCorPrinc');
-                $('.produtos').removeClass('navCorSecund');
-
-            };
-
-
-        });
-        $('.servicos').click(function() {
-            if ($('.servicos').hasClass('navCorPrinc')) {
-                $('.servicos').removeClass('navCorPrinc');
-                $('.servicos').addClass('navCorSecund');
-
-                $('.home').removeClass('navCorSecund');
-                $('.historia').removeClass('navCorSecund');
-                $('.trabalho').removeClass('navCorSecund');
-                $('.produtos').removeClass('navCorSecund');
-
-                $('.fale').removeClass('navCorSecund');
-
-
-
-            } else {
-                $('.servicos').addClass('navCorPrinc');
-                $('.servicos').removeClass('navCorSecund');
-
-            };
-
-
-        });
-        $('.fale').click(function() {
-            if ($('.fale').hasClass('navCorPrinc')) {
-                $('.fale').removeClass('navCorPrinc');
-                $('.fale').addClass('navCorSecund');
-
-                $('.home').removeClass('navCorSecund');
-                $('.historia').removeClass('navCorSecund');
-                $('.trabalho').removeClass('navCorSecund');
-                $('.produtos').removeClass('navCorSecund');
-                $('.servicos').removeClass('navCorSecund');
-
-
-
-            } else {
-                $('.fale').addClass('navCorPrinc');
-                $('.fale').removeClass('navCorSecund');
-
-            };
-
-
-        });
-    </script>
-
+    <script src="/root/js/main.js"></script>
 </body>
 
 </html>

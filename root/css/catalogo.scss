@@ -1,0 +1,41 @@
+$verde: #26492a;
+$laranja: #db812d;
+$branco: #fff;
+$preto:#000;
+.pdf {
+    display: flex;
+    .cont-img-pdf {
+        width: 30%;
+        div {
+            padding: 20px;
+            img {
+                width: 100%;
+                max-width: 90px;
+                object-fit: contain;
+            }
+        }
+    }
+    .cont-texto-pdf {
+        padding: 20px;
+        h3 {
+            padding: 10px 0px;
+            color: $verde;
+            font-size: 40px;
+            font-weight: 600;
+        }
+        p {
+            width: 100%;
+            max-width: 450px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #555;
+        }
+        span {
+            img {
+                width: 100%;
+                max-width: 200px;
+                object-fit: contain;
+            }
+        }
+    }
+}

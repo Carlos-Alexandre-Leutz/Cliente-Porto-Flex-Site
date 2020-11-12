@@ -1,0 +1,141 @@
+<style>
+    .conteudo {
+        background-color: aqua;
+        width: 100%;
+        height: 100%;
+        color: blue;
+    }
+    
+    .flip-container {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        perspective: 1000px;
+    }
+    
+    .flipper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    .flip-container:hover .flipper {
+        transform: rotatex(180deg);
+    }
+    
+    .front,
+    .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-container .back {
+        transform: rotateX(180deg);
+    }
+</style>
+
+
+
+<section>
+
+
+
+
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_24_horas.png" alt="">
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    24hrs
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_Acessorios_para_montagem_industrial.png" alt="">
+
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    instalção
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_manutenção.png" alt="">
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    manutenção
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_entrega.png" alt="">
+
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    entregas
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_whatsapp.png" alt="">
+
+
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    wths
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flip-container">
+        <div class="flipper">
+            <div class="front">
+                <img src="/root/img/icones/Icone_destaque.png" alt="">
+
+            </div>
+            <div class="back">
+                <div class="conteudo">
+                    destaque
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+<script>
+    function scrollWin() {
+        window.scrollTo(0, 0);
+    }
+    scrollWin();
+</script>

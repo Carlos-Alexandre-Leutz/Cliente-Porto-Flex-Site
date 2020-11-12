@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+.backg-conectados {
+  background-color: #db812d;
+  height: 100px;
+}
+
+.backg-conectados .cont-eficiencia {
+  width: 60%;
+  text-align: right;
+  font-size: 33px;
+  color: #fff;
+  padding: 25px 20px;
+}
+
+.backg-conectados .cont-plantao24hrs {
+  width: 40%;
+  height: 50px;
+  margin-top: 25px;
+  background-color: #26492a;
+  color: #fff;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=home.css.map */

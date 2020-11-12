@@ -1,0 +1,111 @@
+.menu {
+    background: white;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    top: 14px;
+    left: 20px;
+    z-index: 1;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #333;
+    width: 25px;
+    height: 2px;
+    top: 17px;
+    left: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+#check {
+    display: none;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+.hamburguerPos {
+    transform: rotate(45deg);
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguerPos:before {
+    transform: rotate(90deg);
+    transition: 0.5s ease-in-out;
+    top: 0;
+}
+
+.hamburguerPos:after {
+    transform: rotate(90deg);
+    transition: 0.5s ease-in-out;
+    bottom: 0;
+}
+
+
+/**  css menu latel mobile*/
+
+.barra {
+    background-color: #26492a;
+    border-right: solid #db812d 2px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: all .2s linear;
+}
+
+.barra section {
+    margin-top: 80px;
+}
+
+.barra div {
+    width: 100%;
+    border: solid #db812d;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.barra a {
+    padding: 1px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.barra a :hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/**  animação menu latel mobile
+
+#check:checked~.barra {
+    transform: translateX(300px);
+}
+*/
+
+.barraAberta {
+    transform: translateX(300px) !important;
+    transition: all .2s linear;
+}

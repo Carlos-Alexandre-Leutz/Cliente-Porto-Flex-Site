@@ -26,6 +26,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/contato.html',
             controller: 'contatoCtrl',
         })
+        .when('/catalogo', {
+            templateUrl: 'app/views/catalogo.html',
+            controller: 'catalogoCtrl',
+        })
 
 
     .otherwise({ redirectTo: '/' });

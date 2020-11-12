@@ -1,9 +1,12 @@
 app.controller('HomeCtrl', function($scope) {
     $scope.title = 'Bem-vindo, esta é nossa página principal!';
+
+
 });
 
 app.controller('nossaHistoriaCtrl', function($scope) {
     $scope.title = 'nossa historia';
+
 });
 
 app.controller('nossoTrabalhoCtrl', function($scope) {
@@ -17,4 +20,5 @@ app.controller('servicosCtrl', function($scope) {
 });
 app.controller('contatoCtrl', function($scope) {
     $scope.title = 'contato';
+
 });

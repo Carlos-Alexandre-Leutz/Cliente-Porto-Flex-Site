@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .selected-menu {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 10px;
+            margin: auto;
+            top: 17px;
+            left: 5px;
+        }
+        
+        .selected-menu:before,
+        .selected-menu:after {
+            background: #db812d;
+            content: '';
+            display: block;
+            width: 2px;
+            height: 100%;
+            margin-left: 50%;
+            position: absolute;
+            transition: 0.5s ease-in-out;
+        }
+        
+        .selected-menu:before {
+            top: -10px;
+        }
+        
+        .selected-menu:after {
+            bottom: -18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="max-width: 35px;">
+        <div class="selected-menu">home</div>
+
+    </div>
+    <br><br>
+
+    <div style="max-width: 90px;">
+        <div class="selected-menu">Nosa Historia</div>
+    </div>
+    <br>
+    <br>
+
+    <div style="max-width: 55px;">
+        <div class="selected-menu">Produtos</div>
+    </div>
+    <br><br>
+
+
+    <div style="max-width: 105px;">
+        <div class="hamburguer">Nosso Trabalho</div>
+    </div>
+    <br>
+    <br>
+
+
+    <div style="max-width: 85px;">
+        <div class="selected-menu">Fale conosco</div>
+    </div>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
