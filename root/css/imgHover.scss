@@ -41,10 +41,10 @@ $laranjaClaro: #f4c498;
 }
 
 .flip-container {
-    width: 150px;
-    height: 150px;
-    min-width: 150px;
-    min-height: 150px;
+    width: 180px;
+    height: 180px;
+    min-width: 180px;
+    min-height: 180px;
     margin: auto;
     perspective: 1000px;
     cursor: pointer;
@@ -85,10 +85,11 @@ $laranjaClaro: #f4c498;
         margin-top: 20px;
         text-align: center;
         color: $branco;
+        font-size: 15px;
     }
     .cont-img-serv {
         margin: auto;
-        margin-top: 10px;
+        margin-top: 20px;
         max-width: 80px;
         width: 100%;
         img {

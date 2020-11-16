@@ -1,0 +1,18 @@
+.cont-contato {
+  margin-bottom: 30px;
+}
+
+.cont-contato div {
+  border: solid;
+}
+
+.texto::before {
+  content: "ao lado";
+}
+
+@media screen and (max-width: 770px) {
+  .texto::before {
+    content: "a baixo";
+  }
+}
+/*# sourceMappingURL=contato.css.map */

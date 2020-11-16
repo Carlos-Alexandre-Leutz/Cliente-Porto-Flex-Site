@@ -1,0 +1,17 @@
+.cont-contato {
+    margin-bottom: 30px;
+    div {
+        border: solid;
+        p {}
+    }
+}
+
+.texto::before {
+    content: "ao lado";
+}
+
+@media screen and (max-width: 770px) {
+    .texto::before {
+        content: "a baixo";
+    }
+}
