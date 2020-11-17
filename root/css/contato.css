@@ -2,8 +2,78 @@
   margin-bottom: 30px;
 }
 
-.cont-contato div {
-  border: solid;
+.cont-contato div h1 {
+  color: #26492a;
+  font-size: 30px;
+  font-weight: 500;
+  width: 70%;
+}
+
+.cont-contato div p {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 300;
+  width: 90%;
+}
+
+.cont-contato div form {
+  color: #777;
+  font-size: 13px;
+}
+
+.cont-contato div form input {
+  width: 100%;
+  border: solid 2px #db812d;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.cont-contato div form .conteiner-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cont-contato div form .conteiner-form .email {
+  width: 49% !important;
+}
+
+.cont-contato div form .conteiner-form .telefone {
+  width: 49% !important;
+}
+
+.cont-contato div form select {
+  border: solid 2px #db812d;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 0px 10px;
+}
+
+.cont-contato div form textarea {
+  height: 100px;
+  border: solid 2px #db812d;
+  margin-bottom: 3px;
+  width: 100%;
+  height: 150px;
+}
+
+.cont-contato div form button {
+  border: none;
+  background-color: transparent;
+  color: #db812d;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cont-contato div form button img {
+  width: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5px;
 }
 
 .texto::before {

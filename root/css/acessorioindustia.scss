@@ -1,0 +1,26 @@
+$verde: #26492a;
+$laranja: #db812d;
+$branco: #fff;
+$preto:#000;
+.cont-aces-industria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    div {
+        width: 50%;
+        padding: 0px 10px;
+        h1 {
+            text-align: end;
+            color: $verde;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 12px;
+            text-align: justify;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

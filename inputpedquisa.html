@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        mark {
+            background: orange;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="input" type="text">
+    <div id="context">
+        Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Paisis, filhis, espiritis santis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Leite de capivaris,
+        leite de mula manquis sem cabeça.
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+    <script>
+        $(function() {
+            $("#input").on("input.highlight", function() {
+                // Determine o termo de pesquisa especificado
+                var search = $(this).val();
+                // Highlight termo de pesquisa dentro de um contexto específico
+                $("#context").unmark().mark(search);
+            }).trigger("input.highlight").focus();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.cont-aces-industria {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cont-aces-industria div {
+  width: 50%;
+  padding: 0px 10px;
+}
+
+.cont-aces-industria div h1 {
+  text-align: end;
+  color: #26492a;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.cont-aces-industria div p {
+  font-size: 12px;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+}
+/*# sourceMappingURL=acessorioindustia.css.map */

@@ -10,9 +10,9 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'app/views/nossaHistoria.html',
             controller: 'nossaHistoriaCtrl',
         })
-        .when('/nossotrabalho', {
-            templateUrl: 'app/views/nossoTrabalho.html',
-            controller: 'nossoTrabalhoCtrl',
+        .when('/acessorioindustia', {
+            templateUrl: 'app/views/acessorioindustia.html',
+            controller: 'acessorioindustiaCtrl',
         })
         .when('/produtos', {
             templateUrl: 'app/views/produtos.html',

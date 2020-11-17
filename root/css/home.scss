@@ -1,23 +1,268 @@
-                $verde: #26492a;
-                $laranja: #db812d;
-                $branco: #fff;
-                $preto:#000;
-                $laranjaClaro: #f4c498;
+            $verde: #26492a;
+            $laranja: #db812d;
+            $branco: #fff;
+            $preto:#000;
+            $laranjaClaro: #f4c498;
+            .cont-servicos-home {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 50px;
+                padding: 0px 40px;
+                div {
+                    width: 130px;
+                    height: 130px;
+                    min-width: 130px;
+                    background-color: $verde;
+                    transition: 0.5s;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border-radius: 5px;
+                    background-size: 70%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    span {
+                        text-align: center;
+                        color: $verde;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        font-weight: 700;
+                        width: 100%;
+                        button {
+                            border: none;
+                            background-color: $laranja;
+                            font-size: 12px;
+                            color: $branco;
+                            width: 90%;
+                        }
+                    }
+                }
+                div:hover {
+                    background-color: $branco;
+                    border: solid 5px $verde;
+                    width: 130px;
+                    height: 130px;
+                    cursor: grab;
+                }
+                div:nth-child(1) {
+                    background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(1):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+                div:nth-child(2) {
+                    background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+                    background-size: 60%;
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(2):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+                div:nth-child(3) {
+                    background-image: url("/root/img/icones/Icone_correias_industriais.png");
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(3):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+                div:nth-child(4) {
+                    background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(4):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+                div:nth-child(5) {
+                    background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(5):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+                div:nth-child(6) {
+                    background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+                    span {
+                        display: none;
+                    }
+                }
+                div:nth-child(6):hover {
+                    background-image: none;
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            
+            .backg-conectados {
+                background-color: $laranja;
+                height: 100px;
+                display: flex;
+                .cont-eficiencia {
+                    width: 60%;
+                    text-align: right;
+                    font-size: 33px;
+                    color: $branco;
+                    padding: 25px 20px;
+                }
+                .cont-plantao24hrs {
+                    width: 40%;
+                    height: 50px;
+                    margin-top: 25px;
+                    background-color: $verde;
+                    color: $branco;
+                    padding: 5px 20px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 300;
+                    border-radius: 5px 0px 0px 5px;
+                }
+            }
+            
+            h1 {
+                font-size: 40px;
+                padding: 10px 10px;
+            }
+            
+            .cont-article-home {
+                div {
+                    padding: 10px;
+                    width: 50%;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: justify;
+                    color: #777;
+                }
+            }
+            
+            .sectiom-conexao-home {
+                display: flex;
+                margin-bottom: 30px;
+                .direita {
+                    text-align: right;
+                }
+                .esquerda {
+                    padding: 20px 10px;
+                    font-size: 35px;
+                    font-weight: 600;
+                    line-height: 40px;
+                    img {
+                        margin-top: 5px;
+                        width: 15px;
+                        object-fit: contain;
+                    }
+                }
+                div {
+                    padding: 10px;
+                    width: 50%;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: justify;
+                    color: #777;
+                    .encontrou-conexao {
+                        color: $verde;
+                        font-size: 30px;
+                        font-weight: 700;
+                        text-align: right;
+                        width: 100%;
+                    }
+                    .dica {
+                        font-size: 20px;
+                        color: $verde;
+                        font-weight: 500;
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 770px) {
+                .cont-article-home {
+                    div {
+                        padding: 10px;
+                        width: 100%;
+                        font-size: 15px;
+                        font-weight: 400;
+                        text-align: justify;
+                        color: #777;
+                    }
+                }
+                .backg-conectados {
+                    .cont-eficiencia {
+                        font-size: 17px;
+                        padding: 35px 20px;
+                    }
+                    .cont-plantao24hrs {
+                        white-space: nowrap;
+                        font-size: 10px;
+                        padding: 10px 20px;
+                    }
+                }
+                .sectiom-conexao-home {
+                    .esquerda {
+                        padding: 20px 10px;
+                        font-size: 35px;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    div {
+                        .encontrou-conexao {
+                            color: $verde;
+                            font-size: 25px;
+                            font-weight: 700;
+                            text-align: right;
+                            width: 100%;
+                        }
+                        .dica {
+                            font-size: 16px;
+                            color: $verde;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 425px) {
                 .backg-conectados {
                     background-color: $laranja;
                     height: 100px;
-                    display: flex;
+                    display: block;
                     .cont-eficiencia {
-                        width: 60%;
-                        text-align: right;
-                        font-size: 33px;
-                        color: $branco;
-                        padding: 25px 20px;
+                        width: 100%;
+                        text-align: left;
+                        font-size: 20px;
+                        padding: 5px 20px;
                     }
                     .cont-plantao24hrs {
-                        width: 40%;
+                        width: 100%;
                         height: 50px;
-                        margin-top: 25px;
+                        margin-top: 0px;
                         background-color: $verde;
                         color: $branco;
                         padding: 5px 20px;
@@ -26,107 +271,26 @@
                         font-weight: 300;
                     }
                 }
-                
-                h1 {
-                    font-size: 40px;
-                    padding: 10px 10px;
-                }
-                
-                .cont-article-home {
-                    div {
-                        padding: 10px;
-                        width: 50%;
-                        font-size: 15px;
-                        font-weight: 400;
-                        text-align: justify;
-                        color: #777;
-                    }
-                }
-                
                 .sectiom-conexao-home {
-                    display: flex;
-                    margin-bottom: 30px;
-                    .direita {
-                        text-align: right;
-                    }
                     .esquerda {
-                        padding: 20px 10px;
-                        font-size: 35px;
+                        padding: 10px 10px;
+                        font-size: 25px;
                         font-weight: 600;
-                        line-height: 40px;
-                        img {
-                            margin-top: 5px;
-                            width: 15px;
-                            object-fit: contain;
-                        }
+                        line-height: normal;
                     }
                     div {
-                        padding: 10px;
-                        width: 50%;
-                        font-size: 15px;
-                        font-weight: 400;
-                        text-align: justify;
-                        color: #777;
                         .encontrou-conexao {
                             color: $verde;
-                            font-size: 30px;
+                            font-size: 15px;
                             font-weight: 700;
                             text-align: right;
                             width: 100%;
                         }
                         .dica {
-                            font-size: 20px;
+                            font-size: 13px;
                             color: $verde;
                             font-weight: 500;
                         }
                     }
                 }
-                
-                @media only screen and (max-width: 770px) {
-                    .cont-article-home {
-                        div {
-                            padding: 10px;
-                            width: 100%;
-                            font-size: 15px;
-                            font-weight: 400;
-                            text-align: justify;
-                            color: #777;
-                        }
-                    }
-                    .backg-conectados {
-                        .cont-eficiencia {
-                            font-size: 17px;
-                            padding: 35px 20px;
-                        }
-                        .cont-plantao24hrs {
-                            white-space: nowrap;
-                            font-size: 10px;
-                            padding: 10px 20px;
-                        }
-                    }
-                }
-                
-                @media only screen and (max-width: 425px) {
-                    .backg-conectados {
-                        background-color: $laranja;
-                        height: 100px;
-                        display: block;
-                        .cont-eficiencia {
-                            width: 100%;
-                            text-align: left;
-                            font-size: 20px;
-                            padding: 5px 20px;
-                        }
-                        .cont-plantao24hrs {
-                            width: 100%;
-                            height: 50px;
-                            margin-top: 0px;
-                            background-color: $verde;
-                            color: $branco;
-                            padding: 5px 20px;
-                            text-transform: uppercase;
-                            font-size: 13px;
-                            font-weight: 300;
-                        }
-                    }
-                }
+            }

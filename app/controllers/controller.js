@@ -9,8 +9,8 @@ app.controller('nossaHistoriaCtrl', function($scope) {
 
 });
 
-app.controller('nossoTrabalhoCtrl', function($scope) {
-    $scope.title = 'trabalho';
+app.controller('acessorioindustiaCtrl', function($scope) {
+    $scope.title = 'acessorio industia';
 });
 app.controller('produtosCtrl', function($scope) {
     $scope.title = 'produtos';

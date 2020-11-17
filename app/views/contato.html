@@ -1,12 +1,13 @@
 <link rel="stylesheet" href="/root/css/contato.css">
-<section class="wrapper">
-    <p>{{title}}</p>
-
-</section>
+<!--
+    <section class="wrapper">
+        <p>{{title}}</p>
+    </section>
+-->
 
 <section class="flex wrapper cont-contato">
-    <div class="w50">
-        <h1>
+    <div class="w50  p-3">
+        <h1 class="mb-5">
             Agora você pode <br> tirar suas dúvidas <br> ou solilicitar um <br> orçamento!
         </h1>
         <p>
@@ -14,7 +15,35 @@
             <span class="texto"> </span> e conte-nos suas dúvidas sobre algum produto ou servço. Caso não tenha encontrado o produto que deseja m basta indicar nos campos disponíveis e se preferir, cique no WhatsApp
         </p>
     </div>
-    <div class="w50"></div>
+    <div class="w50 p-3">
+        <form action="$PHP_SELF.php" method="POST">
+
+
+            <input placeholder="    Seu nome" type="text" name="nome">
+            <div class="conteiner-form">
+                <input class="email" placeholder="    Seu e-mail" type="text" name="email">
+                <input class="telefone" placeholder="    Seu telefone" type="text" name="telefone">
+            </div>
+            <select name="assunto">
+               <option value="Nenhum valor foi selecionado">Sobre o que deseja falar?</option>
+               <option value="Financeiro">Financeiro</option>
+               <option value="Comercial">Comercial</option>
+               <option value="Manutenção">Manutenção</option>
+           </select>
+
+
+
+            <textarea placeholder="    Deixe sua mensagem" type="text" name="mensagem"></textarea>
+
+            <div class="d-flex justify-content-end">
+                <button type="submit" name="BTEnvia"> <img src="/root/img/icones/seta-enviar.png" alt="">Pode enviar!</button>
+            </div>
+            <!--<input type="reset" name="BTApaga" value="Apagar">-->
+
+
+        </form>
+        <div id="result"></div>
+    </div>
 </section>
 
 

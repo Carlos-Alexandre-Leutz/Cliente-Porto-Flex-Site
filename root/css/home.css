@@ -1,3 +1,165 @@
+@charset "UTF-8";
+.cont-servicos-home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0px 40px;
+}
+
+.cont-servicos-home div {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  background-color: #26492a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  background-size: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.cont-servicos-home div span {
+  text-align: center;
+  color: #26492a;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.cont-servicos-home div span button {
+  border: none;
+  background-color: #db812d;
+  font-size: 12px;
+  color: #fff;
+  width: 90%;
+}
+
+.cont-servicos-home div:hover {
+  background-color: #fff;
+  border: solid 5px #26492a;
+  width: 130px;
+  height: 130px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.cont-servicos-home div:nth-child(1) {
+  background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+}
+
+.cont-servicos-home div:nth-child(1) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(1):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(1):hover span {
+  display: block;
+}
+
+.cont-servicos-home div:nth-child(2) {
+  background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+  background-size: 60%;
+}
+
+.cont-servicos-home div:nth-child(2) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(2):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(2):hover span {
+  display: block;
+}
+
+.cont-servicos-home div:nth-child(3) {
+  background-image: url("/root/img/icones/Icone_correias_industriais.png");
+}
+
+.cont-servicos-home div:nth-child(3) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(3):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(3):hover span {
+  display: block;
+}
+
+.cont-servicos-home div:nth-child(4) {
+  background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+}
+
+.cont-servicos-home div:nth-child(4) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(4):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(4):hover span {
+  display: block;
+}
+
+.cont-servicos-home div:nth-child(5) {
+  background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+}
+
+.cont-servicos-home div:nth-child(5) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(5):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(5):hover span {
+  display: block;
+}
+
+.cont-servicos-home div:nth-child(6) {
+  background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+}
+
+.cont-servicos-home div:nth-child(6) span {
+  display: none;
+}
+
+.cont-servicos-home div:nth-child(6):hover {
+  background-image: none;
+}
+
+.cont-servicos-home div:nth-child(6):hover span {
+  display: block;
+}
+
 .backg-conectados {
   background-color: #db812d;
   height: 100px;
@@ -24,6 +186,7 @@
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 300;
+  border-radius: 5px 0px 0px 5px;
 }
 
 h1 {
@@ -106,6 +269,24 @@ h1 {
     font-size: 10px;
     padding: 10px 20px;
   }
+  .sectiom-conexao-home .esquerda {
+    padding: 20px 10px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .sectiom-conexao-home div .encontrou-conexao {
+    color: #26492a;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: right;
+    width: 100%;
+  }
+  .sectiom-conexao-home div .dica {
+    font-size: 16px;
+    color: #26492a;
+    font-weight: 500;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -130,6 +311,24 @@ h1 {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 300;
+  }
+  .sectiom-conexao-home .esquerda {
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .sectiom-conexao-home div .encontrou-conexao {
+    color: #26492a;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+    width: 100%;
+  }
+  .sectiom-conexao-home div .dica {
+    font-size: 13px;
+    color: #26492a;
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=home.css.map */
