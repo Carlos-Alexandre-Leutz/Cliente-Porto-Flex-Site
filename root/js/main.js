@@ -201,6 +201,48 @@ $('.produtos').click(function() {
 
 
 });
+
+
+$('#catalogo').click(function() {
+
+    $('.home').removeClass('navCorSecund');
+    $('.historia').removeClass('navCorSecund');
+    $('.trabalho').removeClass('navCorSecund');
+    $('.servicos').removeClass('navCorSecund');
+    $('.fale').removeClass('navCorSecund');
+
+    $('.home').removeClass('selected-menu');
+    $('.historia').removeClass('selected-menu');
+    $('.trabalho').removeClass('selected-menu');
+    $('.servicos').removeClass('selected-menu');
+    $('.fale').removeClass('selected-menu');
+    $('#collapseProdutos').removeClass('show');
+
+
+
+});
+$('#AcessorioIndustia').click(function() {
+
+    $('.home').removeClass('navCorSecund');
+    $('.historia').removeClass('navCorSecund');
+    $('.trabalho').removeClass('navCorSecund');
+    $('.servicos').removeClass('navCorSecund');
+    $('.fale').removeClass('navCorSecund');
+
+    $('.home').removeClass('selected-menu');
+    $('.historia').removeClass('selected-menu');
+    $('.trabalho').removeClass('selected-menu');
+    $('.servicos').removeClass('selected-menu');
+    $('.fale').removeClass('selected-menu');
+    $('#collapseProdutos').removeClass('show');
+
+
+
+});
+
+
+
+
 $('.servicos').click(function() {
     if (!$('.servicos').hasClass('navCorSecund')) {
         $('.servicos').addClass('selected-menu');

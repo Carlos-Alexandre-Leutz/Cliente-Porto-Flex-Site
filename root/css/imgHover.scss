@@ -9,6 +9,10 @@ $laranjaClaro: #f4c498;
     margin-bottom: 40px;
 }
 
+.mt-img {
+    margin-top: 150px;
+}
+
 .conteudo {
     background-color: $branco;
     border: solid 6px $verde;
@@ -104,8 +108,40 @@ $laranjaClaro: #f4c498;
 
 @media only screen and (max-width: 600px) {
     .section-servicos {
-        display: block;
         max-width: 700px;
-        margin-bottom: 0px;
+        overflow: scroll;
+        margin-bottom: 20px;
+    }
+    .flip-container {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        min-height: 100px;
+        margin: auto;
+        perspective: 1000px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .front {
+        .cont-text-serv {
+            margin-top: 10px;
+            text-align: center;
+            color: $branco;
+            font-size: 15px;
+        }
+        .cont-img-serv {
+            margin: auto;
+            margin-top: 5px;
+            max-width: 50px;
+            width: 100%;
+            img {
+                max-width: 80px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .mt-img {
+        margin-top: 50px;
     }
 }

@@ -44,6 +44,14 @@ body {
     margin-bottom: 10px;
 }
 
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
 
 /*espasamentos*/
 

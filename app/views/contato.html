@@ -1,3 +1,8 @@
+<style>
+    .navegacao-img {
+        background-image: url("/root/img/capas/contato.png");
+    }
+</style>
 <link rel="stylesheet" href="/root/css/contato.css">
 <!--
     <section class="wrapper">
@@ -8,7 +13,7 @@
 <section class="flex wrapper cont-contato">
     <div class="w50  p-3">
         <h1 class="mb-5">
-            Agora você pode <br> tirar suas dúvidas <br> ou solilicitar um <br> orçamento!
+            Agora você pode tirar suas dúvidas ou solilicitar um orçamento!
         </h1>
         <p>
             Prencha atentamente o formulario
@@ -52,4 +57,14 @@
         window.scrollTo(0, 0);
     }
     scrollWin();
+</script>
+<script>
+    function alerta() {
+        alert('E-Mail enviado com sucesso!');
+        retornar();
+    }
+
+    function retornar() {
+        window.location.href = 'https://portoflexconexoes.com/#/faleconosco'
+    }
 </script>

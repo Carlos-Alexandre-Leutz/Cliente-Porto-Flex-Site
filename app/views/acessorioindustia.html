@@ -1,4 +1,10 @@
+<style>
+    .navegacao-img {
+        background-image: url("/root/img/capas/home.png");
+    }
+</style>
 <link rel="stylesheet" href="/root/css/acessorioindustia.css">
+
 <!--
 
     <section class="wrapper">
@@ -8,9 +14,10 @@
     
 -->
 <div class="cont-aces-industria wrapper">
+
     <div>
         <h1>
-            Produtos que vão <br> melhorar todo <br> desempenho!
+            Produtos que vão melhorar todo desempenho!
         </h1>
     </div>
     <div>
@@ -21,6 +28,197 @@
         </p>
     </div>
 </div>
+<div id="Val-tit">Valvulas</div>
+<section class="d-flex">
+
+
+    <div id="anterior"><img src="/root/img/icones/Icone_seta_esquerda.png" alt=""></div>
+    <div class="wrapper" id="content"></div>
+    <div id="proximo"><img src="/root/img/icones/Icone_seta_direita.png" alt=""></div>
+
+
+
+</section>
+<div class="wrapper">
+
+    <div class=" traco-verde"></div>
+
+    <section class="cont-conte-center">
+        <div style=" height: 220px; overflow-y: scroll; ">
+
+
+
+            <div id="btn-selecao-1"></div>
+            <div id="btn-selecao-2"></div>
+            <div id="btn-selecao-3"></div>
+            <div id="btn-selecao-4"></div>
+            <div id="btn-selecao-5"></div>
+            <div id="btn-selecao-6"></div>
+            <div id="btn-selecao-7"></div>
+            <div id="btn-selecao-8"></div>
+            <div id="btn-selecao-9"></div>
+            <div id="btn-selecao-10"></div>
+            <div id="btn-selecao-11"></div>
+            <div id="btn-selecao-12"></div>
+
+
+        </div>
+
+        <div class="div-instalcao">
+            <p id="descricaoProduto">texto não caregado</p>
+        </div>
+    </section>
+
+
+    <section class="cont-industria ">
+        <div data-toggle="modal" data-target="#ind-pord-1"></div>
+        <div data-toggle="modal" data-target="#ind-pord-2"></div>
+        <div data-toggle="modal" data-target="#ind-pord-3"></div>
+        <div data-toggle="modal" data-target="#ind-pord-4"></div>
+        <div data-toggle="modal" data-target="#ind-pord-5"></div>
+    </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="ind-pord-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-img modal-body" id="modal1">
+                    Não foi possível carregar a imagem
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="ind-pord-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          </button>
+                </div>
+                <div class="modal-img modal-body" id="modal2">
+                    Não foi possível carregar a imagem
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="ind-pord-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          </button>
+                </div>
+                <div class="modal-img modal-body" id="modal3">
+                    Não foi possível carregar a imagem
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="ind-pord-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+          </button>
+                </div>
+                <div class="modal-img modal-body" id="modal4">
+                    Não foi possível carregar a imagem
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="ind-pord-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+            
+          </button>
+                </div>
+                <div class="modal-img modal-body" id="modal5">
+                    Não foi possível carregar a imagem.
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<template id="cont-seletor-primeiro"> 
+
+    <section  class="cont-servicos-home cont-servicos-home-1 ">      
+
+            <div><span>Válvulas <br><button onclick="btnValvulas()">Conheça a linha</button></span></div>
+            <div><span>Acessórios para Montagem Industrial <br><button onclick="btnMontagemINdustrial()">Conheça a linha</button></span></div>
+            <div><span>Acessórios para Oficinas, Pinturas e Borracharias <br><button onclick="btnAcessoriosOficinas()">Conheça a linha</button></span></div>
+            <div><span>Acessórios para Lavação e Engraxadeiras<br> <button onclick="btnLavacao() ">Conheça a linha</button></span></div>
+            <div><span>Correias Industriais<br><button onclick="btnCoreias()">Conheça a linha</button></span></div>
+       
+    </section>
+    <section  class="cont-servicos-home-movel cont-servicos-home-1-movel ">      
+
+        <div onclick="btnValvulas()"></div>
+        <div onclick="btnMontagemINdustrial()"></div>
+        <div onclick="btnAcessoriosOficinas()"></div>
+        <div onclick="btnLavacao() "></div>
+        <div onclick="btnCoreias()"></div>
+   
+</section>
+    
+
+</template>
+
+<template id="cont-seletor-segundo">
+    
+    <section  class="cont-servicos-home cont-servicos-home-2">
+        <div ><span>Equipamentos Hidráulicos<br><button onclick="btnEquipamentosHidraulicos()">Conheça a linha</button></span></div>
+        <div><span>Conjuntos Pneumáticos<br><button onclick="btnConjuntosPneumaticos()">Conheça a linha</button></span></div>
+        <div><span>Conexões hidráulicas<br><button onclick="btnConexoesHidraulicas()">Conheça a linha</button></span></div>
+        <div><span>Filtros e acessórios<br> <button onclick="btnFiltrosAcessorios()">Conheça a linha</button></span></div>
+        <div><span>Mangueiras diversas<br><button onclick="btnMangueirasDiversas()">Conheça a linha</button></span></div>
+    </section>
+    <section  class="cont-servicos-home-movel cont-servicos-home-2-movel">
+        <div onclick="btnEquipamentosHidraulicos()"></div>
+        <div onclick="btnConjuntosPneumaticos()"></div>
+        <div onclick="btnConexoesHidraulicas()"></div>
+        <div onclick="btnFiltrosAcessorios()"></div>
+        <div onclick="btnMangueirasDiversas()"></div>
+    </section>
+    
+</template>
+
+<template id="cont-seletor-terceiro">
+    <p>sem mais categorias no momento</p>
+    <!--
+
+        
+        <section  class="cont-servicos-home-3">
+            <div><span>Instalação <br><button id="btn-instalacao-terceiro">terceiro</button></span></div>
+            <div><span>text <br><button id="btn-pintura-terceiro">Conheça a linha</button></span></div>
+            <div><span>text <br><button id="btn-coreias-terceiro">Conheça a linha</button></span></div>
+            <div><span>Equipamentos Hídráulicos <br> <button id="bnt-hidrauliaca-terceiro">Conheça a linha</button></span></div>
+            <div><span>text <br><button id="btn-ultimo-terceiro">Conheça a linha</button></span></div>
+        </section>
+    -->
+    </template>
+
+<script src="/root/js/acessorioIndustria.js"></script>
 <script>
     function scrollWin() {
         window.scrollTo(0, 0);

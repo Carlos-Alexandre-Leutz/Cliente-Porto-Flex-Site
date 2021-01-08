@@ -5,6 +5,7 @@
 }
 
 .pdf .cont-img-pdf {
+  margin-top: 150px;
   width: 30%;
 }
 
@@ -20,6 +21,7 @@
 }
 
 .pdf .cont-texto-pdf {
+  margin-top: 150px;
   padding: 20px;
 }
 
@@ -43,5 +45,34 @@
   max-width: 200px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media screen and (max-width: 770px) {
+  .pdf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .pdf .cont-img-pdf {
+    width: 70%;
+    margin: auto;
+  }
+  .pdf .cont-img-pdf div {
+    padding: 0px;
+  }
+  .pdf .cont-img-pdf div img {
+    margin: auto;
+    width: 100%;
+    max-width: 300px !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .pdf .cont-texto-pdf {
+    margin-top: 0px !important;
+  }
 }
 /*# sourceMappingURL=catalogo.css.map */

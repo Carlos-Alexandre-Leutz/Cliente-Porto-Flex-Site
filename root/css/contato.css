@@ -1,4 +1,5 @@
 .cont-contato {
+  margin-top: 150px;
   margin-bottom: 30px;
 }
 
@@ -83,6 +84,20 @@
 @media screen and (max-width: 770px) {
   .texto::before {
     content: "a baixo";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cont-contato {
+    margin-top: 50px;
+  }
+  div h1 {
+    font-size: 15px !important;
+    width: 100% !important;
+  }
+  div p {
+    font-size: 13px !important;
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=contato.css.map */

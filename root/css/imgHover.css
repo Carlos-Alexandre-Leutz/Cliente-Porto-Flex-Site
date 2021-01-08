@@ -6,6 +6,10 @@
   margin-bottom: 40px;
 }
 
+.mt-img {
+  margin-top: 150px;
+}
+
 .conteudo {
   background-color: #fff;
   border: solid 6px #26492a;
@@ -115,9 +119,41 @@
 
 @media only screen and (max-width: 600px) {
   .section-servicos {
-    display: block;
     max-width: 700px;
-    margin-bottom: 0px;
+    overflow: scroll;
+    margin-bottom: 20px;
+  }
+  .flip-container {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    margin: auto;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  .front .cont-text-serv {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+  }
+  .front .cont-img-serv {
+    margin: auto;
+    margin-top: 5px;
+    max-width: 50px;
+    width: 100%;
+  }
+  .front .cont-img-serv img {
+    max-width: 80px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .mt-img {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=imgHover.css.map */

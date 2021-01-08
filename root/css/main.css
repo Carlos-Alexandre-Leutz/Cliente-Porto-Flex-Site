@@ -120,29 +120,31 @@ header section div span i {
   color: #fff;
 }
 
-.navegacao nav .collapseProdutos table {
+.navegacao nav .collapseProdutos section {
   width: 90%;
+  max-width: 150px;
+  position: absolute;
   margin: auto;
-  text-align: start;
   margin-top: -3px;
+  z-index: 950;
 }
 
-.navegacao nav .collapseProdutos table tr td {
+.navegacao nav .collapseProdutos section div {
   font-size: 12px;
   font-weight: 300;
   background-color: #db812d;
   padding: 5px 10px;
 }
 
-.navegacao nav .collapseProdutos table svg {
+.navegacao nav .collapseProdutos i {
   color: #fff;
 }
 
-.navegacao .navCorPrinc {
+.navCorPrinc {
   color: #fff;
 }
 
-.navegacao .navCorSecund {
+.navCorSecund {
   color: #db812d !important;
 }
 
@@ -153,9 +155,40 @@ header section div span i {
   background-image: linear-gradient(to right, #db812d, #f4c498);
 }
 
+.cont-navegacao-img {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.navegacao-img {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 78%;
+  height: 100%;
+  max-height: 400px;
+  position: absolute;
+  max-width: 800px;
+}
+
 @media screen and (max-width: 770px) {
   .navegacao {
-    width: 100%;
+    height: 200px;
+  }
+  .navegacao-img {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navegacao-img {
+    max-height: 150px;
+  }
+  .navegacao {
+    height: 150px;
   }
 }
 
@@ -203,13 +236,29 @@ header section div span i {
 
 @media screen and (max-width: 770px) {
   .logoPosition {
-    width: 68px;
+    width: 66px;
     margin: auto;
     margin-top: 0px;
     text-align: center;
   }
   .logoPosition img {
     width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .conteinerLogo {
+    width: 100%;
+    height: 100%;
+    max-width: 66px;
+    min-width: 66px;
+    max-height: 66px;
+    min-height: 66px;
+    margin-top: -28px;
+    margin-bottom: 30px;
+  }
+  .conteinerLogo img {
+    width: 100%;
+    height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -379,11 +428,37 @@ footer .img-footer-icons {
   }
   footer .footer-left {
     color: #fff;
-    width: 50%;
+    width: 100%;
+  }
+  footer .footer-left .cont-center-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer .footer-right {
     color: #fff;
-    width: 50%;
+    width: 100%;
+  }
+  footer .footer-right div {
+    text-align: center;
+  }
+  footer .footer-right .cont-redes-soc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footer-right .cont-redes-soc i {
+    color: #db812d;
+    padding: 5px;
+  }
+  footer .footer-right .dias {
+    color: #db812d;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 .cont-aces-industria {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,22 +11,1084 @@
           flex-direction: row;
 }
 
-.cont-aces-industria div {
-  width: 50%;
+.cont-aces-industria div:nth-child(1) {
+  width: 40%;
   padding: 0px 10px;
 }
 
-.cont-aces-industria div h1 {
+.cont-aces-industria div:nth-child(1) h1 {
+  width: 90%;
   text-align: end;
-  color: #26492a;
-  font-size: 25px;
-  font-weight: 500;
 }
 
-.cont-aces-industria div p {
-  font-size: 12px;
+.cont-aces-industria div:nth-child(2) {
+  width: 60%;
+}
+
+.cont-aces-industria div:nth-child(2) p {
+  width: 70%;
+  font-size: 15px;
   text-align: justify;
-  width: 80%;
-  margin: auto;
+}
+
+#Val-tit {
+  display: none;
+}
+
+.cont-servicos-home {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+.cont-servicos-home div {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  background-color: #26492a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.cont-servicos-home div span {
+  text-align: center;
+  color: #26492a;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.cont-servicos-home div span button {
+  border: none;
+  background-color: #db812d;
+  font-size: 12px;
+  color: #fff;
+  width: 90%;
+}
+
+.cont-servicos-home div:hover {
+  background-color: #fff;
+  border: solid 5px #26492a;
+  width: 130px;
+  height: 130px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.cont-servicos-home-1 div:nth-child(1) {
+  background-image: url("/root/img/icones/Icone_válvulas.png");
+}
+
+.cont-servicos-home-1 div:nth-child(1) span {
+  display: none;
+}
+
+.cont-servicos-home-1 div:nth-child(1):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-1 div:nth-child(1):hover span {
+  display: block;
+}
+
+.cont-servicos-home-1 div:nth-child(2) {
+  background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+  background-size: 60%;
+}
+
+.cont-servicos-home-1 div:nth-child(2) span {
+  display: none;
+}
+
+.cont-servicos-home-1 div:nth-child(2):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-1 div:nth-child(2):hover span {
+  display: block;
+}
+
+.cont-servicos-home-1 div:nth-child(3) {
+  background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+}
+
+.cont-servicos-home-1 div:nth-child(3) span {
+  display: none;
+}
+
+.cont-servicos-home-1 div:nth-child(3):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-1 div:nth-child(3):hover span {
+  display: block;
+}
+
+.cont-servicos-home-1 div:nth-child(4) {
+  background-image: url("/root/img/icones/Icone_acessorios_para_lavaçao_engraxamento.png");
+}
+
+.cont-servicos-home-1 div:nth-child(4) span {
+  display: none;
+}
+
+.cont-servicos-home-1 div:nth-child(4):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-1 div:nth-child(4):hover span {
+  display: block;
+}
+
+.cont-servicos-home-1 div:nth-child(5) {
+  background-image: url("/root/img/icones/Icone_correias_industriais.png");
+}
+
+.cont-servicos-home-1 div:nth-child(5) span {
+  display: none;
+}
+
+.cont-servicos-home-1 div:nth-child(5):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-1 div:nth-child(5):hover span {
+  display: block;
+}
+
+.cont-servicos-home-2 div:nth-child(1) {
+  background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+}
+
+.cont-servicos-home-2 div:nth-child(1) span {
+  display: none;
+}
+
+.cont-servicos-home-2 div:nth-child(1):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-2 div:nth-child(1):hover span {
+  display: block;
+}
+
+.cont-servicos-home-2 div:nth-child(2) {
+  background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
+  background-size: 60%;
+}
+
+.cont-servicos-home-2 div:nth-child(2) span {
+  display: none;
+}
+
+.cont-servicos-home-2 div:nth-child(2):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-2 div:nth-child(2):hover span {
+  display: block;
+}
+
+.cont-servicos-home-2 div:nth-child(3) {
+  background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+}
+
+.cont-servicos-home-2 div:nth-child(3) span {
+  display: none;
+}
+
+.cont-servicos-home-2 div:nth-child(3):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-2 div:nth-child(3):hover span {
+  display: block;
+}
+
+.cont-servicos-home-2 div:nth-child(4) {
+  background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
+}
+
+.cont-servicos-home-2 div:nth-child(4) span {
+  display: none;
+}
+
+.cont-servicos-home-2 div:nth-child(4):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-2 div:nth-child(4):hover span {
+  display: block;
+}
+
+.cont-servicos-home-2 div:nth-child(5) {
+  background-image: url("/root/img/icones/Icone_mangueiras.png");
+}
+
+.cont-servicos-home-2 div:nth-child(5) span {
+  display: none;
+}
+
+.cont-servicos-home-2 div:nth-child(5):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-2 div:nth-child(5):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 0px 0px;
+}
+
+.cont-servicos-home-3 div {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  background-color: #26492a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.cont-servicos-home-3 div span {
+  text-align: center;
+  color: #26492a;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.cont-servicos-home-3 div span button {
+  border: none;
+  background-color: #db812d;
+  font-size: 12px;
+  color: #fff;
+  width: 90%;
+}
+
+.cont-servicos-home-3 div:hover {
+  background-color: #fff;
+  border: solid 5px #26492a;
+  width: 130px;
+  height: 130px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.cont-servicos-home-3 div:nth-child(1) {
+  background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+}
+
+.cont-servicos-home-3 div:nth-child(1) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(1):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(1):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 div:nth-child(2) {
+  background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+  background-size: 60%;
+}
+
+.cont-servicos-home-3 div:nth-child(2) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(2):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(2):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 div:nth-child(3) {
+  background-image: url("/root/img/icones/Icone_correias_industriais.png");
+}
+
+.cont-servicos-home-3 div:nth-child(3) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(3):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(3):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 div:nth-child(4) {
+  background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+}
+
+.cont-servicos-home-3 div:nth-child(4) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(4):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(4):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 div:nth-child(5) {
+  background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+}
+
+.cont-servicos-home-3 div:nth-child(5) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(5):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(5):hover span {
+  display: block;
+}
+
+.cont-servicos-home-3 div:nth-child(6) {
+  background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+}
+
+.cont-servicos-home-3 div:nth-child(6) span {
+  display: none;
+}
+
+.cont-servicos-home-3 div:nth-child(6):hover {
+  background-image: none;
+}
+
+.cont-servicos-home-3 div:nth-child(6):hover span {
+  display: block;
+}
+
+.traco-verde {
+  background-color: #26492a;
+  width: 100%;
+  height: 5px;
+}
+
+.cont-conte-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cont-conte-center div:nth-child(1) {
+  width: 40%;
+  background-color: #26492a;
+  color: #db812d;
+}
+
+.cont-conte-center div:nth-child(1) div {
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid #fff 1px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cont-conte-center div:nth-child(2) {
+  width: 60%;
+}
+
+.cont-conte-center div:nth-child(2) p {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.bacg-click-acessorio-ind {
+  background-image: -webkit-gradient(linear, left top, right top, from(#db812d), to(#26492a)) !important;
+  background-image: linear-gradient(to right, #db812d, #26492a) !important;
+  color: #fff !important;
+}
+
+#anterior {
+  position: absolute;
+  left: 5px;
+  margin-top: 50px;
+  background-color: #26492a;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#anterior img {
+  width: 35px;
+  height: 35px;
+  margin-top: 7px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#proximo {
+  position: absolute;
+  right: 5px;
+  margin-top: 50px;
+  background-color: #26492a;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#proximo img {
+  width: 35px;
+  height: 35px;
+  margin-top: 7px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cont-industria {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0px 0px;
+}
+
+.cont-industria div {
+  width: 130px;
+  height: 130px;
+  min-width: 130px;
+  background-color: #fff;
+  border: solid 1px #6e6d6d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.cont-industria div:hover {
+  background-color: #db812d;
+  width: 130px;
+  height: 130px;
+  cursor: pointer;
+  background-size: 40%, 70%;
+  background-image: url("/root/img/iconesBrancos/lupa branca.png") !important;
+}
+
+.cont-industria-valvulas-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvulas de esfera aço carbono alta pressão.jpg");
+}
+
+.cont-industria-valvulas-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula- valvulas de esfera aço carbono baixa pressão.jpg");
+}
+
+.cont-industria-valvulas-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula  de esfera aço inox.jpg");
+}
+
+.cont-industria-valvulas-4 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/valvulas/VALVULA DE ESFERA (2).jpg");
+}
+
+.cont-industria-valvulas-4 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/valvulas/VALVULA DE ESFERA.jpg");
+}
+
+.cont-industria-valvulas-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/VALVÚLA DE ESFERA.jpg");
+}
+
+.cont-industria-valvulas-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Borboleta.jpg");
+}
+
+.cont-industria-valvulas-6 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula de Gaveta.jpg");
+}
+
+.cont-industria-valvulas-7 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno PVC (1).jpg");
+}
+
+.cont-industria-valvulas-8 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Vertical (1).jpg");
+}
+
+.cont-industria-valvulas-9 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Horizontal (1).jpg");
+}
+
+.cont-industria-valvulas-10 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Captação Pvc (1).jpg");
+}
+
+.cont-industria-valvulas-11 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas/Válvula - valvula Captação Latão (1).jpg");
+}
+
+.cont-industria-valvulas-12 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/valvulas");
+}
+
+.cont-industria-montagem-industrial-1 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/ADESIVO DE SILICONE.jpg");
+}
+
+.cont-industria-montagem-industrial-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/ADESIVO DE SILICONE PARA O MOTOR.jpg");
+}
+
+.cont-industria-montagem-industrial-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/VEDA ROSCA LÍQUIDO (CATEGORIA 7) (1).jpg");
+}
+
+.cont-industria-montagem-industrial-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/FITA VEDA ROSCA.jpg");
+}
+
+.cont-industria-montagem-industrial-4 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/LUBRIFICANTE SPRAY.jpg");
+}
+
+.cont-industria-montagem-industrial-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/DESENGRIPANTE.jpg");
+}
+
+.cont-industria-montagem-industrial-5 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/TRAVA ROSCA (2).jpg");
+}
+
+.cont-industria-montagem-industrial-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/TRAVA ROSCA.jpg");
+}
+
+.cont-industria-montagem-industrial-6 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/GEL DESENGRAXANTE.jpg");
+}
+
+.cont-industria-montagem-industrials-7 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/GRAFITE-SPRAY.jpg");
+}
+
+.cont-industria-pintura-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pintura/PISTOLA DE AR.jpg");
+}
+
+.cont-industria-pintura-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pintura/PULVERIZADOR.jpg");
+}
+
+.cont-industria-pintura-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pintura/CALIBRADORES.jpg");
+}
+
+.cont-industria-pintura-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pintura/BICO PRESILHA PARA ENCHER PNEUS.jpg");
+}
+
+.cont-industria-pintura-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pintura/SACA FILTRO DE ÓLEO.jpg");
+}
+
+.cont-industria-lavacao-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acesPlavacao/ACOPLADORES PRA GRAXA.jpg");
+}
+
+.cont-industria-lavacao-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acesPlavacao/ESGUICHO DE ÁGUA.jpg");
+}
+
+.cont-industria-lavacao-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/acesPlavacao/ENGRAXADEIRAS.jpg");
+}
+
+.cont-industria-coreias-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/coreias/Correia A.jpg");
+}
+
+.cont-industria-coreias-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/coreias/correia B.jpg");
+}
+
+.cont-industria-coreias-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/coreias/Correia C.jpg");
+}
+
+.cont-industria-coreias-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/coreias//correia 3L.jpg");
+}
+
+.cont-industria-hidraulicos-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/CILINDROS HIDRAULICOS (CATEGORIA 5) (1).jpg");
+}
+
+.cont-industria-hidraulicos-2 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/equipind/comandos/COMANDOS HIDRAULICOS (1).jpg");
+}
+
+.cont-industria-hidraulicos-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/comandos/COMANDOS HIDRAULICOS (2) (1).jpg");
+}
+
+.cont-industria-hidraulicos-3 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/equipind/bombas/BOMBA HIDRAULICAS.jpg");
+}
+
+.cont-industria-hidraulicos-3 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/equipind/bombas/BOMBA HIDRAULICAS (2).jpg");
+}
+
+.cont-industria-hidraulicos-3 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/equipind/bombas/BOMBA HIDRAULICAS (3).jpg");
+}
+
+.cont-industria-hidraulicos-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/bombas/BOMBA HIDRAULICAS (4).jpg");
+}
+
+.cont-industria-hidraulicos-4 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/equipind/motores/MOTOR HIDRAULICO (1).jpg");
+}
+
+.cont-industria-hidraulicos-4 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/equipind/motores/MOTORES HIDRAULICOS (1).jpg");
+}
+
+.cont-industria-hidraulicos-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/motores/motores hidraulicos (2) (1).jpg");
+}
+
+.cont-industria-hidraulicos-5 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/equipind/valvulas/VALVULAS HIDRAULICAS (1) (1).jpg");
+}
+
+.cont-industria-hidraulicos-5 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/equipind/valvulas/VALVULAS HIDRAULICAS (2) (1).jpg");
+}
+
+.cont-industria-hidraulicos-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/valvulas/VALVULAS HIDRAULICAS (3) (1).jpg");
+}
+
+.cont-industria-pneumatico-1 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (2) (1).jpg");
+}
+
+.cont-industria-pneumatico-1 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (3) (1).jpg");
+}
+
+.cont-industria-pneumatico-1 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (5) (1).jpg");
+}
+
+.cont-industria-pneumatico-1 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (7) (1).jpg");
+}
+
+.cont-industria-pneumatico-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (8) (1).jpg");
+}
+
+.cont-industria-pneumatico-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pneusmatico/FILTROS E LUBRIFICADORRES PNEUMATICOS (1).jpg");
+}
+
+.cont-industria-pneumatico-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pneusmatico/VALVULAS PNEUMATICOS (1).jpg");
+}
+
+.cont-industria-pneumatico-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/pneusmatico/ENGATES RAPIDOS (2) (1) (1).jpg");
+}
+
+.cont-industria-hidraulica-1 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexGalv/CONEXOES GALVONIZADAS.jpg");
+}
+
+.cont-industria-hidraulica-1 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexGalv/CONEXOES GALVONIZADAS (2).jpg");
+}
+
+.cont-industria-hidraulica-1 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexGalv/CONEXOES GALVONIZADAS (3).jpg");
+}
+
+.cont-industria-hidraulica-1 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexGalv/CONEXOES GALVONIZADAS (4).jpg");
+}
+
+.cont-industria-hidraulica-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexGalv/CONEXOES GALVONIZADAS (5).jpg");
+}
+
+.cont-industria-hidraulica-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/conexindustriais/engatRapido/ENGATE RAPIDO HIDRAULICO (1).jpg");
+}
+
+.cont-industria-hidraulica-3 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexInox/CONEXÃO DE INOX.jpg");
+}
+
+.cont-industria-hidraulica-3 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexInox/CONEXÕES INOX (2).jpg");
+}
+
+.cont-industria-hidraulica-3 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexInox/CONEXÕES INOX (3).jpg");
+}
+
+.cont-industria-hidraulica-3 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexInox/CONEXÕES INOX (4).jpg");
+}
+
+.cont-industria-hidraulica-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/conexindustriais/conexInox/CONEXÕES INOX (5).jpg");
+}
+
+.cont-industria-hidraulica-4 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/conexindustriais/treminaisFlexiveis/TERMINAIS PARA FLEXIVEIS.jpg");
+}
+
+.cont-industria-hidraulica-4 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/conexindustriais/treminaisFlexiveis/TERMINAIS PARA FLEXIVEIS (10).jpg");
+}
+
+.cont-industria-hidraulica-4 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/conexindustriais/treminaisFlexiveis/TERMINAIS PARA FLEXIVEIS (11).jpg");
+}
+
+.cont-industria-hidraulica-4 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/conexindustriais/treminaisFlexiveis/TERMINAIS PARA FLEXIVEIS (12).jpg");
+}
+
+.cont-industria-hidraulica-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/conexindustriais/treminaisFlexiveis/TERMINAIS PARA FLEXIVEIS (8).jpg");
+}
+
+.cont-industria-hidraulica-5 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/conexindustriais/adapHidraulicos/adapitador1.jpg");
+}
+
+.cont-industria-hidraulica-5 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/conexindustriais/adapHidraulicos/adapitador2.jpg");
+}
+
+.cont-industria-hidraulica-5 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/conexindustriais/adapHidraulicos/adapitador3.jpg");
+}
+
+.cont-industria-hidraulica-5 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/conexindustriais/adapHidraulicos/adaptador.jpg");
+}
+
+.cont-industria-hidraulica-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/conexindustriais/adapHidraulicos/adaptador4.jpg");
+}
+
+.cont-industria-filtros-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/filtro/FILTROSHIDRAULICOSSUCCAO.jpg");
+}
+
+.cont-industria-filtros-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/filtro/FILTROHIDRAULICODERETORNO.jpg");
+}
+
+.cont-industria-filtros-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/filtro/VISORTANQUE.jpg");
+}
+
+.cont-industria-filtros-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/filtro/BOCALDEENCHIENTO.jpg");
+}
+
+.cont-industria-filtros-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira");
+}
+
+.cont-industria-maqueiras-1 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/MANGUEIRA TERMICA DE ALUMINIO (CATEGORIA 12) (1).jpg");
+}
+
+.cont-industria-maqueiras-2 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/mangueira/tubo-fx/TUBO FX - MANGUEIRA PX (4) (1).jpg");
+}
+
+.cont-industria-maqueiras-2 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/tubo-fx/TUBO FX - MANGUEIRA PX (3) (1).jpg");
+}
+
+.cont-industria-maqueiras-2 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/tubo-fx/TUBO FX - MANGUEIRA PX (2) (1).jpg");
+}
+
+.cont-industria-maqueiras-2 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/tubo-fx/TUBO FX - MANGUEIRA PX (1).jpg");
+}
+
+.cont-industria-maqueiras-3 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/MANGUEIRA LAVA AUTO.jpg");
+}
+
+.cont-industria-maqueiras-4 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/MANGUEIRA OXIGÊNIO_ACETILENO (1).jpg");
+}
+
+.cont-industria-maqueiras-5 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/cibza/MANGUEIRA CINZA (3) (1).jpg");
+}
+
+.cont-industria-maqueiras-5 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/cibza/MANGUEIRA CINZA (2) (1).jpg");
+}
+
+.cont-industria-maqueiras-5 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/cibza/MANGUEIRA CINZA (1).jpg");
+}
+
+.modal-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 425px) {
+  #Val-tit {
+    display: block;
+    width: 90%;
+    margin: auto;
+    color: #26492a;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .cont-aces-industria {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cont-aces-industria div:nth-child(1) {
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .cont-aces-industria div:nth-child(1) h1 {
+    width: 100%;
+    text-align: end;
+    color: #26492a;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .cont-aces-industria div:nth-child(2) {
+    width: 100%;
+  }
+  .cont-aces-industria div:nth-child(2) p {
+    width: 100%;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .cont-servicos-home-1,
+  .cont-servicos-home-2 {
+    display: none;
+  }
+  .cont-servicos-home-movel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .cont-servicos-home-movel div {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background-color: #26492a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .cont-servicos-home-1-movel div:nth-child(1) {
+    background-image: url("/root/img/icones/Icone_válvulas.png");
+  }
+  .cont-servicos-home-1-movel div:nth-child(2) {
+    background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+    background-size: 60%;
+  }
+  .cont-servicos-home-1-movel div:nth-child(3) {
+    background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+  }
+  .cont-servicos-home-1-movel div:nth-child(4) {
+    background-image: url("/root/img/icones/Icone_acessorios_para_lavaçao_engraxamento.png");
+  }
+  .cont-servicos-home-1-movel div:nth-child(5) {
+    background-image: url("/root/img/icones/Icone_correias_industriais.png");
+  }
+  .cont-servicos-home-2-movel div:nth-child(1) {
+    background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+  }
+  .cont-servicos-home-2-movel div:nth-child(2) {
+    background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
+    background-size: 60%;
+  }
+  .cont-servicos-home-2-movel div:nth-child(3) {
+    background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+  }
+  .cont-servicos-home-2-movel div:nth-child(4) {
+    background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
+  }
+  .cont-servicos-home-2-movel div:nth-child(5) {
+    background-image: url("/root/img/icones/Icone_mangueiras.png");
+  }
+  .cont-industria {
+    margin-bottom: 50px;
+  }
+  .cont-industria div {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+  .cont-industria div:hover {
+    width: 60px;
+    height: 60px;
+  }
+  .cont-conte-center div:nth-child(1) div {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid #fff 1px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .div-instalcao {
+    font-size: 10px;
+    height: 220px;
+    overflow-y: scroll;
+  }
+  #anterior {
+    margin-top: 25px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #db812d;
+  }
+  #anterior img {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+  }
+  #proximo {
+    right: 5px;
+    margin-top: 25px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #db812d;
+  }
+  #proximo img {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+  }
 }
 /*# sourceMappingURL=acessorioindustia.css.map */
