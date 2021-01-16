@@ -80,7 +80,7 @@ function btnValvulas() {
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
-        descricaoProduto.innerHTML = 'indicado para sistema de baixa pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
+        descricaoProduto.innerHTML = 'Indicado para sistema de baixa pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
         $('.cont-industria').addClass('cont-industria-valvulas-2');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula- valvulas de esfera aço carbono baixa pressão.jpg" alt="">';
@@ -127,7 +127,7 @@ function btnValvulas() {
         descricaoProduto.innerHTML = 'Desenvolvida para retenção de fluido em fluxos de tubulações verticais. Possui sistema de vedação em borracha nitrílica proporcionando assim uma vedação perfeita no seu fechamento através de uma mola que está no interior do corpo da válvula.'
         $('.cont-industria').addClass('cont-industria-valvulas-8');
         removeImg();
-        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Horizontal (1).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Vertical (1).jpg">';
     });
     btnSelecao9.addEventListener('click', function(e) {
         limparClass();
@@ -257,20 +257,14 @@ function btnAcessoriosOficinas() {
         descricaoProduto.innerHTML = 'As pistolas de ar de limpezas são ideias para uso frequentes por serem bastante confortáveis. Resistente e fácil de usar, possui corpo com formato de pistola que permite o usuário trabalhar por mais tempo, fabricada em alumínio (apenas o revestimento do cabo é feito em plástico).';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-1');
-        modal1.innerHTML = 'ola';
-        modal2.innerHTML = 'ola';
-        modal3.innerHTML = 'ola';
-        modal4.innerHTML = 'ola';
+        removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/Aces p oficinas otimizado/PISTOLA DE AR.jpg" alt="">';
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Pistola de pintura para de alta produção com revolucionaria, indicado para uso profissional em funilarias, marcenarias, serralherias e para outras diversas aplicações. Possui regulagem do fluxo de ar e da vazão de tinta e controle do jato.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-2');
-        modal1.innerHTML = 'sem img';
-        modal2.innerHTML = 'sem img';
-        modal3.innerHTML = 'sem img';
-        modal4.innerHTML = 'sem img';
+        removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/PULVERIZADOR.jpg" alt="">';
 
     });
@@ -278,10 +272,7 @@ function btnAcessoriosOficinas() {
         descricaoProduto.innerHTML = 'A uma ferramenta ideal, apropriada e segura para fazer uma calibragem precisa, erros na calibragem pode gerar desgastes no pneu. P possui corpo de alumínio resistente.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-3');
-        modal1.innerHTML = 'sem img';
-        modal2.innerHTML = 'sem img';
-        modal3.innerHTML = 'sem img';
-        modal4.innerHTML = 'sem img';
+        removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/CALIBRADORES.jpg" alt="">';
 
     });
@@ -289,20 +280,15 @@ function btnAcessoriosOficinas() {
         descricaoProduto.innerHTML = 'Possui entrada de ar rosca fêmea, com bico duplo de encher dependendo de sua aplicação e cabo emborrachado. Também possuímos outro modelo no qual é indicado a calibradores, sendo assim é possível conectar a mangueira direto no enchedor de pneu';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-4');
-        modal1.innerHTML = 'sem img';
-        modal2.innerHTML = 'sem img';
-        modal3.innerHTML = 'sem img';
-        modal4.innerHTML = 'sem img';
-        modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/BICO DE TRAVA PARA ENCHER PNEUS.jpg" alt="">';
+        removeImg();
+        modal4.innerHTML = '<img src="/root/img/cont-industria/pintura/BICO DE TRAVA PARA ENCHER PNEUS.jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/Aces p oficinas otimizado/BICO PRESILHA PARA ENCHER PNEUS.jpg">';
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Chave saca filtro de corrente regulável especial, produto de ótima qualidade e garantindo a melhor fixação para extração do filtro. Possui cabo emborrachado e adaptável em qualquer tamanho e diâmetro de filtro de óleo.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-5');
-        modal1.innerHTML = 'sem img';
-        modal2.innerHTML = 'sem img';
-        modal3.innerHTML = 'sem img';
-        modal4.innerHTML = 'sem img';
+        removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/SACA FILTRO DE ÓLEO.jpg" alt=""></img>';
     });
 
@@ -329,7 +315,7 @@ function btnLavacao() {
     removeClassbacgclickacessorioind();
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     removeImg();
-    modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA TERMICA DE ALUMINIO (CATEGORIA 12) (1).jpg" alt="">';
+    modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ACOPLADORES PRA GRAXA.jpg" alt="">';
     btnSelecao1.addEventListener('click', function(e) {
         limparClass();
         descricaoProduto.innerHTML = 'Acoplador para comando de graxas, bombas propulsoras ou manuais. Dispõe bico fino, de alta resistência e com a possibilidade de possuir válvula de retenção em seu corpo.';
@@ -426,6 +412,7 @@ function btnEquipamentosHidraulicos() {
     limparClass();
     escondeBtnSelecao();
     $('#btn-selecao-5').removeClass('display-none');
+    removeClassbacgclickacessorioind();
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     $('.cont-industria').addClass('cont-industria-hidraulicos-1');
     removeImg();
