@@ -108,13 +108,12 @@
         </section>
         <div class="soNoMobile">
 
-            <input id="check" type="checkbox" />
 
-            <label for="check" id="icone">
-                <div class="menu "  >
-                    <span class="hamburguer "></span>
+            <div class="barraFechada" id="icone">
+                <div class="menu">
+                    <span class="hamburguer"></span>
                 </div>
-            </label>
+            </div>
 
             <div class="barra ">
                 <section>
@@ -173,6 +172,8 @@
 
 
             </div>
+
+
         </div>
     </header>
 
@@ -387,19 +388,27 @@
                 $("#context").unmark().mark(search);
             }).trigger("input.highlight").focus();
         });
-    </script>
-    <script>
         $('#barraProdutos').click(function() {
             if (!$('#collapsProdutoMovel').hasClass('show')) {
-
                 $('#collapsProdutoMovel').addClass('show');
             } else {
                 $('#collapsProdutoMovel').removeClass('show');
             }
-
+        });
+        $('#icone').click(function() {
+            if ($('.barra').hasClass('trasformarBarra')) {
+                $('.barra').removeClass('trasformarBarra')
+                $('.hamburguer').removeClass('hamburguer-mover')
+            } else {
+                $('.barra').addClass('trasformarBarra');
+                $('.hamburguer').addClass('hamburguer-mover');
+            }
+        })
+        $('.linkNavMob').click(function() {
+            $('.barra').removeClass('trasformarBarra')
+            $('.hamburguer').removeClass('hamburguer-mover')
         })
     </script>
-
 </body>
 
 </html>

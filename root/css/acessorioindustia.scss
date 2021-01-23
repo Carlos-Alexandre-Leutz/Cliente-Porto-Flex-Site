@@ -2,6 +2,12 @@ $verde: #26492a;
 $laranja: #db812d;
 $branco: #fff;
 $preto:rgb(110, 109, 109);
+.wrapper-industria {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
 .cont-aces-industria {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -401,31 +407,33 @@ $preto:rgb(110, 109, 109);
 .cont-industria {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 50px;
     padding: 0px 0px;
+    .cont-btn-modal {
+        border: solid 1px $preto;
+    }
+    .cont-btn-modal:hover {
+        background-image: url("/root/img/iconesBrancos/lupa\ branca.png") !important;
+        cursor: pointer;
+        background-color: $laranja;
+        width: 130px;
+        height: 130px;
+        background-size: 40%, 70%;
+    }
     div {
         width: 130px;
         height: 130px;
         min-width: 130px;
         background-color: $branco;
-        border: solid 1px $preto;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 70%;
         display: flex;
         align-items: center;
         margin-top: 10px;
-    }
-    div:hover {
-        background-color: $laranja;
-        width: 130px;
-        height: 130px;
-        cursor: pointer;
-        background-size: 40%, 70%;
-        background-image: url("/root/img/iconesBrancos/lupa\ branca.png") !important;
     }
 }
 

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.wrapper-industria {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
 .cont-aces-industria {
   margin-top: 150px;
   margin-bottom: 150px;
@@ -522,9 +528,9 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -534,12 +540,24 @@
   padding: 0px 0px;
 }
 
+.cont-industria .cont-btn-modal {
+  border: solid 1px #6e6d6d;
+}
+
+.cont-industria .cont-btn-modal:hover {
+  background-image: url("/root/img/iconesBrancos/lupa branca.png") !important;
+  cursor: pointer;
+  background-color: #db812d;
+  width: 130px;
+  height: 130px;
+  background-size: 40%, 70%;
+}
+
 .cont-industria div {
   width: 130px;
   height: 130px;
   min-width: 130px;
   background-color: #fff;
-  border: solid 1px #6e6d6d;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -550,15 +568,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
-}
-
-.cont-industria div:hover {
-  background-color: #db812d;
-  width: 130px;
-  height: 130px;
-  cursor: pointer;
-  background-size: 40%, 70%;
-  background-image: url("/root/img/iconesBrancos/lupa branca.png") !important;
 }
 
 .cont-industria-valvulas-1 div:nth-child(5) {
