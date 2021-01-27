@@ -475,10 +475,7 @@
 }
 
 #anterior {
-  position: absolute;
-  left: 5px;
   margin-top: 50px;
-  background-color: #26492a;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -488,21 +485,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#anterior img {
-  width: 35px;
-  height: 35px;
-  margin-top: 7px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 #proximo {
-  position: absolute;
-  right: 5px;
   margin-top: 50px;
-  background-color: #26492a;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -512,14 +498,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#proximo img {
-  width: 35px;
-  height: 35px;
-  margin-top: 7px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .cont-industria {
@@ -953,6 +931,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .wrapper-industria {
+    width: 90%;
+    margin: auto;
+  }
   #Val-tit {
     display: block;
     width: 90%;
@@ -1081,27 +1063,17 @@
     overflow-y: scroll;
   }
   #anterior {
-    margin-top: 25px;
+    margin-top: 15px;
     width: 20px;
     height: 20px;
-    border: 1px solid #db812d;
-  }
-  #anterior img {
-    width: 12px;
-    height: 12px;
-    margin-top: 3px;
+    color: #26492a;
   }
   #proximo {
     right: 5px;
-    margin-top: 25px;
+    margin-top: 15px;
     width: 20px;
     height: 20px;
-    border: 1px solid #db812d;
-  }
-  #proximo img {
-    width: 12px;
-    height: 12px;
-    margin-top: 3px;
+    color: #26492a;
   }
 }
 /*# sourceMappingURL=acessorioindustia.css.map */
