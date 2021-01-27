@@ -107,32 +107,35 @@ $laranjaClaro: #f4c498;
 }
 
 .section-servicos-mob {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .cards-movel {
-        background-color: $laranja;
-        border-radius: 5px;
-        width: 100px;
-        height: 100px;
-        color: $branco;
-        margin-bottom: 20px;
-        a:hover {
-            color: $branco;
-        }
-        img {
-            max-width: 60px;
-            width: 100%;
-            object-fit: contain;
-        }
-    }
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
     .section-servicos {
-        overflow: scroll;
+        display: none;
+    }
+    .section-servicos-mob {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .cards-movel {
+            background-color: $laranja;
+            border-radius: 5px;
+            width: 100px;
+            height: 100px;
+            color: $branco;
+            margin-bottom: 20px;
+            a:hover {
+                color: $branco;
+            }
+            img {
+                max-width: 60px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
     }
 }
 

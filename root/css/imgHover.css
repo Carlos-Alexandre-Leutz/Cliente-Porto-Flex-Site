@@ -118,41 +118,41 @@
 }
 
 .section-servicos-mob {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.section-servicos-mob .cards-movel {
-  background-color: #db812d;
-  border-radius: 5px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.section-servicos-mob .cards-movel a:hover {
-  color: #fff;
-}
-
-.section-servicos-mob .cards-movel img {
-  max-width: 60px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
   .section-servicos {
-    overflow: scroll;
+    display: none;
+  }
+  .section-servicos-mob {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-servicos-mob .cards-movel {
+    background-color: #db812d;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .section-servicos-mob .cards-movel a:hover {
+    color: #fff;
+  }
+  .section-servicos-mob .cards-movel img {
+    max-width: 60px;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
