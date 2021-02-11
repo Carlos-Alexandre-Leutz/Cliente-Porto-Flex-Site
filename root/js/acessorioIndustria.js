@@ -45,6 +45,7 @@ btnProximo.addEventListener('click', function(e) {
     }
 });
 
+
 function btnValvulas() {
     ValTit.innerHTML = 'Válvulas'
     btnSelecao1.innerHTML = 'Válvula de esfera ferro alta pressão';
@@ -86,7 +87,7 @@ function btnValvulas() {
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
-        descricaoProduto.innerHTML = 'indicado para sistema de baixa pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
+        descricaoProduto.innerHTML = 'Indicado para sistema de baixa pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
         $('.cont-industria').addClass('cont-industria-valvulas-2');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula- valvulas de esfera aço carbono baixa pressão.jpg" alt="">';
@@ -243,7 +244,7 @@ function btnMontagemINdustrial() {
     });
     btnSelecao5.addEventListener('click', function(e) {
         limparClass();
-        descricaoProduto.innerHTML = 'é um adesivo de torque alto, com média viscosidade. Indicado para travamento de porcas, parafusos e prisioneiros tratados ou não (zincados, cadmiados, etc.), preenche as folgas existentes entre as peças. Possui forte poder de travamento, evitando o afrouxamento acidental.';
+        descricaoProduto.innerHTML = 'É um adesivo de torque alto, com média viscosidade. Indicado para travamento de porcas, parafusos e prisioneiros tratados ou não (zincados, cadmiados, etc.), preenche as folgas existentes entre as peças. Possui forte poder de travamento, evitando o afrouxamento acidental.';
         $('.cont-industria').addClass('cont-industria-montagem-industrial-5');
         removeImg();
         modal4.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/TRAVA ROSCA (2).jpg" alt="">';
@@ -782,7 +783,7 @@ function btnMangueirasDiversas() {
     limpaContImgBtnModal1();
 
     btnSelecao1.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
+        descricaoProduto.innerHTML = 'Trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-maqueiras-1');
         removeImg();

@@ -1046,7 +1046,19 @@
     height: 60px;
     min-width: 60px;
   }
-  .cont-industria div:hover {
+  .cont-industria .cont-btn-modal {
+    border: solid 1px #6e6d6d;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+  .cont-industria .cont-btn-modal:hover {
+    background-image: url("/root/img/iconesBrancos/lupa branca.png") !important;
+    cursor: pointer;
+    background-color: #db812d;
+    width: 130px;
+    height: 130px;
+    background-size: 40%, 70%;
     width: 60px;
     height: 60px;
   }
