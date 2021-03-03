@@ -43,54 +43,188 @@ $preto:rgb(110, 109, 109);
     flex-wrap: nowrap;
     margin-bottom: 10px;
     padding: 0px 0px;
-    div {
-        width: 130px;
-        height: 130px;
-        min-width: 130px;
-        background-color: $verde;
-        transition: 0.5s;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 70%;
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        span {
-            text-align: center;
-            color: $verde;
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: 700;
-            width: 100%;
-            button {
-                border: none;
-                background-color: $laranja;
-                font-size: 12px;
-                color: $branco;
-                width: 90%;
-            }
+}
+
+.div-clique {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    background-color: $verde;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    span {
+        text-align: center;
+        color: $verde;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        width: 100%;
+        button {
+            border: none;
+            background-color: $laranja;
+            font-size: 12px;
+            color: $branco;
+            width: 90%;
         }
-    }
-    div:hover {
-        background-color: $branco;
-        border: solid 5px $verde;
-        width: 130px;
-        height: 130px;
-        cursor: grab;
     }
 }
 
+.div-clique:hover {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    background-color: $branco;
+    border: solid 5px $verde;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+    cursor: grab;
+    background-image: none;
+    span {
+        text-align: center;
+        color: $verde;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        width: 100%;
+        display: block;
+        button {
+            border: none;
+            background-color: $laranja;
+            font-size: 12px;
+            color: $branco;
+            width: 90%;
+        }
+    }
+}
+
+.div-clicado {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    background-color: $branco;
+    border: solid 5px $verde;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+    cursor: grab;
+    span {
+        text-align: center;
+        color: $verde;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        width: 100%;
+        display: block;
+        button {
+            border: none;
+            background-color: $laranja;
+            font-size: 12px;
+            color: $branco;
+            width: 90%;
+        }
+    }
+}
+
+
+/* .div-hover-clique {
+    background-color: $branco;
+    border: solid 5px $verde;
+    width: 130px;
+    height: 130px;
+    cursor: grab;
+}
+*/
+
+//img bacgrond para animação dos cards seletorer
+.background-image-valvula {
+    background-image: url("/root/img/icones/Icone_válvulas.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-montagen-industrial {
+    background-image: url("/root/img/icones/Icone_Acessorios_para_montagem_industrial.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-boracharia {
+    background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-lavacao {
+    background-image: url("/root/img/icones/Icone_acessorios_para_lavaçao_engraxamento.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-coreias {
+    background-image: url("/root/img/icones/Icone_correias_industriais.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-equipamentos-hidraulcos {
+    background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-pinelmatico {
+    background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-conexoes-hidraulicas {
+    background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-filtros-acessorios {
+    background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
+    span {
+        display: none;
+    }
+}
+
+.background-image-mangueiras {
+    background-image: url("/root/img/icones/Icone_mangueiras.png");
+    span {
+        display: none;
+    }
+}
+
+
+/*
 .cont-servicos-home-1 {
     div:nth-child(1) {
         background-image: url("/root/img/icones/Icone_válvulas.png");
         span {
             display: none;
-        }
-    }
-    div:nth-child(1):hover {
-        background-image: none;
-        span {
-            display: block;
         }
     }
     div:nth-child(2) {
@@ -100,22 +234,10 @@ $preto:rgb(110, 109, 109);
             display: none;
         }
     }
-    div:nth-child(2):hover {
-        background-image: none;
-        span {
-            display: block;
-        }
-    }
     div:nth-child(3) {
         background-image: url("/root/img/icones/Icone_acessorios_para_oficinas_pinturas_borracharias.png");
         span {
             display: none;
-        }
-    }
-    div:nth-child(3):hover {
-        background-image: none;
-        span {
-            display: block;
         }
     }
     div:nth-child(4) {
@@ -124,16 +246,34 @@ $preto:rgb(110, 109, 109);
             display: none;
         }
     }
-    div:nth-child(4):hover {
+    div:nth-child(5) {
+        background-image: url("/root/img/icones/Icone_correias_industriais.png");
+        span {
+            display: none;
+        }
+    }
+     div:nth-child(1):hover {
         background-image: none;
         span {
             display: block;
         }
     }
-    div:nth-child(5) {
-        background-image: url("/root/img/icones/Icone_correias_industriais.png");
+    div:nth-child(2):hover {
+        background-image: none;
         span {
-            display: none;
+            display: block;
+        }
+    }
+    div:nth-child(3):hover {
+        background-image: none;
+        span {
+            display: block;
+        }
+    }
+    div:nth-child(4):hover {
+        background-image: none;
+        span {
+            display: block;
         }
     }
     div:nth-child(5):hover {
@@ -141,7 +281,7 @@ $preto:rgb(110, 109, 109);
         span {
             display: block;
         }
-    }
+    } 
 }
 
 .cont-servicos-home-2 {
@@ -151,23 +291,11 @@ $preto:rgb(110, 109, 109);
             display: none;
         }
     }
-    div:nth-child(1):hover {
-        background-image: none;
-        span {
-            display: block;
-        }
-    }
     div:nth-child(2) {
         background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
         background-size: 60%;
         span {
             display: none;
-        }
-    }
-    div:nth-child(2):hover {
-        background-image: none;
-        span {
-            display: block;
         }
     }
     div:nth-child(3) {
@@ -176,22 +304,10 @@ $preto:rgb(110, 109, 109);
             display: none;
         }
     }
-    div:nth-child(3):hover {
-        background-image: none;
-        span {
-            display: block;
-        }
-    }
     div:nth-child(4) {
         background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
         span {
             display: none;
-        }
-    }
-    div:nth-child(4):hover {
-        background-image: none;
-        span {
-            display: block;
         }
     }
     div:nth-child(5) {
@@ -200,13 +316,43 @@ $preto:rgb(110, 109, 109);
             display: none;
         }
     }
-    div:nth-child(5):hover {
+    */
+
+
+/* div:nth-child(1):hover {
         background-image: none;
         span {
             display: block;
         }
     }
+    div:nth-child(2):hover {
+        background-image: none;
+        span {
+            display: block;
+        }
+    }
+    div:nth-child(3):hover {
+        background-image: none;
+        span {
+            display: block;
+        }
+    }
+    div:nth-child(4):hover {
+        background-image: none;
+        span {
+            display: block;
+        }
+    }
+    div:nth-child(5):hover {
+        background-image: none;
+        span {
+            display: block;
+        }
+    } 
+    
+    
 }
+*/
 
 .cont-servicos-home-3 {
     width: 100%;
@@ -544,7 +690,7 @@ $preto:rgb(110, 109, 109);
     }
 }
 
-.cont-industria-montagem-industrials-7 {
+.cont-industria-montagem-industrial-7 {
     div:nth-child(5) {
         background-image: url("/root/img/cont-industria/acessorioPMontagemIndustrial/GRAFITE-SPRAY.jpg");
     }
@@ -603,9 +749,17 @@ $preto:rgb(110, 109, 109);
     }
 }
 
-.cont-industria-lavacao-4 {}
+.cont-industria-lavacao-4 {
+    div:nth-child(5) {
+        background-image: url("/root/img/cont-industria/acesPlavacao/MANGUEIRA PARA ENGRAXADEIRAS.jpg");
+    }
+}
 
-.cont-industria-lavacao-5 {}
+.cont-industria-lavacao-5 {
+    div:nth-child(5) {
+        background-image: url("/root/img/cont-industria/acesPlavacao/COMANDO\ DE\ GRAXAS.jpg");
+    }
+}
 
 .cont-industria-lavacao-6 {}
 
@@ -631,6 +785,21 @@ $preto:rgb(110, 109, 109);
 .cont-industria-coreias-4 {
     div:nth-child(5) {
         background-image: url("/root/img/cont-industria/coreias//correia\ 3L.jpg");
+    }
+}
+
+.cont-industria-coreias-5 {
+    div:nth-child(5) {
+        background-image: url("/root/img/cont-industria/coreias/POLIA\ DE\ ALUMINIO.jpg");
+    }
+    div:nth-child(4) {
+        background-image: url("/root/img/cont-industria/coreias/POLIA\ DE\ ALUMINIO\ \(2\).jpg");
+    }
+    div:nth-child(3) {
+        background-image: url("/root/img/cont-industria/coreias/POLIA\ DE\ FERRO.JPG");
+    }
+    div:nth-child(2) {
+        background-image: url("/root/img/cont-industria/coreias/POLIA\ DE\ FERRO\ \(2\).jpg");
     }
 }
 
@@ -726,7 +895,14 @@ $preto:rgb(110, 109, 109);
     }
 }
 
-.cont-industria-pneumatico-5 {}
+.cont-industria-pneumatico-5 {
+    div:nth-child(5) {
+        background-image: url("/root/img/cont-industria/pneusmatico/MANOMETROS\ \(CATEGORIA\ 5\).jpg");
+    }
+    div:nth-child(4) {
+        background-image: url("/root/img/cont-industria/pneusmatico/MANOMETROS\ \(CATEGORIA\ 5\)\ \(2\).jpg");
+    }
+}
 
 //conexao hidraulica  5
 .cont-industria-hidraulica-1 {

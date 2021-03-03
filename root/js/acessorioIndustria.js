@@ -57,7 +57,7 @@ function btnValvulas() {
     btnSelecao7.innerHTML = 'Válvula Anti-retorno PVC';
     btnSelecao8.innerHTML = 'Válvula Anti-retorno Latão Vertical';
     btnSelecao9.innerHTML = 'Válvula Anti-retorno Latão Horizontal';
-    btnSelecao10.innerHTML = 'Válvula Captação Pvc';
+    btnSelecao10.innerHTML = 'Válvula Captação PVC';
     btnSelecao11.innerHTML = 'Válvula Captação Latão';
     btnSelecao12.innerHTML = 'Válvula agulha';
     descricaoProduto.innerHTML = 'Válvula de esfera de ferro alta pressão – indicado para sistema de alta pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
@@ -160,7 +160,7 @@ function btnValvulas() {
         descricaoProduto.innerHTML = 'Válvula de Captação ou Sucção em PVC com mola interna, para assegurar o retorno da válvula para a posição fechada, mesmo em ângulos inclinados. Aplicação indicada em poço artesiano, rede de distribuição de água e sistema de captação de água (recalque).'
         $('.cont-industria').addClass('cont-industria-valvulas-10');
         removeImg();
-        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Captação Pvc (1).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Captação PVC (1).jpg" alt="">';
         limpaContImgBtnModal1();
     });
     btnSelecao11.addEventListener('click', function(e) {
@@ -320,8 +320,11 @@ function btnAcessoriosOficinas() {
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-4');
         removeImg();
-        modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/BICO DE TRAVA PARA ENCHER PNEUS.jpg" alt="">';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/pintura/BICO DE TRAVA PARA ENCHER PNEUS.jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/BICO\ PRESILHA\ PARA\ ENCHER\ PNEUS.jpg" alt="">';
+
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Chave saca filtro de corrente regulável especial, produto de ótima qualidade e garantindo a melhor fixação para extração do filtro. Possui cabo emborrachado e adaptável em qualquer tamanho e diâmetro de filtro de óleo.';
@@ -387,8 +390,9 @@ function btnLavacao() {
         descricaoProduto.innerHTML = 'Mangueira com terminais fixos utilizada em conjunto com propulsora de graxa manuais. Podendo ser confeccionadas conforme a necessidade da aplicação, com comprimento e conexos diversos.';
         $('.cont-industria').addClass('cont-industria-lavacao-4');
         removeImg();
-
+        modal5.innerHTML = '<img src="root/img/cont-industria/acesPlavacao/MANGUEIRA PARA ENGRAXADEIRAS.jpg" alt="">'
         limpaContImgBtnModal1();
+
 
     });
     btnSelecao5.addEventListener('click', function(e) {
@@ -396,7 +400,7 @@ function btnLavacao() {
         descricaoProduto.innerHTML = 'Os comandos de graxas são necessários para aplicação da graxa no local desejado. Possui corpo de ferro, acabamento zincado e seu gatilho anatômico para melhor uso, é utilizado apenas em propulsoras de graxas pneumáticas.';
         $('.cont-industria').addClass('cont-industria-lavacao-5');
         removeImg();
-
+        modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/COMANDO\ DE\ GRAXAS.jpg">'
         limpaContImgBtnModal1();
 
     });
@@ -414,10 +418,12 @@ function btnCoreias() {
     btnSelecao2.innerHTML = 'Correia B';
     btnSelecao3.innerHTML = 'Correia C';
     btnSelecao4.innerHTML = 'Correia 3L';
+    btnSelecao5.innerHTML = 'POLIAS INDUSTRIAIS';
     descricaoProduto.innerHTML = 'É uma cinta de material flexível, normalmente feita de camadas de lonas e borracha vulcanizada, que serve para transmitir a força e movimento de uma polia ou engrenagem para outras. É importante adquirir a correia correta e entender qual o tipo de polia que vai fazê-la se movimentar. As Correias possuem 13mm de largura externa e 8,15mm de largura interna.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-coreias-1');
     escondeBtnSelecao();
+    $('#btn-selecao-5').removeClass('display-none');
     removeClassbacgclickacessorioind();
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     removeImg();
@@ -456,6 +462,21 @@ function btnCoreias() {
         modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/correia 3L.jpg" alt=""></img>';
         limpaContImgBtnModal1();
     });
+    btnSelecao5.addEventListener('click', function(e) {
+        limparClass();
+        descricaoProduto.innerHTML = `As Polias Industriais podem ser descritas como um disco para transportar as correias. Podem ser encontradas em matérias como ferro fundido ou alumínio, em diversos tamanhos, com cavidades para transportar correrias de diversas bitolas. Para o bom funcionamento do equipamento e da vida útil das correias aplicadas para a função, é importante que as polias estejam alinhadas uma com as outras e, sejam utilizadas correias correspondentes as polias empregue nesse trabalho.`
+        $('.cont-industria').addClass('cont-industria-coreias-5');
+        removeImg();
+        modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ ALUMINIO.jpg" alt=""></img>';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ ALUMINIO\ \(2\).jpg" alt=""></img>';
+        modal3.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ FERRO.JPG" alt=""></img>';
+        modal2.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ FERRO\ \(2\).jpg" alt=""></img>';
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-3').addClass('cont-btn-modal');
+        $('.cont-btn-modal-2').addClass('cont-btn-modal');
+
+    });
 };
 
 function btnEquipamentosHidraulicos() {
@@ -464,7 +485,7 @@ function btnEquipamentosHidraulicos() {
     btnSelecao2.innerHTML = 'Comandos hidráulicos';
     btnSelecao3.innerHTML = 'Bombas hidráulicas';
     btnSelecao4.innerHTML = 'Motores hidráulicos';
-    btnSelecao5.innerHTML = 'Válvulas hidráulica';
+    btnSelecao5.innerHTML = 'Válvulas hidráulicas';
     descricaoProduto.innerHTML = 'No segmento hidráulico, um cilindro é um atuador mecânico, que é usado para aplicar uma força através de um percurso linear. O cilindro hidráulico recebe a energia do fluido pressurizado por uma bomba hidráulica. O cilindro converte essa energia recebida em energia mecânica. O fluido é enviado para o cilindro por uma válvula direcional ou comando.';
     limparClass();
     escondeBtnSelecao();
@@ -537,6 +558,7 @@ function btnEquipamentosHidraulicos() {
 };
 
 function btnConjuntosPneumaticos() {
+
     ValTit.innerHTML = 'Conjuntos Pneumáticos';
     btnSelecao1.innerHTML = 'Conectores pneumáticos';
     btnSelecao2.innerHTML = 'Filtros e lubrificadores pneumáticos';
@@ -603,7 +625,10 @@ function btnConjuntosPneumaticos() {
         limparClass();
         $('.cont-industria').addClass('cont-industria-pneumatico-5');
         removeImg();
+        modal5.innerHTML = '<img src="/root/img/cont-industria/pneusmatico/MANOMETROS (CATEGORIA 5).jpg" alt="">';
+        modal4.innerHTML = ' <img src="/root/img/cont-industria/pneusmatico/MANOMETROS (CATEGORIA 5) (2).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
 
     });
 
@@ -707,8 +732,8 @@ function btnFiltrosAcessorios() {
     ValTit.innerHTML = 'Filtros e acessórios';
     btnSelecao1.innerHTML = 'Filtros Hidráulicos Sucção';
     btnSelecao2.innerHTML = 'Filtros Hidráulicos de Retorno';
-    btnSelecao3.innerHTML = 'Visor de  Tarnque';
-    btnSelecao4.innerHTML = 'Bocal De Enchimento';
+    btnSelecao3.innerHTML = 'Visor de  Tanque';
+    btnSelecao4.innerHTML = 'Bocal de Enchimento';
     btnSelecao5.innerHTML = 'Elementos Filtrantes';
     descricaoProduto.innerHTML = 'O elemento filtrante de óleo é capaz de retirar partículas contaminadas dos sistemas hidráulicos e, assim, pode ser encontrado em vários seguimentos industriais e navais, por isso é disponível em diversos modelos e tamanhos a fim de atender as demandas da necessidade.';
     limparClass();
@@ -972,6 +997,7 @@ function limparClass() {
     $('.cont-industria').removeClass('cont-industria-coreias-2');
     $('.cont-industria').removeClass('cont-industria-coreias-3');
     $('.cont-industria').removeClass('cont-industria-coreias-4');
+    $('.cont-industria').removeClass('cont-industria-coreias-5');
     // equipamentos hidraulicos
     $('.cont-industria').removeClass('cont-industria-hidraulicos-1');
     $('.cont-industria').removeClass('cont-industria-hidraulicos-2');
@@ -1012,3 +1038,135 @@ function limpaContImgBtnModal1() {
     $('.cont-btn-modal-4').removeClass('cont-btn-modal');
 
 };
+
+function animacaoCliqueCategorias(a, b) {
+    limparClassCliqueCategorias()
+    let iten = document.getElementById(a);
+    let clase = b;
+    let testeclass = document.getElementById(a).classList.contains('div-clique');
+    if (testeclass) {
+        iten.classList.remove('div-clique');
+        iten.classList.add('div-clicado');
+        iten.classList.remove(b)
+
+    } else {
+        iten.classList.add(b)
+        iten.classList.add('div-clique');
+        iten.classList.remove('div-clicado');
+    }
+
+}
+
+function animacaoCliqueCategorias2(a, b) {
+    limparClassCliqueCategorias2()
+    let iten = document.getElementById(a);
+    let clase = b;
+    let testeclass = document.getElementById(a).classList.contains('div-clique');
+    if (testeclass) {
+        iten.classList.remove('div-clique');
+        iten.classList.add('div-clicado');
+        iten.classList.remove(b)
+
+    } else {
+        iten.classList.add(b)
+        iten.classList.add('div-clique');
+        iten.classList.remove('div-clicado');
+    }
+
+}
+
+/* 
+function iconHover() {
+
+
+    $('#valvula').hover(function() {
+        let valvula = document.getElementById('valvula');
+        valvula.classList.remove('div-clique');
+        valvula.classList.remove('background-image-valvula');
+        valvula.classList.add('div-clicado');
+
+    })
+    $('#valvula').mouseleave(function() {
+        let valvula = document.getElementById('valvula');
+        valvula.classList.add('div-clique');
+        valvula.classList.add('background-image-valvula');
+        valvula.classList.remove('div-clicado');
+
+    })
+
+}
+iconHover()
+ */
+function limparClassCliqueCategorias() {
+    let valvula = document.getElementById('valvula')
+    let montagemIndustrial = document.getElementById('montagemIndustrial')
+    let pinturas = document.getElementById('pinturas')
+    let lavacao = document.getElementById('lavacao')
+    let coreias = document.getElementById('coreias')
+
+
+
+
+    valvula.classList.add('div-clique');
+    valvula.classList.add('background-image-valvula');
+    valvula.classList.remove('div-clicado');
+
+    montagemIndustrial.classList.add('div-clique');
+    montagemIndustrial.classList.add('background-image-montagen-industrial');
+    montagemIndustrial.classList.remove('div-clicado');
+
+    pinturas.classList.add('div-clique');
+    pinturas.classList.add('background-image-boracharia');
+    pinturas.classList.remove('div-clicado');
+
+    lavacao.classList.add('div-clique');
+    lavacao.classList.add('background-image-lavacao');
+    lavacao.classList.remove('div-clicado');
+
+    coreias.classList.add('div-clique');
+    coreias.classList.add('background-image-coreias');
+    coreias.classList.remove('div-clicado');
+
+
+
+
+
+
+}
+
+function limparClassCliqueCategorias2() {
+
+
+
+    let equipamentosHidraulicos = document.getElementById('equipamentosHidraulicos')
+    let pneumatico = document.getElementById('pneumatico')
+    let conexaoHidraulica = document.getElementById('conexaoHidraulica')
+    let filtros = document.getElementById('filtros')
+    let mangueiras = document.getElementById('mangueiras')
+
+
+
+    equipamentosHidraulicos.classList.add('div-clique');
+    equipamentosHidraulicos.classList.add('background-image-equipamentos-hidraulcos');
+    equipamentosHidraulicos.classList.remove('div-clicado');
+
+    pneumatico.classList.add('div-clique');
+    pneumatico.classList.add('background-image-pinelmatico');
+    pneumatico.classList.remove('div-clicado');
+
+    conexaoHidraulica.classList.add('div-clique');
+    conexaoHidraulica.classList.add('background-image-conexoes-hidraulicas');
+    conexaoHidraulica.classList.remove('div-clicado');
+
+    filtros.classList.add('div-clique');
+    filtros.classList.add('background-image-filtros-acessorios');
+    filtros.classList.remove('div-clicado');
+
+    mangueiras.classList.add('div-clique');
+    mangueiras.classList.add('background-image-mangueiras');
+    mangueiras.classList.remove('div-clicado');
+
+
+
+
+}

@@ -21,7 +21,7 @@
         </h1>
     </div>
     <div>
-        <p>
+        <p class="fontTextos">
 
             A qualidade influencia diretamente no desempenho. Por isso é imprecindivel ficar atento ao processo de fabricação dos produtos e sua origem, que devem seguir as normas estabelaceidas pelos órgãos reguladores, para que assim tenha a segurança e eficácia
             especificadas.
@@ -66,7 +66,7 @@
         </div>
 
         <div class="div-instalcao">
-            <p id="descricaoProduto">Texto não carregado, recarregue a página</p>
+            <p class="fontTextos" id="descricaoProduto">Texto não carregado, recarregue a página</p>
         </div>
     </section>
 
@@ -162,13 +162,13 @@
 </div>
 <template id="cont-seletor-primeiro"> 
 
-    <section  class="cont-servicos-home cont-servicos-home-1 ">      
+    <section  class="cont-servicos-home">      
 
-            <div><span>Válvulas <br><button onclick="btnValvulas()">Conheça a linha</button></span></div>
-            <div><span>Acessórios para Montagem Industrial <br><button onclick="btnMontagemINdustrial()">Conheça a linha</button></span></div>
-            <div><span>Acessórios para Oficinas, Pinturas e Borracharias <br><button onclick="btnAcessoriosOficinas()">Conheça a linha</button></span></div>
-            <div><span>Acessórios para Lavação e Engraxadeiras<br> <button onclick="btnLavacao() ">Conheça a linha</button></span></div>
-            <div><span>Correias Industriais<br><button onclick="btnCoreias()">Conheça a linha</button></span></div>
+            <div id="valvula" class="div-clique background-image-valvula" onclick="animacaoCliqueCategorias('valvula','background-image-valvula' )"><span>Válvulas <br><button onclick="btnValvulas()">Conheça a linha</button></span></div>
+            <div id="montagemIndustrial" class="div-clique background-image-montagen-industrial"onclick="animacaoCliqueCategorias('montagemIndustrial','background-image-montagen-industrial')"><span>Acessórios para Montagem Industrial <br><button onclick="btnMontagemINdustrial()">Conheça a linha</button></span></div>
+            <div id="pinturas" class="div-clique background-image-boracharia" onclick="animacaoCliqueCategorias('pinturas', 'background-image-boracharia')"><span>Acessórios para Oficinas, Pinturas e Borracharias <br><button onclick="btnAcessoriosOficinas()">Conheça a linha</button></span></div>
+            <div id="lavacao" class="div-clique background-image-lavacao" onclick="animacaoCliqueCategorias('lavacao', 'background-image-lavacao')"><span>Acessórios para Lavação e Engraxadeiras<br> <button onclick="btnLavacao() ">Conheça a linha</button></span></div>
+            <div id="coreias" class="div-clique background-image-coreias" onclick="animacaoCliqueCategorias('coreias' ,'background-image-coreias')"><span>Correias Industriais<br><button onclick="btnCoreias()">Conheça a linha</button></span></div>
        
     </section>
     <section  class="cont-servicos-home-movel cont-servicos-home-1-movel ">      
@@ -186,12 +186,12 @@
 
 <template id="cont-seletor-segundo">
     
-    <section  class="cont-servicos-home cont-servicos-home-2">
-        <div ><span>Equipamentos Hidráulicos<br><button onclick="btnEquipamentosHidraulicos()">Conheça a linha</button></span></div>
-        <div><span>Conjuntos Pneumáticos<br><button onclick="btnConjuntosPneumaticos()">Conheça a linha</button></span></div>
-        <div><span>Conexões hidráulicas<br><button onclick="btnConexoesHidraulicas()">Conheça a linha</button></span></div>
-        <div><span>Filtros e acessórios<br> <button onclick="btnFiltrosAcessorios()">Conheça a linha</button></span></div>
-        <div><span>Mangueiras diversas<br><button onclick="btnMangueirasDiversas()">Conheça a linha</button></span></div>
+    <section  class="cont-servicos-home ">
+        <div id="equipamentosHidraulicos" class="div-clique background-image-equipamentos-hidraulcos" onclick="animacaoCliqueCategorias2('equipamentosHidraulicos','background-image-equipamentos-hidraulcos')"><span>Equipamentos Hidráulicos<br><button onclick="btnEquipamentosHidraulicos()">Conheça a linha</button></span></div>
+        <div id="pneumatico" class="div-clique background-image-pinelmatico" onclick="animacaoCliqueCategorias2('pneumatico' ,'background-image-pinelmatico')"><span>Conjuntos Pneumáticos<br><button onclick="btnConjuntosPneumaticos()">Conheça a linha</button></span></div>
+        <div id="conexaoHidraulica" class="div-clique background-image-conexoes-hidraulicas" onclick="animacaoCliqueCategorias2('conexaoHidraulica','background-image-conexoes-hidraulicas')"><span>Conexões hidráulicas<br><button onclick="btnConexoesHidraulicas()">Conheça a linha</button></span></div>
+        <div id="filtros" class="div-clique background-image-filtros-acessorios" onclick="animacaoCliqueCategorias2('filtros','background-image-filtros-acessorios')"><span>Filtros e acessórios<br> <button onclick="btnFiltrosAcessorios()">Conheça a linha</button></span></div>
+        <div id="mangueiras" class="div-clique background-image-mangueiras" onclick="animacaoCliqueCategorias2('mangueiras','background-image-mangueiras')"><span>Mangueiras diversas<br><button onclick="btnMangueirasDiversas()">Conheça a linha</button></span></div>
     </section>
     <section  class="cont-servicos-home-movel cont-servicos-home-2-movel">
         <div onclick="btnEquipamentosHidraulicos()"></div>
@@ -199,10 +199,8 @@
         <div onclick="btnConexoesHidraulicas()"></div>
         <div onclick="btnFiltrosAcessorios()"></div>
         <div onclick="btnMangueirasDiversas()"></div>
-    </section>
-    
+    </section>    
 </template>
-
 <template id="cont-seletor-terceiro">
     <p>sem mais categorias no momento</p>
     <!--

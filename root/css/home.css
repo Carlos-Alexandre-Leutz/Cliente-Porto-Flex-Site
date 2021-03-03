@@ -197,6 +197,12 @@ h1 {
   padding: 10px 10px;
 }
 
+.wrapper-historia {
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+}
+
 .cont-article-home div {
   padding: 10px;
   width: 50%;
@@ -204,6 +210,7 @@ h1 {
   font-weight: 400;
   text-align: justify;
   color: #777;
+  line-height: 30px;
 }
 
 .sectiom-conexao-home {
@@ -226,9 +233,11 @@ h1 {
 
 .sectiom-conexao-home .esquerda img {
   margin-top: 5px;
-  width: 15px;
+  width: 25px;
   -o-object-fit: contain;
      object-fit: contain;
+  background-color: #26492a;
+  border: solid 4px #26492a;
 }
 
 .sectiom-conexao-home div {
