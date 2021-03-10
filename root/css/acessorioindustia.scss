@@ -43,6 +43,10 @@ $preto:rgb(110, 109, 109);
     flex-wrap: nowrap;
     margin-bottom: 10px;
     padding: 0px 0px;
+    overflow: scroll;
+    div {
+        margin-right: 40px;
+    }
 }
 
 .div-clique {
@@ -61,7 +65,7 @@ $preto:rgb(110, 109, 109);
         text-align: center;
         color: $verde;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
         width: 100%;
         button {
@@ -92,7 +96,7 @@ $preto:rgb(110, 109, 109);
         text-align: center;
         color: $verde;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
         width: 100%;
         display: block;
@@ -123,7 +127,7 @@ $preto:rgb(110, 109, 109);
         text-align: center;
         color: $verde;
         text-transform: uppercase;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 700;
         width: 100%;
         display: block;
@@ -858,6 +862,12 @@ $preto:rgb(110, 109, 109);
     }
 }
 
+.cont-industria-hidraulicos-6 {
+    div:nth-child(5) {
+        background-image: url("/root/img/cont-industria/equipind/direcoes/DIREÇÕES\ HIDROSTÁTICAS\ \(1\).jpg");
+    }
+}
+
 //conjunto pneumatico 5
 .cont-industria-pneumatico-1 {
     div:nth-child(1) {
@@ -1068,6 +1078,9 @@ $preto:rgb(110, 109, 109);
 }
 
 @media screen and (max-width: 425px) {
+    .cont-servicos-home {
+        display: none;
+    }
     .wrapper-industria {
         width: 90%;
         margin: auto;
@@ -1105,16 +1118,14 @@ $preto:rgb(110, 109, 109);
             }
         }
     }
-    .cont-servicos-home-1,
-    .cont-servicos-home-2 {
-        display: none;
-    }
     .cont-servicos-home-movel {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 10px;
+        overflow-y: scroll;
         div {
+            margin-right: 25px;
             width: 60px;
             height: 60px;
             min-width: 60px;
@@ -1144,22 +1155,20 @@ $preto:rgb(110, 109, 109);
         div:nth-child(5) {
             background-image: url("/root/img/icones/Icone_correias_industriais.png");
         }
-    }
-    .cont-servicos-home-2-movel {
-        div:nth-child(1) {
+        div:nth-child(6) {
             background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
         }
-        div:nth-child(2) {
+        div:nth-child(7) {
             background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
             background-size: 60%;
         }
-        div:nth-child(3) {
+        div:nth-child(8) {
             background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
         }
-        div:nth-child(4) {
+        div:nth-child(9) {
             background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
         }
-        div:nth-child(5) {
+        div:nth-child(10) {
             background-image: url("/root/img/icones/Icone_mangueiras.png");
         }
     }

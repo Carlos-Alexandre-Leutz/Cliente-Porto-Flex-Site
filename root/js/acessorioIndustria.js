@@ -17,17 +17,21 @@ var modal2 = document.getElementById('modal2');
 var modal3 = document.getElementById('modal3');
 var modal4 = document.getElementById('modal4');
 var modal5 = document.getElementById('modal5');
-var tmpl1 = document.getElementById("cont-seletor-primeiro").innerHTML;
-var tmpl2 = document.getElementById("cont-seletor-segundo").innerHTML;
-var tmpl3 = document.getElementById("cont-seletor-terceiro").innerHTML;
-var btnAnterior = document.getElementById('anterior');
-var btnProximo = document.getElementById('proximo');
+
 var semimg = 'Selecione uma imagem';
 
 
-
-
-document.getElementById('content').innerHTML = tmpl1;
+/* if (windowWidth <= 668) {
+    
+    var windowWidth = window.innerWidth;
+    var tmpl1 = document.getElementById("cont-seletor-primeiro").innerHTML;
+    var tmpl2 = document.getElementById("cont-seletor-segundo").innerHTML;
+    document.getElementById('content').innerHTML = tmpl1;
+    
+} */
+/* 
+var btnAnterior = document.getElementById('anterior');
+var btnProximo = document.getElementById('proximo');
 btnAnterior.addEventListener('click', function(e) {
     var impreso = document.getElementById('content').innerHTML;
     if (impreso == tmpl1) {
@@ -43,7 +47,7 @@ btnProximo.addEventListener('click', function(e) {
     } else if (impreso == tmpl2) {
         document.getElementById('content').innerHTML = tmpl1;
     }
-});
+}); */
 
 
 function btnValvulas() {
@@ -144,7 +148,7 @@ function btnValvulas() {
         descricaoProduto.innerHTML = 'Desenvolvida para retenção de fluido em fluxos de tubulações verticais. Possui sistema de vedação em borracha nitrílica proporcionando assim uma vedação perfeita no seu fechamento através de uma mola que está no interior do corpo da válvula.'
         $('.cont-industria').addClass('cont-industria-valvulas-8');
         removeImg();
-        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Horizontal (1).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Vertical (1).jpg" alt="">';
         limpaContImgBtnModal1();
     });
     btnSelecao9.addEventListener('click', function(e) {
@@ -308,7 +312,7 @@ function btnAcessoriosOficinas() {
         limpaContImgBtnModal1();
     });
     btnSelecao3.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'A uma ferramenta ideal, apropriada e segura para fazer uma calibragem precisa, erros na calibragem pode gerar desgastes no pneu. P possui corpo de alumínio resistente.';
+        descricaoProduto.innerHTML = 'A uma ferramenta ideal, apropriada e segura para fazer uma calibragem precisa, erros na calibragem pode gerar desgastes no pneu. Possui corpo de alumínio resistente.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-3');
         removeImg();
@@ -316,7 +320,7 @@ function btnAcessoriosOficinas() {
         limpaContImgBtnModal1();
     });
     btnSelecao4.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'Possui entrada de ar rosca fêmea, com bico duplo de encher dependendo de sua aplicação e cabo emborrachado. Também possuímos outro modelo no qual é indicado a calibradores, sendo assim é possível conectar a mangueira direto no enchedor de pneu';
+        descricaoProduto.innerHTML = 'Possui entrada de ar rosca fêmea, com bico duplo de encher dependendo de sua aplicação e cabo emborrachado. Também possuímos outro modelo no qual é indicado a calibradores, sendo assim é possível conectar a mangueira direto no enchedor de pneu.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-4');
         removeImg();
@@ -358,7 +362,7 @@ function btnLavacao() {
     removeClassbacgclickacessorioind();
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     removeImg();
-    modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA TERMICA DE ALUMINIO (CATEGORIA 12) (1).jpg" alt="">';
+    modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ACOPLADORES PRA GRAXA.jpg" alt="">';
     limpaContImgBtnModal1();
     btnSelecao1.addEventListener('click', function(e) {
         limparClass();
@@ -378,7 +382,7 @@ function btnLavacao() {
     });
     btnSelecao3.addEventListener('click', function(e) {
         limparClass();
-        descricaoProduto.innerHTML = 'Bomba manual para graxa com tampa fabricada em alumínio para máxima resistência e durabilidade. Produzida com chapa espessa que garante longa vida a sua bomba e contém filtro que bloqueia impurezas para uma lubrificação mais. Além disso possui disco raspador com mola de alta compressão.';
+        descricaoProduto.innerHTML = 'Bomba manual para graxa com tampa fabricada em alumínio para máxima resistência e durabilidade. Produzida com chapa espessa que garante longa vida a sua bomba e contém filtro que bloqueia impurezas para uma lubrificação. Além disso possui disco raspador com mola de alta compressão.';
         $('.cont-industria').addClass('cont-industria-lavacao-3');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ENGRAXADEIRAS.jpg" alt=""></img>';
@@ -486,11 +490,13 @@ function btnEquipamentosHidraulicos() {
     btnSelecao3.innerHTML = 'Bombas hidráulicas';
     btnSelecao4.innerHTML = 'Motores hidráulicos';
     btnSelecao5.innerHTML = 'Válvulas hidráulicas';
+    btnSelecao6.innerHTML = 'Direções Hidrostáticas';
     descricaoProduto.innerHTML = 'No segmento hidráulico, um cilindro é um atuador mecânico, que é usado para aplicar uma força através de um percurso linear. O cilindro hidráulico recebe a energia do fluido pressurizado por uma bomba hidráulica. O cilindro converte essa energia recebida em energia mecânica. O fluido é enviado para o cilindro por uma válvula direcional ou comando.';
     limparClass();
     escondeBtnSelecao();
     removeClassbacgclickacessorioind();
     $('#btn-selecao-5').removeClass('display-none');
+    $('#btn-selecao-6').removeClass('display-none');
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     $('.cont-industria').addClass('cont-industria-hidraulicos-1');
     removeImg();
@@ -505,7 +511,7 @@ function btnEquipamentosHidraulicos() {
         limpaContImgBtnModal1();
     });
     btnSelecao2.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'No segmento hidráulico, um cilindro é um atuador mecânico, que é usado para aplicar uma força através de um percurso linear. O cilindro hidráulico recebe a energia do fluido pressurizado por uma bomba hidráulica. O cilindro converte essa energia recebida em energia mecânica. O fluido é enviado para o cilindro por uma válvula direcional ou comando.';
+        descricaoProduto.innerHTML = 'O comando hidráulico é o componente do circuito hidráulico que permite controlar e direcionar o fluxo do fluído óleo hidráulico para os atuadores da máquina, assim a energia hidráulica do óleo em movimento será transportada para os atuadores que realizam diversos trabalhos. Com o uso do comando hidráulico é possível que um operador controle o equipamento por alavancas.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-hidraulicos-2');
         removeImg();
@@ -515,7 +521,7 @@ function btnEquipamentosHidraulicos() {
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'A bomba hidráulica é um componente do circuito hidráulico, acionada por motores a combustão ou elétricos, transmitindo essa energia através do fluido hidráulico. O equipamento é extremamente requisitado por indústrias dos mais variados segmentos, como por exemplo, na construção civil, sendo utilizada em escavadeiras, tratores, embarcações, entre outros';
+        descricaoProduto.innerHTML = 'A bomba hidráulica é um componente do circuito hidráulico, acionada por motores a combustão ou elétricos, transmitindo essa energia através do fluido hidráulico. O equipamento é extremamente requisitado por indústrias dos mais variados segmentos, como por exemplo, na construção civil, sendo utilizada em escavadeiras, tratores, embarcações, entre outros.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-hidraulicos-3');
         removeImg();
@@ -530,7 +536,7 @@ function btnEquipamentosHidraulicos() {
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
     });
     btnSelecao4.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'O motor hidráulico está presente em equipamentos como máquinas de siderurgia, mineração, construção, automação industrial, colheitadeiras de cana e de outros produtos agrícolas, tratores, entre outros.  o motor hidráulico é apenas mais um item que trabalha em conjunto com bombas, válvulas e comandos hidráulicos para tornar atividades industriais mais rápidas e precisas.';
+        descricaoProduto.innerHTML = 'O motor hidráulico está presente em equipamentos como máquinas de siderurgia, mineração, construção, automação industrial, colheitadeiras de cana e de outros produtos agrícolas, tratores, entre outros. O motor hidráulico é apenas mais um item que trabalha em conjunto com bombas, válvulas e comandos hidráulicos para tornar atividades industriais mais rápidas e precisas.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-hidraulicos-4');
         removeImg();
@@ -542,7 +548,7 @@ function btnEquipamentosHidraulicos() {
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
     });
     btnSelecao5.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'O motor hidráulico é apenas mais um item que trabalha em conjunto com bombas, válvulas e comandos hidráulicos para tornar atividades industriais mais rápidas e precisas.';
+        descricaoProduto.innerHTML = 'A válvula hidráulica é um dispositivo que regula, direciona e controla o fluxo e a pressão do fluido hidráulico.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-hidraulicos-5');
         removeImg();
@@ -552,6 +558,15 @@ function btnEquipamentosHidraulicos() {
         limpaContImgBtnModal1();
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+    });
+    btnSelecao6.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'As direções hidrostáticas são muito usadas em diversos sistemas hidráulicos por conta dos seus muitos benefícios. Possuem características muito importantes para o funcionamento de diferentes tipos de sistemas e facilitam e muito na montagem e aplicação em maquinários e veículos de diferentes tamanhos.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-hidraulicos-6');
+        removeImg();
+        modal5.innerHTML = '<img src="/root/img/cont-industria/equipind/direcoes/DIREÇÕES\ HIDROSTÁTICAS\ \(1\).jpg">';
+        limpaContImgBtnModal1();
+
     });
 
 
@@ -564,7 +579,7 @@ function btnConjuntosPneumaticos() {
     btnSelecao2.innerHTML = 'Filtros e lubrificadores pneumáticos';
     btnSelecao3.innerHTML = 'Válvulas pneumáticas';
     btnSelecao4.innerHTML = 'Engates rápidos';
-    btnSelecao5.innerHTML = 'Manometros';
+    btnSelecao5.innerHTML = 'Manômetros';
     descricaoProduto.innerHTML = 'Os conectores pneumáticos possuem diversas aplicações na área industrial e também hospitalar, ou seja, qualquer local que utiliza sistema de ar comprimido. É geralmente utilizado em sistemas pressurizados de ar comprimido, mas também podem ser usados em outros sistemas gasosos.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-pneumatico-1');
@@ -634,11 +649,12 @@ function btnConjuntosPneumaticos() {
 
 
 
+
 };
 
 function btnConexoesHidraulicas() {
     ValTit.innerHTML = 'Conexões hidráulicas';
-    btnSelecao1.innerHTML = 'Conexões galvonizadas';
+    btnSelecao1.innerHTML = 'Conexões galvanizadas';
     btnSelecao2.innerHTML = 'Engate rápido hidráulico';
     btnSelecao3.innerHTML = 'Conexões inox';
     btnSelecao4.innerHTML = 'Terminais para flexíveis';
@@ -735,7 +751,7 @@ function btnFiltrosAcessorios() {
     btnSelecao3.innerHTML = 'Visor de  Tanque';
     btnSelecao4.innerHTML = 'Bocal de Enchimento';
     btnSelecao5.innerHTML = 'Elementos Filtrantes';
-    descricaoProduto.innerHTML = 'O elemento filtrante de óleo é capaz de retirar partículas contaminadas dos sistemas hidráulicos e, assim, pode ser encontrado em vários seguimentos industriais e navais, por isso é disponível em diversos modelos e tamanhos a fim de atender as demandas da necessidade.';
+    descricaoProduto.innerHTML = 'Com função de proteger a bomba hidráulica e reter partículas de tinta, plástico, cavacos, entre outros elementos que podem provocar algum dano na bomba, o filtro hidráulico de sucção tem a importância de sua função focada em evitar o desgaste natural do sistema de bombas.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-filtros-1');
     escondeBtnSelecao();
@@ -748,7 +764,7 @@ function btnFiltrosAcessorios() {
     modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/FILTROSHIDRAULICOSSUCCAO.jpg">';
     limpaContImgBtnModal1();
     btnSelecao1.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'O elemento filtrante de óleo é capaz de retirar partículas contaminadas dos sistemas hidráulicos e, assim, pode ser encontrado em vários seguimentos industriais e navais, por isso é disponível em diversos modelos e tamanhos a fim de atender as demandas da necessidade.';
+        descricaoProduto.innerHTML = 'Com função de proteger a bomba hidráulica e reter partículas de tinta, plástico, cavacos, entre outros elementos que podem provocar algum dano na bomba, o filtro hidráulico de sucção tem a importância de sua função focada em evitar o desgaste natural do sistema de bombas.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-filtros-1');
         removeImg();
@@ -795,7 +811,7 @@ function btnMangueirasDiversas() {
     btnSelecao3.innerHTML = 'Mangueira lava auto';
     btnSelecao4.innerHTML = 'Mangueira oxigênio/acetileno';
     btnSelecao5.innerHTML = 'Mangueira Vácuo Ar Cinza';
-    descricaoProduto.innerHTML = 'trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
+    descricaoProduto.innerHTML = 'Trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-maqueiras-1');
     escondeBtnSelecao();
@@ -838,7 +854,7 @@ function btnMangueirasDiversas() {
         limpaContImgBtnModal1();
     });
     btnSelecao4.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'Mangueira dupla flexível para solda Oxigenio e Acetileno é indicada para processos de soldagem em geral, utilizadas em equipamentos normatizados de solda. Sua função é conduzir os gases até o ponto de solda. Composta por duas mangueiras, verde (oxigênio) e vermelha (acetileno).';
+        descricaoProduto.innerHTML = 'Mangueira dupla flexível para solda Oxigênio e Acetileno é indicada para processos de soldagem em geral, utilizadas em equipamentos normatizados de solda. Sua função é conduzir os gases até o ponto de solda. Composta por duas mangueiras, verde (oxigênio) e vermelha (acetileno).';
         limparClass();
         $('.cont-industria').addClass('cont-industria-maqueiras-4');
         removeImg();
@@ -1075,28 +1091,7 @@ function animacaoCliqueCategorias2(a, b) {
 
 }
 
-/* 
-function iconHover() {
 
-
-    $('#valvula').hover(function() {
-        let valvula = document.getElementById('valvula');
-        valvula.classList.remove('div-clique');
-        valvula.classList.remove('background-image-valvula');
-        valvula.classList.add('div-clicado');
-
-    })
-    $('#valvula').mouseleave(function() {
-        let valvula = document.getElementById('valvula');
-        valvula.classList.add('div-clique');
-        valvula.classList.add('background-image-valvula');
-        valvula.classList.remove('div-clicado');
-
-    })
-
-}
-iconHover()
- */
 function limparClassCliqueCategorias() {
     let valvula = document.getElementById('valvula')
     let montagemIndustrial = document.getElementById('montagemIndustrial')
@@ -1126,17 +1121,6 @@ function limparClassCliqueCategorias() {
     coreias.classList.add('div-clique');
     coreias.classList.add('background-image-coreias');
     coreias.classList.remove('div-clicado');
-
-
-
-
-
-
-}
-
-function limparClassCliqueCategorias2() {
-
-
 
     let equipamentosHidraulicos = document.getElementById('equipamentosHidraulicos')
     let pneumatico = document.getElementById('pneumatico')

@@ -57,6 +57,11 @@
       flex-wrap: nowrap;
   margin-bottom: 10px;
   padding: 0px 0px;
+  overflow: scroll;
+}
+
+.cont-servicos-home div {
+  margin-right: 40px;
 }
 
 .div-clique {
@@ -82,7 +87,7 @@
   text-align: center;
   color: #26492a;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   width: 100%;
 }
@@ -121,7 +126,7 @@
   text-align: center;
   color: #26492a;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   width: 100%;
   display: block;
@@ -160,7 +165,7 @@
   text-align: center;
   color: #26492a;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   width: 100%;
   display: block;
@@ -900,6 +905,10 @@
   background-image: url("/root/img/cont-industria/equipind/valvulas/VALVULAS HIDRAULICAS (3) (1).jpg");
 }
 
+.cont-industria-hidraulicos-6 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/equipind/direcoes/DIREÇÕES HIDROSTÁTICAS (1).jpg");
+}
+
 .cont-industria-pneumatico-1 div:nth-child(1) {
   background-image: url("/root/img/cont-industria/pneusmatico/conecto/CONECTORES PNEUMATICOS (2) (1).jpg");
 }
@@ -1091,6 +1100,9 @@
 }
 
 @media screen and (max-width: 425px) {
+  .cont-servicos-home {
+    display: none;
+  }
   .wrapper-industria {
     width: 90%;
     margin: auto;
@@ -1133,10 +1145,6 @@
     font-size: 15px;
     text-align: justify;
   }
-  .cont-servicos-home-1,
-  .cont-servicos-home-2 {
-    display: none;
-  }
   .cont-servicos-home-movel {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1149,8 +1157,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 10px;
+    overflow-y: scroll;
   }
   .cont-servicos-home-movel div {
+    margin-right: 25px;
     width: 60px;
     height: 60px;
     min-width: 60px;
@@ -1182,20 +1192,20 @@
   .cont-servicos-home-1-movel div:nth-child(5) {
     background-image: url("/root/img/icones/Icone_correias_industriais.png");
   }
-  .cont-servicos-home-2-movel div:nth-child(1) {
+  .cont-servicos-home-1-movel div:nth-child(6) {
     background-image: url("/root/img/icones/Icone_Equipamentos_hidraulicos.png");
   }
-  .cont-servicos-home-2-movel div:nth-child(2) {
+  .cont-servicos-home-1-movel div:nth-child(7) {
     background-image: url("/root/img/icones/Icone_conjuntos_pneumáticos.png");
     background-size: 60%;
   }
-  .cont-servicos-home-2-movel div:nth-child(3) {
+  .cont-servicos-home-1-movel div:nth-child(8) {
     background-image: url("/root/img/icones/Icone_conexões_hidraulicas.png");
   }
-  .cont-servicos-home-2-movel div:nth-child(4) {
+  .cont-servicos-home-1-movel div:nth-child(9) {
     background-image: url("/root/img/icones/Icone_filtros_e_acessorios.png");
   }
-  .cont-servicos-home-2-movel div:nth-child(5) {
+  .cont-servicos-home-1-movel div:nth-child(10) {
     background-image: url("/root/img/icones/Icone_mangueiras.png");
   }
   .cont-industria {

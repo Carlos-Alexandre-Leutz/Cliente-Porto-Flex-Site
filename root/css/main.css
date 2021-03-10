@@ -172,6 +172,12 @@ header section div span i {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 425px) {
+  .cont-navegacao-img {
+    margin-top: 25px;
+  }
+}
+
 .navegacao-img {
   background-position: top;
   background-repeat: no-repeat;
@@ -239,22 +245,22 @@ header section div span i {
 }
 
 .wthsPositionafter {
-  margin-top: -36px;
+  margin-top: -30px;
 }
 
 .wthsPositionahover {
-  margin-top: -30px;
+  margin-top: -24px;
 }
 
 @media screen and (max-width: 770px) {
   .logoPosition {
     width: 66px;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 5px;
     text-align: center;
   }
   .logoPosition img {
-    width: 100%;
+    width: 60px;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -269,16 +275,10 @@ header section div span i {
     margin-bottom: 30px;
   }
   .conteinerLogo img {
-    width: 100%;
+    width: 70%;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  .wthsPositionafter {
-    margin-top: -40px;
-  }
-  .wthsPositionahover {
-    margin-top: -20px;
   }
 }
 
@@ -314,16 +314,17 @@ footer .footern1 .icon-wthas {
 }
 
 footer .footern1 .icon-wthas img {
-  width: 70px;
+  width: 55px;
 }
 
 footer .footern1 .icon-wthas .chamaNoWthas {
-  line-height: 20px;
-  margin-top: 15px;
+  line-height: 25px;
+  margin-top: 7px;
   margin-left: 5px;
   color: #db812d;
   font-weight: 600;
   min-width: 100px;
+  font-size: 30px;
 }
 
 footer .footern1 .btn-wthas {
@@ -336,7 +337,7 @@ footer .footern1 .btn-wthas button {
   background-color: transparent;
   color: #fff;
   padding: 5px 15px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 770px) {

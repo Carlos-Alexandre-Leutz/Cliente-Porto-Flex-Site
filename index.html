@@ -73,11 +73,11 @@
         
          ::-webkit-scrollbar {
             width: 6px;
+            height: 6px;
             background: #F4F4F4;
         }
         
          ::-webkit-scrollbar-thumb {
-            height: 6px;
             background: #dad7d7;
         }
     </style>
@@ -90,8 +90,8 @@
         </div>
     </div>
     <header>
-        <form class="wrapper soNoDescktop">
-            <div>
+        <form class="soNoDescktop">
+            <div class="wrapper">
 
                 <input id="input" type="text" placeholder="   Faça sua busca">
                 <button class="soNoDescktop"> 
@@ -106,7 +106,7 @@
             <a href="#/"> <img src="/root/img/icones/Logo_topo_colorida.png" alt=""></a>
         </div>
         <section class="wrapper">
-            <div class="wthas wthsPositionahover">
+            <div class="wthas wthsPositionahover ">
                 <span class="soNoDescktop" style="padding-right: 15px;">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
@@ -138,7 +138,7 @@
 
                     <a href="#/nosahistoria" class="linkNavMob">
                         <div>
-                            Nossa hístoria
+                            Nossa história
                         </div>
                     </a>
                     <a class="linkNavMob" href="#/faleconosco">
@@ -194,9 +194,9 @@
     </header>
 
     <div class="navegacao">
-        <nav class="wrapper ">
+        <nav style="width: 100%; max-width: 1350px;">
             <div><a id="home" class="home navCorPrinc navCorSecund soNoDescktop selected-menu" href="#/">Home</a></div>
-            <div><a id="historia" href="#/nosahistoria" class="historia navCorPrinc soNoDescktop">Nossa hístoria</a></div>
+            <div><a id="historia" href="#/nosahistoria" class="historia navCorPrinc soNoDescktop">Nossa história</a></div>
             <div><a id="trabalho" class="trabalho navCorPrinc soNoDescktop" href="#/faleconosco">Orçamento</a></div>
             <div class="conteinerLogo">
                 <a href="#/"> <img src="/root/img/icones/Logo_topo_colorida.png" alt=""> </a>
@@ -232,9 +232,11 @@
                 </div>
             </div>
             <div>
-                <a id="servicos" class="servicos navCorPrinc soNoDescktop" href="#/servicos" style="cursor: pointer;">Serviços</a></div>
+                <a id="servicos" class="servicos navCorPrinc soNoDescktop" href="#/servicos" style="cursor: pointer;">Serviços</a>
+            </div>
             <div>
-                <a id="fale" class="fale navCorPrinc soNoDescktop" href="#/faleconosco">Fale Conosco</a></div>
+                <a id="fale" class="fale navCorPrinc soNoDescktop" href="#/faleconosco">Fale Conosco</a>
+            </div>
         </nav>
         <div class="cont-navegacao-img">
 
@@ -249,7 +251,7 @@
 
 
     <footer>
-        <div class="footern1 wrapper">
+        <div class="footern1 ">
 
             <div class="esquerda"> Quer uma ajuda para <br>encontrar <br>o produto certo?</div>
             <div class="icon-wthas ">
@@ -269,10 +271,10 @@
 
         </div>
 
-        <div class="separador wrapper mb-3 mt-5"></div>
+        <div class="separador  mb-3 mt-5"></div>
 
 
-        <div class=" wrapper flex " style="margin: auto;">
+        <div class="wrapper  flex " style="margin: auto;">
 
             <div class="p-2 bd-highlight footer-left  soNoDescktop">
 
@@ -281,7 +283,7 @@
                         <img src="/root/img/icones/Icone_local.png" alt="">
                     </div>
                     <div>
-                        Rua José Pereira Liberato, <br/> n° 623 Bairo São João <br/> Itajaí - SC,88304-400
+                        Rua José Pereira Liberato, <br/> n° 623 - Bairo São João <br/> Itajaí - SC, 88304-400
                     </div>
                 </div>
 
@@ -291,7 +293,7 @@
                         <img class="img-footer-icons" src="/root/img/icones/Icone_telefone.png" alt="">
                     </div>
                     <div>
-                        47 21227337
+                        (47) 2122-7337
                     </div>
                 </div>
 
@@ -301,7 +303,7 @@
                         <img class="img-footer-icons" src="/root/img/icones/Icone_whatsapp.png" alt="">
                     </div>
                     <div>
-                        47 9764-1173
+                        (47) 9764-1173
                     </div>
                 </div>
 
@@ -315,7 +317,7 @@
 
             <div class="p-2 bd-highlight footer-right soNoDescktop">
                 <div class="bd-highlight dias"> <img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Segunda a sexta : </div>
-                <div class="bd-highlight">08h às 13h30 às 18h </div>
+                <div class="bd-highlight">08h às 12h e 13h30 às 18h </div>
                 <div class="bd-highlight dias"><img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Sábados: </div>
                 <div class="bd-highlight">08 às 12h </div>
 
@@ -329,7 +331,8 @@
             </div>
 
         </div>
-        <div class="soNoMobile wrapper mt-5">
+
+        <div class="soNoMobile  mt-5">
 
 
             <div class="p-2 bd-highlight footer-left soNoMobile ">
@@ -339,7 +342,7 @@
                         <img src="/root/img/icones/Icone_local.png" alt="">
                     </div>
                     <div>
-                        Rua José Pereira Liberato, <br/> n° 623 Bairo São João <br/> Itajaí - SC,88304-400
+                        Rua José Pereira Liberato, <br/> n° 623 - Bairo São João <br/> Itajaí - SC, 88304-400
                     </div>
                 </div>
 
@@ -349,7 +352,7 @@
                         <img class="img-footer-icons" src="/root/img/icones/Icone_telefone.png" alt="">
                     </div>
                     <div>
-                        47 21227337
+                        (47) 2122-7337
                     </div>
                 </div>
 
@@ -359,7 +362,7 @@
                         <img class="img-footer-icons" src="/root/img/icones/Icone_whatsapp.png" alt="">
                     </div>
                     <div>
-                        47 9764-1173
+                        (47) 9764-1173
                     </div>
                 </div>
 
@@ -367,7 +370,7 @@
 
             <div class="p-2 bd-highlight footer-right soNoMobile">
                 <div class="bd-highlight dias"> <img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Segunda a sexta : </div>
-                <div class="bd-highlight">08h às 13h30 às 18h </div>
+                <div class="bd-highlight">08h às 12h e 13h30 às 18h </div>
                 <div class="bd-highlight dias"><img class="img-footer-icons" src="/root/img/icones/Icone_relógio.png" alt=""> Sábados: </div>
                 <div class="bd-highlight">08 às 12h </div>
 
