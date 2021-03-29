@@ -10,6 +10,7 @@ var btnSelecao9 = document.getElementById('btn-selecao-9');
 var btnSelecao10 = document.getElementById('btn-selecao-10');
 var btnSelecao11 = document.getElementById('btn-selecao-11');
 var btnSelecao12 = document.getElementById('btn-selecao-12');
+var btnSelecao13 = document.getElementById('btn-selecao-13');
 var descricaoProduto = document.getElementById('descricaoProduto');
 var ValTit = document.getElementById('Val-tit');
 var modal1 = document.getElementById('modal1');
@@ -52,18 +53,18 @@ btnProximo.addEventListener('click', function(e) {
 
 function btnValvulas() {
     ValTit.innerHTML = 'Válvulas'
-    btnSelecao1.innerHTML = 'Válvula de esfera ferro alta pressão';
-    btnSelecao2.innerHTML = 'Válvula de esfera ferro baixa pressão';
-    btnSelecao3.innerHTML = 'Válvula de esfera aço inox';
-    btnSelecao4.innerHTML = 'Válvula esfera mini';
-    btnSelecao5.innerHTML = 'Válvula borboleta';
-    btnSelecao6.innerHTML = 'Válvula de gaveta';
+    btnSelecao1.innerHTML = 'Válvula de Esfera Ferro Alta Pressão';
+    btnSelecao2.innerHTML = 'Válvula de Esfera Ferro Baixa Pressão';
+    btnSelecao3.innerHTML = 'Válvula de Esfera Aço Inox';
+    btnSelecao4.innerHTML = 'Válvula Esfera Mini';
+    btnSelecao5.innerHTML = 'Válvula Borboleta';
+    btnSelecao6.innerHTML = 'Válvula de Gaveta';
     btnSelecao7.innerHTML = 'Válvula Anti-retorno PVC';
     btnSelecao8.innerHTML = 'Válvula Anti-retorno Latão Vertical';
     btnSelecao9.innerHTML = 'Válvula Anti-retorno Latão Horizontal';
     btnSelecao10.innerHTML = 'Válvula Captação PVC';
     btnSelecao11.innerHTML = 'Válvula Captação Latão';
-    btnSelecao12.innerHTML = 'Válvula agulha';
+    btnSelecao12.innerHTML = 'Válvula Agulha';
     descricaoProduto.innerHTML = 'Válvula de esfera de ferro alta pressão – indicado para sistema de alta pressão que utilizam de fechamentos manuais. Válvula de esfera com bloqueio manual para gás, ar, água e outros fluidos.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-valvulas-1');
@@ -87,6 +88,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvulas de esfera aço carbono alta pressão.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao2.addEventListener('click', function(e) {
@@ -96,6 +98,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula- valvulas de esfera aço carbono baixa pressão.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
         limparClass();
@@ -104,6 +107,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula  de esfera aço inox.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao4.addEventListener('click', function(e) {
         limparClass();
@@ -116,7 +120,7 @@ function btnValvulas() {
         limpaContImgBtnModal1();
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
-
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao5.addEventListener('click', function(e) {
@@ -126,6 +130,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Borboleta.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao6.addEventListener('click', function(e) {
         limparClass();
@@ -134,6 +139,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula de Gaveta.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao7.addEventListener('click', function(e) {
         limparClass();
@@ -142,6 +148,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno PVC (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao8.addEventListener('click', function(e) {
         limparClass();
@@ -150,6 +157,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Vertical (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao9.addEventListener('click', function(e) {
         limparClass();
@@ -158,6 +166,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Anti-retorno Latão Horizontal (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao10.addEventListener('click', function(e) {
         limparClass();
@@ -166,6 +175,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Captação PVC (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao11.addEventListener('click', function(e) {
         limparClass();
@@ -174,6 +184,7 @@ function btnValvulas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/valvulas/Válvula - valvula Captação Latão (1).jpg" alt=""></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao12.addEventListener('click', function(e) {
@@ -182,17 +193,18 @@ function btnValvulas() {
         $('.cont-industria').addClass('cont-industria-valvulas-12');
         removeImg();
         limpaContImgBtnModal1();
+
     });
 }
 btnValvulas();
 
 function btnMontagemINdustrial() {
     ValTit.innerHTML = 'Acessórios para Montagem Industrial';
-    btnSelecao1.innerHTML = 'Adesivo de silicone';
-    btnSelecao2.innerHTML = 'Veda rosca líquido';
-    btnSelecao3.innerHTML = 'Fita veda rosca';
+    btnSelecao1.innerHTML = 'Adesivo de Silicone';
+    btnSelecao2.innerHTML = 'Veda rosca Líquido';
+    btnSelecao3.innerHTML = 'Fita veda Rosca';
     btnSelecao4.innerHTML = 'Desengripante';
-    btnSelecao5.innerHTML = 'Trava rosca';
+    btnSelecao5.innerHTML = 'Trava Rosca';
     btnSelecao6.innerHTML = 'Desengraxante';
     btnSelecao7.innerHTML = 'Grafite spray';
     descricaoProduto.innerHTML = 'É um adesivo de silicone multiuso flexível de cura acética, ideal para reparar uma grande variedade de materiais como: vidro, metais, madeira, alumínio, policarbonatos e outros.';
@@ -210,6 +222,7 @@ function btnMontagemINdustrial() {
     modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/ADESIVO DE SILICONE PARA O MOTOR.jpg" alt="">';
     limpaContImgBtnModal1();
     $('.cont-btn-modal-4').addClass('cont-btn-modal');
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
     btnSelecao1.addEventListener('click', function(e) {
         limparClass();
         descricaoProduto.innerHTML = 'É um adesivo de silicone multiuso flexível de cura acética, ideal para reparar uma grande variedade de materiais como: vidro, metais, madeira, alumínio, policarbonatos e outros.';
@@ -219,6 +232,7 @@ function btnMontagemINdustrial() {
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/ADESIVO DE SILICONE PARA O MOTOR.jpg" alt="">';
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
@@ -227,6 +241,7 @@ function btnMontagemINdustrial() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/VEDA ROSCA LÍQUIDO (CATEGORIA 7) (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
         limparClass();
@@ -235,6 +250,7 @@ function btnMontagemINdustrial() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/FITA VEDA ROSCA.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao4.addEventListener('click', function(e) {
         limparClass();
@@ -245,6 +261,7 @@ function btnMontagemINdustrial() {
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/DESENGRIPANTE.jpg" alt="">';
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao5.addEventListener('click', function(e) {
         limparClass();
@@ -255,6 +272,7 @@ function btnMontagemINdustrial() {
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/TRAVA ROSCA.jpg" alt="">';
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao6.addEventListener('click', function(e) {
         limparClass();
@@ -263,6 +281,7 @@ function btnMontagemINdustrial() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/GEL DESENGRAXANTE.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao7.addEventListener('click', function(e) {
@@ -272,17 +291,18 @@ function btnMontagemINdustrial() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/GRAFITE-SPRAY.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
 };
 
 function btnAcessoriosOficinas() {
     ValTit.innerHTML = 'Acessórios para Oficinas, Pinturas e Borracharias';
-    btnSelecao1.innerHTML = 'Pistola de ar';
-    btnSelecao2.innerHTML = 'Pistola de pintura';
-    btnSelecao3.innerHTML = 'Calibradores para pneu';
-    btnSelecao4.innerHTML = 'Enchedores para pneu';
-    btnSelecao5.innerHTML = 'Chave saca filtros';
+    btnSelecao1.innerHTML = 'Pistola de Ar';
+    btnSelecao2.innerHTML = 'Pistola de Pulverização';
+    btnSelecao3.innerHTML = 'Calibradores para Pneu';
+    btnSelecao4.innerHTML = 'Enchedores para Pneu';
+    btnSelecao5.innerHTML = 'Chave Saca Filtros';
     descricaoProduto.innerHTML = 'As pistolas de ar de limpezas são ideias para uso frequentes por serem bastante confortáveis. Resistente e fácil de usar, possui corpo com formato de pistola que permite o usuário trabalhar por mais tempo, fabricada em alumínio (apenas o revestimento do cabo é feito em plástico).';
     limparClass();
     $('.cont-industria').addClass('cont-industria-pintura-1');
@@ -292,8 +312,8 @@ function btnAcessoriosOficinas() {
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     removeImg();
     modal5.innerHTML = '<img src="/root/img/cont-industria/Aces p oficinas otimizado/PISTOLA DE AR.jpg" alt="">';
-
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'As pistolas de ar de limpezas são ideias para uso frequentes por serem bastante confortáveis. Resistente e fácil de usar, possui corpo com formato de pistola que permite o usuário trabalhar por mais tempo, fabricada em alumínio (apenas o revestimento do cabo é feito em plástico).';
         limparClass();
@@ -301,23 +321,26 @@ function btnAcessoriosOficinas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/Aces p oficinas otimizado/PISTOLA DE AR.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
 
     btnSelecao2.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'Pistola de pintura para de alta produção com revolucionaria, indicado para uso profissional em funilarias, marcenarias, serralherias e para outras diversas aplicações. Possui regulagem do fluxo de ar e da vazão de tinta e controle do jato.';
+        descricaoProduto.innerHTML = 'Pistola de pulverização é ótima para lavagem de máquinas, equipamentos e motores. Possuem corpo em nylon e acionamento com botão superior, que através de uma mangueira na parte inferior é possível fazer a aplicação de querosene, óleo e outros lubrificantes.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-2');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/PULVERIZADOR.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'A uma ferramenta ideal, apropriada e segura para fazer uma calibragem precisa, erros na calibragem pode gerar desgastes no pneu. Possui corpo de alumínio resistente.';
+        descricaoProduto.innerHTML = 'Uma ferramenta ideal, apropriada e segura para fazer uma calibragem precisa, erros na calibragem podem gerar desgastes no pneu. Possui corpo de alumínio resistente.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-pintura-3');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/CALIBRADORES.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Possui entrada de ar rosca fêmea, com bico duplo de encher dependendo de sua aplicação e cabo emborrachado. Também possuímos outro modelo no qual é indicado a calibradores, sendo assim é possível conectar a mangueira direto no enchedor de pneu.';
@@ -329,6 +352,7 @@ function btnAcessoriosOficinas() {
 
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Chave saca filtro de corrente regulável especial, produto de ótima qualidade e garantindo a melhor fixação para extração do filtro. Possui cabo emborrachado e adaptável em qualquer tamanho e diâmetro de filtro de óleo.';
@@ -337,6 +361,7 @@ function btnAcessoriosOficinas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pintura/SACA FILTRO DE ÓLEO.jpg" alt=""></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
 
 
@@ -344,11 +369,11 @@ function btnAcessoriosOficinas() {
 
 function btnLavacao() {
     ValTit.innerHTML = 'Acessórios para Lavação e Engraxadeiras';
-    btnSelecao1.innerHTML = 'Acopladores para graxa';
-    btnSelecao2.innerHTML = 'Esguicho de água';
+    btnSelecao1.innerHTML = 'Acopladores para Graxa';
+    btnSelecao2.innerHTML = 'Esguicho de Água';
     btnSelecao3.innerHTML = 'Engraxadeiras';
-    btnSelecao4.innerHTML = 'Mangueira para engraxadeiras';
-    btnSelecao5.innerHTML = 'Comando de graxas';
+    btnSelecao4.innerHTML = 'Mangueira para Engraxadeiras';
+    btnSelecao5.innerHTML = 'Comando de Graxas';
     btnSelecao6.innerHTML = 'Graxadeiras';
     descricaoProduto.innerHTML = 'Acoplador para comando de graxas, bombas propulsoras ou manuais. Dispõe bico fino, de alta resistência e com a possibilidade de possuir válvula de retenção em seu corpo.';
     limparClass();
@@ -364,6 +389,7 @@ function btnLavacao() {
     removeImg();
     modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ACOPLADORES PRA GRAXA.jpg" alt="">';
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
     btnSelecao1.addEventListener('click', function(e) {
         limparClass();
         descricaoProduto.innerHTML = 'Acoplador para comando de graxas, bombas propulsoras ou manuais. Dispõe bico fino, de alta resistência e com a possibilidade de possuir válvula de retenção em seu corpo.';
@@ -371,6 +397,7 @@ function btnLavacao() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ACOPLADORES PRA GRAXA.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
@@ -379,6 +406,7 @@ function btnLavacao() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ESGUICHO DE ÁGUA.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
         limparClass();
@@ -387,6 +415,7 @@ function btnLavacao() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/ENGRAXADEIRAS.jpg" alt=""></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao4.addEventListener('click', function(e) {
@@ -396,6 +425,7 @@ function btnLavacao() {
         removeImg();
         modal5.innerHTML = '<img src="root/img/cont-industria/acesPlavacao/MANGUEIRA PARA ENGRAXADEIRAS.jpg" alt="">'
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
 
     });
@@ -406,6 +436,7 @@ function btnLavacao() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acesPlavacao/COMANDO\ DE\ GRAXAS.jpg">'
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
 
     });
     btnSelecao6.addEventListener('click', function(e) {
@@ -413,6 +444,7 @@ function btnLavacao() {
         descricaoProduto.innerHTML = 'Indicado para facilitar a lubrificação em máquinas, embarcações e equipamentos em geral. Evita o retorno da graxa e protege o ponto de lubrificação de impurezas do ambiente externo. Podem ser encontrados com diversas roscas e diversos modelos.';
         $('.cont-industria').addClass('cont-industria-lavacao-6');
         removeImg();
+        limpaContImgBtnModal1();
     });
 };
 
@@ -422,7 +454,7 @@ function btnCoreias() {
     btnSelecao2.innerHTML = 'Correia B';
     btnSelecao3.innerHTML = 'Correia C';
     btnSelecao4.innerHTML = 'Correia 3L';
-    btnSelecao5.innerHTML = 'POLIAS INDUSTRIAIS';
+    btnSelecao5.innerHTML = 'Polias Industiais';
     descricaoProduto.innerHTML = 'É uma cinta de material flexível, normalmente feita de camadas de lonas e borracha vulcanizada, que serve para transmitir a força e movimento de uma polia ou engrenagem para outras. É importante adquirir a correia correta e entender qual o tipo de polia que vai fazê-la se movimentar. As Correias possuem 13mm de largura externa e 8,15mm de largura interna.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-coreias-1');
@@ -434,6 +466,9 @@ function btnCoreias() {
     limpaContImgBtnModal1();
     modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/Correia A.jpg" alt="">';
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+
     btnSelecao1.addEventListener('click', function(e) {
         limparClass();
         descricaoProduto.innerHTML = 'É uma cinta de material flexível, normalmente feita de camadas de lonas e borracha vulcanizada, que serve para transmitir a força e movimento de uma polia ou engrenagem para outras. É importante adquirir a correia correta e entender qual o tipo de polia que vai fazê-la se movimentar. As Correias possuem 13mm de largura externa e 8,15mm de largura interna.';
@@ -441,6 +476,8 @@ function btnCoreias() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/Correia A.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
@@ -449,6 +486,8 @@ function btnCoreias() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/correia B.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao3.addEventListener('click', function(e) {
         limparClass();
@@ -457,6 +496,8 @@ function btnCoreias() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/Correia C.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         limparClass();
@@ -465,6 +506,8 @@ function btnCoreias() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/coreias/correia 3L.jpg" alt=""></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao5.addEventListener('click', function(e) {
         limparClass();
@@ -476,6 +519,7 @@ function btnCoreias() {
         modal3.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ FERRO.JPG" alt=""></img>';
         modal2.innerHTML = '<img src="/root/img/cont-industria/coreias/POLIA\ DE\ FERRO\ \(2\).jpg" alt=""></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
@@ -486,10 +530,10 @@ function btnCoreias() {
 function btnEquipamentosHidraulicos() {
     ValTit.innerHTML = 'Equipamentos Hidráulicos';
     btnSelecao1.innerHTML = 'Cilindros';
-    btnSelecao2.innerHTML = 'Comandos hidráulicos';
-    btnSelecao3.innerHTML = 'Bombas hidráulicas';
-    btnSelecao4.innerHTML = 'Motores hidráulicos';
-    btnSelecao5.innerHTML = 'Válvulas hidráulicas';
+    btnSelecao2.innerHTML = 'Comandos Hidráulicos';
+    btnSelecao3.innerHTML = 'Bombas Hidráulicas';
+    btnSelecao4.innerHTML = 'Motores Hidráulicos';
+    btnSelecao5.innerHTML = 'Válvulas Hidráulicas';
     btnSelecao6.innerHTML = 'Direções Hidrostáticas';
     descricaoProduto.innerHTML = 'No segmento hidráulico, um cilindro é um atuador mecânico, que é usado para aplicar uma força através de um percurso linear. O cilindro hidráulico recebe a energia do fluido pressurizado por uma bomba hidráulica. O cilindro converte essa energia recebida em energia mecânica. O fluido é enviado para o cilindro por uma válvula direcional ou comando.';
     limparClass();
@@ -502,6 +546,7 @@ function btnEquipamentosHidraulicos() {
     removeImg();
     modal5.innerHTML = '<img src="/root/img/cont-industria/equipind/CILINDROS HIDRAULICOS (CATEGORIA 5) (1).jpg">';
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'No segmento hidráulico, um cilindro é um atuador mecânico, que é usado para aplicar uma força através de um percurso linear. O cilindro hidráulico recebe a energia do fluido pressurizado por uma bomba hidráulica. O cilindro converte essa energia recebida em energia mecânica. O fluido é enviado para o cilindro por uma válvula direcional ou comando.';
         limparClass();
@@ -509,6 +554,8 @@ function btnEquipamentosHidraulicos() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/equipind/CILINDROS HIDRAULICOS (CATEGORIA 5) (1).jpg">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'O comando hidráulico é o componente do circuito hidráulico que permite controlar e direcionar o fluxo do fluído óleo hidráulico para os atuadores da máquina, assim a energia hidráulica do óleo em movimento será transportada para os atuadores que realizam diversos trabalhos. Com o uso do comando hidráulico é possível que um operador controle o equipamento por alavancas.';
@@ -519,6 +566,8 @@ function btnEquipamentosHidraulicos() {
         modal5.innerHTML = '<img src="/root/img/cont-industria/equipind/comandos/COMANDOS HIDRAULICOS (2) (1).jpg" alt="">';
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao3.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'A bomba hidráulica é um componente do circuito hidráulico, acionada por motores a combustão ou elétricos, transmitindo essa energia através do fluido hidráulico. O equipamento é extremamente requisitado por indústrias dos mais variados segmentos, como por exemplo, na construção civil, sendo utilizada em escavadeiras, tratores, embarcações, entre outros.';
@@ -534,6 +583,8 @@ function btnEquipamentosHidraulicos() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'O motor hidráulico está presente em equipamentos como máquinas de siderurgia, mineração, construção, automação industrial, colheitadeiras de cana e de outros produtos agrícolas, tratores, entre outros. O motor hidráulico é apenas mais um item que trabalha em conjunto com bombas, válvulas e comandos hidráulicos para tornar atividades industriais mais rápidas e precisas.';
@@ -546,6 +597,8 @@ function btnEquipamentosHidraulicos() {
         limpaContImgBtnModal1();
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'A válvula hidráulica é um dispositivo que regula, direciona e controla o fluxo e a pressão do fluido hidráulico.';
@@ -558,6 +611,8 @@ function btnEquipamentosHidraulicos() {
         limpaContImgBtnModal1();
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao6.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'As direções hidrostáticas são muito usadas em diversos sistemas hidráulicos por conta dos seus muitos benefícios. Possuem características muito importantes para o funcionamento de diferentes tipos de sistemas e facilitam e muito na montagem e aplicação em maquinários e veículos de diferentes tamanhos.';
@@ -566,6 +621,8 @@ function btnEquipamentosHidraulicos() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/equipind/direcoes/DIREÇÕES\ HIDROSTÁTICAS\ \(1\).jpg">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
 
     });
 
@@ -575,10 +632,10 @@ function btnEquipamentosHidraulicos() {
 function btnConjuntosPneumaticos() {
 
     ValTit.innerHTML = 'Conjuntos Pneumáticos';
-    btnSelecao1.innerHTML = 'Conectores pneumáticos';
-    btnSelecao2.innerHTML = 'Filtros e lubrificadores pneumáticos';
-    btnSelecao3.innerHTML = 'Válvulas pneumáticas';
-    btnSelecao4.innerHTML = 'Engates rápidos';
+    btnSelecao1.innerHTML = 'Conectores Pneumáticos';
+    btnSelecao2.innerHTML = 'Filtros e Lubrificadores Pneumáticos';
+    btnSelecao3.innerHTML = 'Válvulas Pneumáticas';
+    btnSelecao4.innerHTML = 'Engates Rápidos';
     btnSelecao5.innerHTML = 'Manômetros';
     descricaoProduto.innerHTML = 'Os conectores pneumáticos possuem diversas aplicações na área industrial e também hospitalar, ou seja, qualquer local que utiliza sistema de ar comprimido. É geralmente utilizado em sistemas pressurizados de ar comprimido, mas também podem ser usados em outros sistemas gasosos.';
     limparClass();
@@ -597,6 +654,8 @@ function btnConjuntosPneumaticos() {
     $('.cont-btn-modal-2').addClass('cont-btn-modal');
     $('.cont-btn-modal-3').addClass('cont-btn-modal');
     $('.cont-btn-modal-4').addClass('cont-btn-modal');
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Os conectores pneumáticos possuem diversas aplicações na área industrial e também hospitalar, ou seja, qualquer local que utiliza sistema de ar comprimido. É geralmente utilizado em sistemas pressurizados de ar comprimido, mas também podem ser usados em outros sistemas gasosos.';
         limparClass();
@@ -610,6 +669,8 @@ function btnConjuntosPneumaticos() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Filtro regulador de ar e lubrificador de ar pneumáticos são partes integrantes de uma unidade de preparação de ar pneumático, que tem como objetivo evitar que partículas de pó e ferrugem, e também umidade, se condense nas tubulações e tragam falhas às ferramentas pneumáticas presentes no local.';
@@ -618,6 +679,8 @@ function btnConjuntosPneumaticos() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pneusmatico/FILTROS E LUBRIFICADORRES PNEUMATICOS (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao3.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'As válvulas pneumáticas são componentes de circuito pneumático designadas para controlar e  manipular o fluxo de ar comprimido (direção, pressão e/ou vazão do ar). Podendo ser de controle direcional, reguladora de fluxo, reguladora de pressão e de bloqueio.';
@@ -626,6 +689,8 @@ function btnConjuntosPneumaticos() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pneusmatico/VALVULAS PNEUMATICOS (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'O engate rápido pneumático é utilizado em linhas de ar comprimido e em sistemas pneumáticos. Sua utilização facilita a manutenção da rede de ar e de seus equipamentos, também agiliza a troca de ferramentas pneumáticas de uma determinada linha.';
@@ -634,6 +699,8 @@ function btnConjuntosPneumaticos() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/pneusmatico/ENGATES RAPIDOS (2) (1) (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Manômetro para compressor de ar é um instrumento importante utilizado para medir e manter o controle da quantidade de ar armazenado no compressor. O manômetro é conectado diretamente no equipamento e pode ser substituído facilmente. Basta desrosquear o manômetro com o compressor vazio.';
@@ -644,6 +711,8 @@ function btnConjuntosPneumaticos() {
         modal4.innerHTML = ' <img src="/root/img/cont-industria/pneusmatico/MANOMETROS (CATEGORIA 5) (2).jpg" alt="">';
         limpaContImgBtnModal1();
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
 
     });
 
@@ -653,12 +722,12 @@ function btnConjuntosPneumaticos() {
 };
 
 function btnConexoesHidraulicas() {
-    ValTit.innerHTML = 'Conexões hidráulicas';
-    btnSelecao1.innerHTML = 'Conexões galvanizadas';
-    btnSelecao2.innerHTML = 'Engate rápido hidráulico';
-    btnSelecao3.innerHTML = 'Conexões inox';
-    btnSelecao4.innerHTML = 'Terminais para flexíveis';
-    btnSelecao5.innerHTML = 'Adaptadores hidráulicos';
+    ValTit.innerHTML = 'Conexões Hidráulicas';
+    btnSelecao1.innerHTML = 'Conexões Galvanizadas';
+    btnSelecao2.innerHTML = 'Engate Rápido Hidráulico';
+    btnSelecao3.innerHTML = 'Conexões Inox';
+    btnSelecao4.innerHTML = 'Terminais para Flexíveis';
+    btnSelecao5.innerHTML = 'Adaptadores Hidráulicos';
     descricaoProduto.innerHTML = 'As conexões galvanizadas estão presentes em redes de água fria e quente, em redes de ar comprimido, prevenção e combate a incêndios e redes de sistemas óleo hidráulicos, podendo ser de alta ou baixa pressão. São fabricadas em ferro maleável e possui padrão de rosca BSP ou NPT.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-hidraulica-1');
@@ -677,6 +746,8 @@ function btnConexoesHidraulicas() {
     $('.cont-btn-modal-2').addClass('cont-btn-modal');
     $('.cont-btn-modal-3').addClass('cont-btn-modal');
     $('.cont-btn-modal-4').addClass('cont-btn-modal');
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'As conexões galvanizadas estão presentes em redes de água fria e quente, em redes de ar comprimido, prevenção e combate a incêndios e redes de sistemas óleo hidráulicos, podendo ser de alta ou baixa pressão. São fabricadas em ferro maleável e possui padrão de rosca BSP ou NPT.';
         limparClass();
@@ -690,6 +761,8 @@ function btnConexoesHidraulicas() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Engate rápido hidráulico é uma peça que permite fazer a conexão e a desconexão imediata em um sistema de circuito hidráulico, sem o uso de ferramentas específicas. Ou seja, esses processos são realizados de forma manual.';
@@ -698,6 +771,8 @@ function btnConexoesHidraulicas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/conexindustriais/engatRapido/ENGATE RAPIDO HIDRAULICO (1).jpg">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
 
     });
     btnSelecao3.addEventListener('click', function(e) {
@@ -713,6 +788,8 @@ function btnConexoesHidraulicas() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Os terminais hidráulicos, são utilizados na montagem e confecção de flexíveis em diversas situações e segmentos.  Podendo ser utilizadas nos sistemas de máquinas interligando as mangueiras, cilindros, atuadores rotativos, acumuladores, motores, bombas, comandos direcionais múltiplos, direções hidrostáticas, unidades hidráulicas, válvulas proporcionais e válvulas direcionais.';
@@ -727,6 +804,8 @@ function btnConexoesHidraulicas() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Servem para compor a mangueira ou tubo na montagem, facilitando a instalação e retirada para futuras manutenções. Os adaptadores são fornecidos com variados tipos de roscas. As peças são sólidas (sem soldas), garantindo assim maior segurança em sua aplicação. Podendo ser utilizados em sistemas de baixa pressão e nos que demandam uma grande pressão de trabalho.';
@@ -741,6 +820,8 @@ function btnConexoesHidraulicas() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
 };
 
@@ -763,12 +844,15 @@ function btnFiltrosAcessorios() {
     removeImg();
     modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/FILTROSHIDRAULICOSSUCCAO.jpg">';
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Com função de proteger a bomba hidráulica e reter partículas de tinta, plástico, cavacos, entre outros elementos que podem provocar algum dano na bomba, o filtro hidráulico de sucção tem a importância de sua função focada em evitar o desgaste natural do sistema de bombas.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-filtros-1');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/FILTROSHIDRAULICOSSUCCAO.jpg">';
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'A função dos filtros de retorno é impedir que as partículas que penetram pela vedação das hastes de cilindros e as geradas pelo sistema atinjam o reservatório e entrem novamente em circulação. São aplicados na parte externa dos reservatórios hidráulicos e possuem elementos filtrantes descartáveis em seu corpo interno.';
@@ -777,14 +861,18 @@ function btnFiltrosAcessorios() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/FILTROHIDRAULICODERETORNO.jpg">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
     });
     btnSelecao3.addEventListener('click', function(e) {
-        descricaoProduto.innerHTML = 'O indicador de nível permite rápida verificação do nível de óleo do seu reservatório. Especialmente projetado para todos os tipos de óleo mineral a base de petróleo, esses indicadores possibilitam a mais completa e econômica proteção de reservatórios hidráulicos';
+        descricaoProduto.innerHTML = 'O indicador de nível permite rápida verificação do nível de óleo do seu reservatório. Especialmente projetado para todos os tipos de óleo mineral a base de petróleo, esses indicadores possibilitam a mais completa e econômica proteção de reservatórios hidráulicos.';
         limparClass();
         $('.cont-industria').addClass('cont-industria-filtros-3');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/VISORTANQUE.jpg">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Além da função de abastecimento do reservatório, também possui a função de respiro. Possui um cesto que permite a retenção de grandes contaminantes como cavacos, parafusos, porcas, entre outros que possam cair dentro do reservatório.';
@@ -793,6 +881,9 @@ function btnFiltrosAcessorios() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/filtro/BOCALDEENCHIENTO.jpg"></img>';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+
     });
     btnSelecao5.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'O elemento filtrante de óleo é capaz de retirar partículas contaminadas dos sistemas hidráulicos e, assim, pode ser encontrado em vários seguimentos industriais e navais, por isso é disponível em diversos modelos e tamanhos a fim de atender as demandas da necessidade.';
@@ -801,27 +892,50 @@ function btnFiltrosAcessorios() {
         removeImg();
         limpaContImgBtnModal1();
 
+
+
+
+
     });
 };
 
 function btnMangueirasDiversas() {
-    ValTit.innerHTML = 'Mangueiras diversas';
-    btnSelecao1.innerHTML = 'Mangueira térmica alumínio';
-    btnSelecao2.innerHTML = 'Mangueira tubo FX';
-    btnSelecao3.innerHTML = 'Mangueira lava auto';
-    btnSelecao4.innerHTML = 'Mangueira oxigênio/acetileno';
+    ValTit.innerHTML = 'Mangueiras Diversas';
+
+    btnSelecao1.innerHTML = 'Mangueira Térmica Alumínio';
+    btnSelecao2.innerHTML = 'Mangueira Tubo FX';
+    btnSelecao3.innerHTML = 'Mangueira Lava Auto';
+    btnSelecao4.innerHTML = 'Mangueira Oxigênio/Acetileno';
     btnSelecao5.innerHTML = 'Mangueira Vácuo Ar Cinza';
-    descricaoProduto.innerHTML = 'Trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
+    btnSelecao6.innerHTML = 'Mangotes de Borrachas';
+    btnSelecao7.innerHTML = 'Mangueiras de PVC';
+    btnSelecao8.innerHTML = 'Mangueiras Ar/Água';
+    btnSelecao9.innerHTML = 'Mangueiras/tubos Pneumáticos';
+    btnSelecao10.innerHTML = 'Mangueiras Cristais e Trançadas';
+    btnSelecao11.innerHTML = 'Mangueiras Hidráulicas com Trama de Aço';
+    btnSelecao12.innerHTML = 'Mangueiras Teflon';
+    btnSelecao13.innerHTML = 'Mangueiras Atóxica';
+    descricaoProduto.innerHTML = 'Os variados tipos de magotes existentes diferem-se pela composição da borracha usada para fabricá-los e pela sua estrutura. Os mangotes possuem reforço em metal ou tecido, além de outros compostos, dependendo das características necessárias para realizar sua função.';
     limparClass();
     $('.cont-industria').addClass('cont-industria-maqueiras-1');
     escondeBtnSelecao();
     $('#btn-selecao-5').removeClass('display-none');
+    $('#btn-selecao-6').removeClass('display-none');
+    $('#btn-selecao-7').removeClass('display-none');
+    $('#btn-selecao-8').removeClass('display-none');
+    $('#btn-selecao-9').removeClass('display-none');
+    $('#btn-selecao-10').removeClass('display-none');
+    $('#btn-selecao-11').removeClass('display-none');
+    $('#btn-selecao-12').removeClass('display-none');
+    $('#btn-selecao-13').removeClass('display-none');
     //remove a segunda cor do botão
     removeClassbacgclickacessorioind();
     btnSelecao1.classList.add("bacg-click-acessorio-ind");
     removeImg();
     modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA TERMICA DE ALUMINIO (CATEGORIA 12) (1).jpg" alt="">';
     limpaContImgBtnModal1();
+    $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
 
     btnSelecao1.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Trata-se de um revestimento em mangueiras que tem por finalidade um aumento considerável na vida útil das mangueiras, tornando-se mais duráveis e consequentemente aumentando seu custo benefício. Pode ser utilizada também como uma espécie de duto de ar, para aplicações do qual necessitam de entrada ou saída de ar quente.';
@@ -830,6 +944,8 @@ function btnMangueirasDiversas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA TERMICA DE ALUMINIO (CATEGORIA 12) (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao2.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Trata-se de um tubo de borracha com espiral de aço e suas extremidades são lisas, para que se possa ter um maior aperto no ato de sua ficção. Pode ser utilizada em diversas ocasiões, como em rede coletora de ar automotiva ou industrial, e radiadores, suspiros de motores entre outros. Não é aconselhado sua aplicação em sistemas, no qual o tubo possui contato com derivados de petróleo devido a sua composição e matéria prima.';
@@ -844,6 +960,8 @@ function btnMangueirasDiversas() {
         $('.cont-btn-modal-2').addClass('cont-btn-modal');
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao3.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Recomendada para a lavagem de automóveis, caminhões, ônibus, tratores e implementos agrícolas com alta pressão. Possuem alta espessura de parede em relação ao diâmetro, o que resulta em excelente flexibilidade.';
@@ -852,6 +970,8 @@ function btnMangueirasDiversas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA LAVA AUTO.jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
     });
     btnSelecao4.addEventListener('click', function(e) {
         descricaoProduto.innerHTML = 'Mangueira dupla flexível para solda Oxigênio e Acetileno é indicada para processos de soldagem em geral, utilizadas em equipamentos normatizados de solda. Sua função é conduzir os gases até o ponto de solda. Composta por duas mangueiras, verde (oxigênio) e vermelha (acetileno).';
@@ -860,6 +980,8 @@ function btnMangueirasDiversas() {
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/MANGUEIRA OXIGÊNIO_ACETILENO (1).jpg" alt="">';
         limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
 
     });
     btnSelecao5.addEventListener('click', function(e) {
@@ -873,6 +995,124 @@ function btnMangueirasDiversas() {
         limpaContImgBtnModal1();
         $('.cont-btn-modal-3').addClass('cont-btn-modal');
         $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao6.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'Os variados tipos de magotes existentes diferem-se pela composição da borracha usada para fabricá-los e pela sua estrutura. Os mangotes possuem reforço em metal ou tecido, além de outros compostos, dependendo das características necessárias para realizar sua função.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-6');
+        removeImg();
+        modal3.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha.jpg" alt="">';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha (2).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha (3).jpg" alt="">';
+
+
+
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-3').addClass('cont-btn-modal');
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao7.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'As mangueiras de PVC Reforçada com Espiral de PVC Rígido. Geralmente utilizadas para sucção de fluidos líquidos que possuem pouca corrosão.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-7');
+        removeImg();
+        modal3.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc.jpg" alt="">';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc (2).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc (3).jpg" alt="">';
+
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-3').addClass('cont-btn-modal');
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao8.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = ' Indicada para aplicação em compressores de ar, ferramentas pneumáticas, para uso em mineração, construção civil, borracharia e oficinas em geral. Possuem alta flexibilidade e fácil manuseio.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-8');
+        removeImg();
+        modal3.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua.jpg" alt="">';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua (2).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua (3).jpg" alt=""></img>';
+
+
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-3').addClass('cont-btn-modal');
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao9.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'Os tubos pneumáticos são circuitos largamente usados na indústria para o transporte eficaz e seguro de líquidos, ar comprimido ou gás. Podendo apresentar inúmeras possibilidades de níveis de pressão e temperatura, bem como de tipos de fluídos a serem transportados.  Trata-se de um componente de fácil manuseio e que oferece total rapidez na instalação.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-9');
+        removeImg();
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - tubos pneumaticos.jpg" alt="">';
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+
+    });
+    btnSelecao10.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'Mangueiras flexíveis fabricadas com PVC cristal, indicadas para as aplicações gerais em transporte de líquidos e gases em baixa pressão. As mangueiras trançadas são indicadas para serviços de média pressão em máquinas e equipamentos industriais em gerais.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-10');
+        removeImg();
+        modal1.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas.jpg" alt="">';
+        modal2.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (2).jpg" alt="">';
+        modal3.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (3).jpg" alt="">';
+        modal4.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (4).jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (5).jpg" alt="">';
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-1').addClass('cont-btn-modal');
+        $('.cont-btn-modal-2').addClass('cont-btn-modal');
+        $('.cont-btn-modal-3').addClass('cont-btn-modal');
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao11.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'Utilizadas para montagem de flexíveis de alta pressão com terminais prensáveis, possuem tramas de aço entre as camadas de borracha e uma vasta variedade de aplicações entre eles óleos minerais, óleos solúveis em água, derivados de petróleo, óleos sintéticos, óleos de emulsão aquosa, água, combustível.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-11');
+        removeImg();
+        modal4.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras hidraulicas trama de aço.jpg" alt="">';
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - mangueiras hidraulicas trama de aço (2).jpg" alt="">';
+
+
+
+
+
+        limpaContImgBtnModal1();
+        $('.cont-btn-modal-4').addClass('cont-btn-modal');
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao12.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'Composta por um teflon interno de alta resistência e uma trama externa de aço inox. Geralmente utilizada para transporte de fluídos hidráulicos a base de água, petróleo, sintéticos, gases ou líquidos pesados e corrosivos em geral sob alta temperatura, a mangueira de teflon suporta variações de temperaturas. ';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-12');
+        removeImg();
+
+        modal5.innerHTML = '<img src="/root/img/cont-industria/mangueira/mangueiras - teflon.jpg" alt="">';
+        limpaContImgBtnModal1();
+
+        $('.cont-btn-modal-5').addClass('cont-btn-modal');
+
+    });
+    btnSelecao13.addEventListener('click', function(e) {
+        descricaoProduto.innerHTML = 'É indicada para transporte de fluidos alimentícios em descarga ou sucção. Sua construção permite que ela não transfira gosto nem cheiro para o conteúdo transportado, isso torna possível manter a pureza do produto, que não perderá suas características originais durante o transporte.';
+        limparClass();
+        $('.cont-industria').addClass('cont-industria-maqueiras-13');
+        removeImg();
+
+        limpaContImgBtnModal1();
+
+
     });
 };
 btnSelecao1.addEventListener('click', function(e) {
@@ -923,6 +1163,10 @@ btnSelecao12.addEventListener('click', function(e) {
     removeClassBacgClickAcessorioInd();
     btnSelecao12.classList.add("bacg-click-acessorio-ind");
 });
+btnSelecao13.addEventListener('click', function(e) {
+    removeClassBacgClickAcessorioInd();
+    btnSelecao13.classList.add("bacg-click-acessorio-ind");
+});
 
 function removeClassBacgClickAcessorioInd() {
     btnSelecao1.classList.remove("bacg-click-acessorio-ind");
@@ -937,6 +1181,7 @@ function removeClassBacgClickAcessorioInd() {
     btnSelecao10.classList.remove("bacg-click-acessorio-ind");
     btnSelecao11.classList.remove("bacg-click-acessorio-ind");
     btnSelecao12.classList.remove("bacg-click-acessorio-ind");
+    btnSelecao13.classList.remove("bacg-click-acessorio-ind");
 };
 
 function escondeBtnSelecao() {
@@ -949,6 +1194,7 @@ function escondeBtnSelecao() {
     $('#btn-selecao-10').addClass('display-none');
     $('#btn-selecao-11').addClass('display-none');
     $('#btn-selecao-12').addClass('display-none');
+    $('#btn-selecao-13').addClass('display-none');
 };
 
 function removeImg() {
@@ -972,6 +1218,7 @@ function removeClassbacgclickacessorioind() {
     btnSelecao10.classList.remove("bacg-click-acessorio-ind");
     btnSelecao11.classList.remove("bacg-click-acessorio-ind");
     btnSelecao12.classList.remove("bacg-click-acessorio-ind");
+    btnSelecao13.classList.remove("bacg-click-acessorio-ind");
 };
 
 function limparClass() {
@@ -1020,6 +1267,7 @@ function limparClass() {
     $('.cont-industria').removeClass('cont-industria-hidraulicos-3');
     $('.cont-industria').removeClass('cont-industria-hidraulicos-4');
     $('.cont-industria').removeClass('cont-industria-hidraulicos-5');
+    $('.cont-industria').removeClass('cont-industria-hidraulicos-6');
     //pneumatico
     $('.cont-industria').removeClass('cont-industria-pneumatico-1');
     $('.cont-industria').removeClass('cont-industria-pneumatico-2');
@@ -1032,6 +1280,7 @@ function limparClass() {
     $('.cont-industria').removeClass('cont-industria-hidraulica-3');
     $('.cont-industria').removeClass('cont-industria-hidraulica-4');
     $('.cont-industria').removeClass('cont-industria-hidraulica-5');
+    $('.cont-industria').removeClass('cont-industria-hidraulica-');
     //filtros
     $('.cont-industria').removeClass('cont-industria-filtros-1');
     $('.cont-industria').removeClass('cont-industria-filtros-2');
@@ -1044,6 +1293,14 @@ function limparClass() {
     $('.cont-industria').removeClass('cont-industria-maqueiras-3');
     $('.cont-industria').removeClass('cont-industria-maqueiras-4');
     $('.cont-industria').removeClass('cont-industria-maqueiras-5');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-6');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-7');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-8');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-9');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-10');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-11');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-12');
+    $('.cont-industria').removeClass('cont-industria-maqueiras-13');
 };
 
 function limpaContImgBtnModal1() {
@@ -1052,6 +1309,7 @@ function limpaContImgBtnModal1() {
     $('.cont-btn-modal-2').removeClass('cont-btn-modal');
     $('.cont-btn-modal-3').removeClass('cont-btn-modal');
     $('.cont-btn-modal-4').removeClass('cont-btn-modal');
+    $('.cont-btn-modal-5').removeClass('cont-btn-modal');
 
 };
 

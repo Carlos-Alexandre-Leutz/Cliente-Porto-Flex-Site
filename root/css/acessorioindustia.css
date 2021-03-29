@@ -61,7 +61,7 @@
 }
 
 .cont-servicos-home div {
-  margin-right: 40px;
+  margin-right: 10vw;
 }
 
 .div-clique {
@@ -1093,6 +1093,78 @@
   background-image: url("/root/img/cont-industria/mangueira/cibza/MANGUEIRA CINZA (1).jpg");
 }
 
+.cont-industria-maqueiras-6 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha.jpg");
+}
+
+.cont-industria-maqueiras-6 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha (2).jpg");
+}
+
+.cont-industria-maqueiras-6 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangotes de borracha (3).jpg");
+}
+
+.cont-industria-maqueiras-7 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc.jpg");
+}
+
+.cont-industria-maqueiras-7 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc (2).jpg");
+}
+
+.cont-industria-maqueiras-7 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras de pvc (3).jpg");
+}
+
+.cont-industria-maqueiras-8 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua.jpg");
+}
+
+.cont-industria-maqueiras-8 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua (2).jpg");
+}
+
+.cont-industria-maqueiras-8 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras Ar- Agua (3).jpg");
+}
+
+.cont-industria-maqueiras-9 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - tubos pneumaticos.jpg");
+}
+
+.cont-industria-maqueiras-10 div:nth-child(1) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas.jpg");
+}
+
+.cont-industria-maqueiras-10 div:nth-child(2) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (2).jpg");
+}
+
+.cont-industria-maqueiras-10 div:nth-child(3) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (3).jpg");
+}
+
+.cont-industria-maqueiras-10 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (4).jpg");
+}
+
+.cont-industria-maqueiras-10 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - Cristal e Trançadas (5).jpg");
+}
+
+.cont-industria-maqueiras-11 div:nth-child(4) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras hidraulicas trama de aço.jpg");
+}
+
+.cont-industria-maqueiras-11 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - mangueiras hidraulicas trama de aço (2).jpg");
+}
+
+.cont-industria-maqueiras-12 div:nth-child(5) {
+  background-image: url("/root/img/cont-industria/mangueira/mangueiras - teflon.jpg");
+}
+
 .modal-img img {
   width: 100%;
   -o-object-fit: contain;
@@ -1153,14 +1225,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-bottom: 10px;
     overflow-y: scroll;
   }
   .cont-servicos-home-movel div {
-    margin-right: 25px;
+    margin-right: 1.5vw;
     width: 60px;
     height: 60px;
     min-width: 60px;

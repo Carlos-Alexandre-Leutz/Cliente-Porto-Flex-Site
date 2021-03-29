@@ -176,6 +176,53 @@ $('.trabalho').click(function() {
 
 });
 $('.produtos').click(function() {
+    if ($('.produtos').hasClass('navCorPrinc')) {
+        $('.produtos').addClass('navCorSecund');
+
+
+
+        $('.home').removeClass('navCorSecund');
+        $('.historia').removeClass('navCorSecund');
+
+        $('.trabalho').removeClass('navCorSecund');
+        $('.servicos').removeClass('navCorSecund');
+        $('.fale').removeClass('navCorSecund');
+
+        //add selected-menu
+        $('.produtos').addClass('selected-menu');
+        $('.historia').removeClass('selected-menu');
+        $('.home').removeClass('selected-menu');
+        $('.fale').removeClass('selected-menu');
+        $('.trabalho').removeClass('selected-menu');
+        $('.servicos').removeClass('selected-menu');
+
+        $('#collapseServicos').removeClass('show');
+        $('#collapseProdutos').removeClass('show');
+
+
+    } else {
+        $('.produtos').removeClass('navCorSecund');
+
+        $('.home').removeClass('navCorSecund');
+        $('.historia').removeClass('navCorSecund');
+
+        $('.trabalho').removeClass('navCorSecund');
+        $('.servicos').removeClass('navCorSecund');
+        $('.fale').removeClass('navCorSecund');
+
+        //add selected-menu
+        $('.produtos').addClass('selected-menu');
+        $('.historia').removeClass('selected-menu');
+        $('.home').removeClass('selected-menu');
+        $('.fale').removeClass('selected-menu');
+        $('.trabalho').removeClass('selected-menu');
+        $('.servicos').removeClass('selected-menu');
+
+    };
+
+
+});
+/* $('.produtos').click(function() {
 
     if (!$('.produtos').hasClass('navCorSecund')) {
         $('.produtos').addClass('selected-menu');
@@ -200,7 +247,7 @@ $('.produtos').click(function() {
 
 
 
-});
+}); */
 
 
 $('#catalogo').click(function() {

@@ -269,8 +269,8 @@ header section div span i {
     height: 100%;
     max-width: 66px;
     min-width: 66px;
-    max-height: 66px;
-    min-height: 66px;
+    max-height: 70px;
+    min-height: 70px;
     margin-top: -28px;
     margin-bottom: 30px;
   }
@@ -399,7 +399,7 @@ footer .conteiner-img-logo {
 }
 
 footer .conteiner-img-logo .img-logo-footer {
-  width: 150px;
+  width: 300px;
   max-width: 150px;
   min-width: 150px;
   -o-object-fit: contain;
