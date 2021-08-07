@@ -34,17 +34,18 @@
 }
 
 .conteudo form {
-  width: 70px;
+  width: 100px;
   margin: auto;
   padding: 5px 0px;
 }
 
 .conteudo form button {
-  width: 80px;
+  width: 100%;
   background-color: #db812d;
   color: #fff;
   border: none;
   border-radius: 3px;
+  text-align: center;
 }
 
 .flip-container {

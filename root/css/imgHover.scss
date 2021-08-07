@@ -33,15 +33,16 @@ $laranjaClaro: #f4c498;
         font-size: 11px;
     }
     form {
-        width: 70px;
+        width: 100px;
         margin: auto;
         padding: 5px 0px;
         button {
-            width: 80px;
+            width: 100%;
             background-color: $laranja;
             color: $branco;
             border: none;
             border-radius: 3px;
+            text-align: center;
         }
     }
 }

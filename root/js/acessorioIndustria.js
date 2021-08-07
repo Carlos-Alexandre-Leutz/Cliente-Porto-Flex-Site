@@ -236,7 +236,7 @@ function btnMontagemINdustrial() {
     });
     btnSelecao2.addEventListener('click', function(e) {
         limparClass();
-        descricaoProduto.innerHTML = 'Vedante à base de borracha sintética, para vedação de roscas em tubos, flanges e conexões de metal e PVC rígido. Pode ainda ser utilizado em tubulação de vácuo, água quente e outras aplicações na área industrial';
+        descricaoProduto.innerHTML = 'Vedante à base de borracha sintética, para vedação de roscas em tubos, flanges e conexões de metal e PVC rígido. Pode ainda ser utilizado em tubulação de vácuo, água quente e outras aplicações na área industrial.';
         $('.cont-industria').addClass('cont-industria-montagem-industrial-2');
         removeImg();
         modal5.innerHTML = '<img src="/root/img/cont-industria/acessorioPMontagemIndustrial/VEDA ROSCA LÍQUIDO (CATEGORIA 7) (1).jpg" alt="">';

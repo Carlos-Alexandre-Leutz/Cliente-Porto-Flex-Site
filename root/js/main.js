@@ -14,14 +14,9 @@ $(function() {
             $(".logo").removeClass("none");
             $(".wthas").addClass("wthsPositionafter");
             $(".wthas").removeClass("wthsPositionahover");
-
-
-
         } else {
             $(".wthas").removeClass("wthsPositionafter");
             $(".wthas").addClass("wthsPositionahover");
-
-
             $(".logo").addClass("none");
 
         }
